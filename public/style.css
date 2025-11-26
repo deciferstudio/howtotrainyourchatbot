@@ -749,7 +749,7 @@ button {
 
 
 /* phone in portrait */
-@media screen and (orientation: portrait) and (max-width: 950px) {
+@media screen and (orientation: portrait) and (max-width: 1300px) {
    body {
     margin: 0;
     overflow: hidden; 
@@ -759,7 +759,8 @@ button {
   .rotate-message {
     display: flex;  
     height: 100%;
-    width: 80%;
+    width: 100%;
+    padding-right: 8rem;
   }
 
     #intro-container,
@@ -768,4 +769,76 @@ button {
     display: none;
   }
 }
+
+/* phone in landscape */
+@media screen and (orientation: landscape) and (max-width: 950px) {
+
+  html{
+    margin: 0rem;
+  }
+
+
+  #intro-container{
+    padding: 1rem 3rem;
+    margin: 1rem auto; 
+    font-size: 1.5rem;
+  }
+
+  #start-btn{
+    margin: 1.5rem;
+  }
+
+  .browser-window{
+    width: 100%;
+    max-width: 100%;
+    margin-top: 0.2rem;
+
+  }
+
+  #main-container{
+    font-size: 1.3rem;
+    max-width: 90%;
+    margin: 1rem auto;
+    justify-content: flex-start;
+    min-height: 20rem;
+  }
+
+  #main-container p{
+    margin-top: 0.7rem;
+  
+  }
+
+  .button-group{
+    gap: 2rem;
+  }
+  button{
+    margin: 1rem;
+  }
+
+   .stage-tag{
+          width: 15%;
+        }
+ 
+}
+
+
+/* tablet in landscape */
+
+@media screen and (orientation: landscape) 
+       and (min-width: 951px) 
+       and (max-width: 1366px) {
+
+       button{
+          margin: 1.5rem 1.5rem;
+        }
+
+        #main-container{
+          margin: 1rem auto;
+        }
+        .stage-tag{
+          width: 15%;
+        }
+ 
+}
+
 

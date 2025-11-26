@@ -68,12 +68,6 @@
           "trigger": "choice-correctly",
           "class": ["button-stagger-3"],
           "delay": "7.0s"
-        },
-        {
-          "text": "!",
-          "trigger": "choice-!",
-          "class": ["button-stagger-4"],
-          "delay": "7.0s"
         }
       ],
       "__comment": "so triggers can also point to an indexed step"
