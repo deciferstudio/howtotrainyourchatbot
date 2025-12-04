@@ -725,6 +725,7 @@ button:hover {
   justify-content: center;
   text-align: center;
   padding: 2rem 0rem;
+  padding-left: 5rem;
   font-size: 2.1rem;
   z-index: 999999;
   overflow: hidden;
@@ -732,7 +733,7 @@ button:hover {
 }
 
 .rotate-message-txt {
-  width: 40%;
+  width: 60%;
   max-width: 90%;
 }
 .rotate-message img {
@@ -760,17 +761,89 @@ button:hover {
     overflow: hidden;
   }
 
-  .rotate-message {
+  body:not(.experience-started) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  body:not(.experience-started) .navbar {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+  body:not(.experience-started) #navbar-title {
+    font-size: 1rem;
+  }
+
+  body:not(.experience-started) .navbar-link {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  body:not(.experience-started) #intro-container {
+    padding: 2rem 1.5rem;
+    margin: 8rem 1rem;
+    font-size: 1.3rem;
+    width: 90%;
+    max-width: 90%;
+    min-height: auto;
+    line-height: 1.5;
+  }
+
+  body:not(.experience-started) #start-btn {
+ 
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    width: 60%;
+    max-width: 200px;
+  }
+
+  body.experience-started .rotate-message {
     display: flex;
     height: 100%;
     width: 100%;
     padding-right: 8rem;
   }
 
-  #intro-container,
-  .browser-window,
-  nav {
-    display: none;
+  body.experience-started .browser-window, body .experience-started nav{
+    display: none !important;
+  }
+
+  body.experience-started #intro-container{
+    display: none !important; 
+  }
+ 
+}
+
+@media screen and (orientation: landscape) and (min-width: 951px) and (max-width: 1366px) {
+  .navbar {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem 1.5rem 0rem;
+  }
+
+  #navbar-title {
+    font-size: 1rem;
+    padding: 0 0.5rem;
+  }
+
+  .navbar-link {
+    padding: 0.5rem;
+    font-size: 0.95rem;
+  }
+
+  
+  #intro-container {
+    padding: 2rem 3rem;
+    margin: 7rem auto;
+    font-size: 1.6rem;
+    width: 70%;
+    max-width: 80%;
+    min-height: 25rem;
+    line-height: 1.5;
   }
 }
 

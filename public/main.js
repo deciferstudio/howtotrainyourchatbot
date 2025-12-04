@@ -125,6 +125,8 @@ function renderStep(step) {
     currentContainer.style.display = "flex";
     document.getElementById("main-container").style.display = "none";
     hideProgressBar();
+
+    document.body.classList.remove("experience-started");
   } else {
     //browser styling made visible, navbar hidden
     document.querySelector(".browser-window").style.visibility = "visible";
@@ -135,6 +137,8 @@ function renderStep(step) {
     currentContainer = genericContainer;
     mainContainer.style.visibility = "visible";
     mainContainer.style.display = "flex";
+
+    document.body.classList.add("experience-started");
   }
 
   if (step.trigger && PROGRESS_MILESTONES.hasOwnProperty(step.trigger)) {
