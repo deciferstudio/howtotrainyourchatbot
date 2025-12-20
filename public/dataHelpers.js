@@ -1,11 +1,14 @@
 let DATA_TYPES = null;
 let FEEDBACK_QUESTIONS = null; 
 
+
 async function loadDataContent(){
     const response = await fetch ("public/json/dataContent.json");
     const data = await response.json(); 
-    DATA_TYPES = data.DATA_TYPES;
-    FEEDBACK_QUESTIONS = data.FEEDBACK_QUESTIONS;
+  
+    const langData = data[currentLanguage]; 
+    DATA_TYPES = langData.DATA_TYPES;
+    FEEDBACK_QUESTIONS = langData.FEEDBACK_QUESTIONS;
 
     console.log("Data loaded:", DATA_TYPES, FEEDBACK_QUESTIONS);
 

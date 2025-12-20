@@ -3,6 +3,7 @@
 // implement personality functions
 //implement chatbot functions
 
+let currentLanguage = localStorage.getItem('language') || 'en';
 let scriptData = [];
 let scriptByIndex = {};
 let scriptByTrigger = {};
@@ -48,9 +49,10 @@ async function loadScript() {
     const response = await fetch("public/json/script.json");
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const jsonData = await response.json();
+    const langData = jsonData[currentLanguage];
     //entire script raw json
-    scriptData = jsonData.script;
-    UIData = jsonData.ui;
+    scriptData = langData.script;
+    UIData = langData.ui;
     // populateUI(UIData);
 
     //sort into index and trigger steps

@@ -1,16 +1,28 @@
+
+
 async function loadIntro() {
+  let currentLanguage = localStorage.getItem('language') || 'en';
   try {
     const response = await fetch("public/json/script.json");
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const jsonData = await response.json();
+
+    const langData = jsonData[currentLanguage];
+    const UIData = langData.ui; 
     
-    const UIData = jsonData.ui;
     document.querySelector("#navbar-title").textContent = UIData.navbar.title;
     document.querySelector("#navbar-resources a").textContent = UIData.navbar.resources;
     document.querySelector("#navbar-about a").textContent = UIData.navbar.about;
-    document.querySelector("#navbar-lang a").textContent = UIData.navbar.language;
+   const languageSelector = document.getElementById("language-selector"); 
+   languageSelector.value = currentLanguage; 
+
+   languageSelector.addEventListener("change", (e) => {
+    currentLanguage = e.target.value; 
+    localStorage.setItem('language', currentLanguage);
+    location.reload();
+   })
     
-    const introStep = jsonData.script[0];
+    const introStep = langData.script[0];
     const container = document.getElementById("intro-container");
     
     introStep.body.forEach(b => {
