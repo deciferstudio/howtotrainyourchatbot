@@ -546,7 +546,7 @@ function renderFineTuningStep4(step) {
 
 
   outputContainer.classList.add("visible");
-  output.textContent = "Move the 'personality' levers above to see corresponding sample text. Your generated text will appear here each time you click above.";
+  output.textContent = "Drag and move the bars above to adjust your chatbot's tone and style. Click 'Generate Text' to view sample output.";
   output.classList.add("placeholder-text");
 
 
