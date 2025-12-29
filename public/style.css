@@ -1194,6 +1194,8 @@ margin-left: 10%;
     padding: 0;
     overflow-y: scroll;
     width: 100vw;
+    background-image: none;
+    background-color: black;
   }
 
   .navbar {
@@ -1427,6 +1429,7 @@ flex-direction: row;
   
   #stage3-chatbot-questions{
     flex-direction: row;
+    width: 100%;
   }
 
   #stage3-chatbot-window {
@@ -1441,6 +1444,10 @@ flex-direction: row;
     font-size: 0.75rem;
     padding: 0.5rem;
     margin-bottom: 0.5rem; 
+    max-width: 30%;
+    margin-left: 2%;
+    margin-right: 2%;
+
 
   }
 
@@ -1460,7 +1467,7 @@ flex-direction: row;
 
 /*mobile landscape and short display*/
 
-@media screen and (orientation: landscape) and (max-height: 400px) {
+@media screen and (orientation: landscape) and (max-height: 450px) {
   body {
     overflow-y: scroll;
   }
