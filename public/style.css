@@ -1140,6 +1140,19 @@ padding-bottom: 0;
  
 }
 
+
+@media screen and (orientation: portrait) and (max-height: 800px) {
+
+.intro-para {
+  font-size: 1rem;
+}
+
+#intro-container {
+  margin-top: 4rem;
+}
+}
+
+
 @media screen and (orientation: landscape) and (min-width: 951px) and (max-width: 1366px) {
   .navbar {
     font-size: 1rem;
