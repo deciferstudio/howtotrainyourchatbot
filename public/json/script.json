@@ -219,7 +219,7 @@
       "order": ["body", "buttons", "interactiveBody"],
       "body": [
         {
-          "text": "To build a language model, you need <b>training data</b>, or large bodies of text a model finds patterns in, and produces text based on. The larger the data, the more complex the model's ability to produce appropriate text: that's the <b>large</b> in <b>large language model </b>(LLM)."
+          "text": "To build a language model, you need <b>training data</b>, or large bodies of text a model finds patterns in, and produces text based on. The larger the data, the more complex the model's ability to produce appropriate text: that's the <b>large</b> in <b>large language model</b> (LLM)."
         },
         {
           "text": "The internet provides a large source of text already written by other people, like blogs, books, or research papers. Select your primary training data:"
@@ -336,7 +336,7 @@
           "text": "Based on what question typically occurs next in empty forms online, it may respond with: <span class='text-red'>What is your last name?</span>"
         },
         {
-          "text": "This is where <b>post-training</b> and <b>fine-tuning</b> comes in, to turn the model from sounding like a <b>random text generator</b> to a realistic assistant."
+          "text": "This is where <b>post-training</b> and <b>fine-tuning</b> come in, to turn the model from sounding like a <b>random text generator</b> to a realistic assistant."
         }
       ],
       "buttons": [
@@ -401,7 +401,7 @@
       "trigger": "finetuning-step-3",
       "body": [
         {
-          "text": "In this final step, you can craft your chatbot's \"personality,\" as in decide how it responds to questions. It can sound more like how your friend writes, or your teacher, or your boss. But remember, the underlying technology will still do the same thing:"
+          "text": "In this final step, you can craft your chatbot's \"personality\" by deciding how it responds to questions. It can sound more like how your friend writes, or your teacher, or your boss. But remember, the underlying technology will still do the same thing:"
         },
         {
           "text": "<span style='color:'><strong>Make statistical predictions about what text should come next.</strong>"
@@ -694,7 +694,7 @@
       "order": ["body", "buttons", "interactiveBody"],
       "body": [
         {
-          "text": "To build a language model, you need <b>training data</b>, or large bodies of text a model finds patterns in, and produces text based on. The larger the data, the more complex the model's ability to produce appropriate text: that's the <b>large</b> in <b>large language model </b>(LLM)."
+          "text": "To build a language model, you need <b>training data</b>, or large bodies of text a model finds patterns in, and produces text based on. The larger the data, the more complex the model's ability to produce appropriate text: that's the <b>large</b> in <b>large language model</b> (LLM)."
         },
         {
           "text": "The internet provides a large source of text already written by other people, like blogs, books, or research papers. Select your primary training data:"
@@ -811,7 +811,7 @@
           "text": "Based on what question typically occurs next in empty forms online, it may respond with: <span class='text-red'>What is your last name?</span>"
         },
         {
-          "text": "This is where <b>post-training</b> and <b>fine-tuning</b> comes in, to turn the model from sounding like a <b>random text generator</b> to a realistic assistant."
+          "text": "This is where <b>post-training</b> and <b>fine-tuning</b> come in, to turn the model from sounding like a <b>random text generator</b> to a realistic assistant."
         }
       ],
       "buttons": [
@@ -876,7 +876,7 @@
       "trigger": "finetuning-step-3",
       "body": [
         {
-          "text": "In this final step, you can craft your chatbot's \"personality,\" as in decide how it responds to questions. It can sound more like how your friend writes, or your teacher, or your boss. But remember, the underlying technology will still do the same thing:"
+          "text": "In this final step, you can craft your chatbot's \"personality\" by deciding how it responds to questions. It can sound more like how your friend writes, or your teacher, or your boss. But remember, the underlying technology will still do the same thing:"
         },
         {
           "text": "<span style='color:'><strong>Make statistical predictions about what text should come next.</strong>"
@@ -1172,7 +1172,7 @@
       "order": ["body", "buttons", "interactiveBody"],
       "body": [
         {
-          "text": "To build a language model, you need <b>training data</b>, or large bodies of text a model finds patterns in, and produces text based on. The larger the data, the more complex the model's ability to produce appropriate text: that's the <b>large</b> in <b>large language model </b>(LLM)."
+          "text": "To build a language model, you need <b>training data</b>, or large bodies of text a model finds patterns in, and produces text based on. The larger the data, the more complex the model's ability to produce appropriate text: that's the <b>large</b> in <b>large language model</b> (LLM)."
         },
         {
           "text": "The internet provides a large source of text already written by other people, like blogs, books, or research papers. Select your primary training data:"
@@ -1289,7 +1289,7 @@
           "text": "Based on what question typically occurs next in empty forms online, it may respond with: <span class='text-red'>What is your last name?</span>"
         },
         {
-          "text": "This is where <b>post-training</b> and <b>fine-tuning</b> comes in, to turn the model from sounding like a <b>random text generator</b> to a realistic assistant."
+          "text": "This is where <b>post-training</b> and <b>fine-tuning</b> come in, to turn the model from sounding like a <b>random text generator</b> to a realistic assistant."
         }
       ],
       "buttons": [
@@ -1354,7 +1354,7 @@
       "trigger": "finetuning-step-3",
       "body": [
         {
-          "text": "In this final step, you can craft your chatbot's \"personality,\" as in decide how it responds to questions. It can sound more like how your friend writes, or your teacher, or your boss. But remember, the underlying technology will still do the same thing:"
+          "text": "In this final step, you can craft your chatbot's \"personality\" by deciding how it responds to questions. It can sound more like how your friend writes, or your teacher, or your boss. But remember, the underlying technology will still do the same thing:"
         },
         {
           "text": "<span style='color:'><strong>Make statistical predictions about what text should come next.</strong>"
@@ -1651,7 +1651,7 @@
       "order": ["body", "buttons", "interactiveBody"],
       "body": [
         {
-          "text": "To build a language model, you need <b>training data</b>, or large bodies of text a model finds patterns in, and produces text based on. The larger the data, the more complex the model's ability to produce appropriate text: that's the <b>large</b> in <b>large language model </b>(LLM)."
+          "text": "To build a language model, you need <b>training data</b>, or large bodies of text a model finds patterns in, and produces text based on. The larger the data, the more complex the model's ability to produce appropriate text: that's the <b>large</b> in <b>large language model</b> (LLM)."
         },
         {
           "text": "The internet provides a large source of text already written by other people, like blogs, books, or research papers. Select your primary training data:"
@@ -1768,7 +1768,7 @@
           "text": "Based on what question typically occurs next in empty forms online, it may respond with: <span class='text-red'>What is your last name?</span>"
         },
         {
-          "text": "This is where <b>post-training</b> and <b>fine-tuning</b> comes in, to turn the model from sounding like a <b>random text generator</b> to a realistic assistant."
+          "text": "This is where <b>post-training</b> and <b>fine-tuning</b> come in, to turn the model from sounding like a <b>random text generator</b> to a realistic assistant."
         }
       ],
       "buttons": [
@@ -1833,7 +1833,7 @@
       "trigger": "finetuning-step-3",
       "body": [
         {
-          "text": "In this final step, you can craft your chatbot's \"personality,\" as in decide how it responds to questions. It can sound more like how your friend writes, or your teacher, or your boss. But remember, the underlying technology will still do the same thing:"
+          "text": "In this final step, you can craft your chatbot's \"personality\" by deciding how it responds to questions. It can sound more like how your friend writes, or your teacher, or your boss. But remember, the underlying technology will still do the same thing:"
         },
         {
           "text": "<span style='color:'><strong>Make statistical predictions about what text should come next.</strong>"
