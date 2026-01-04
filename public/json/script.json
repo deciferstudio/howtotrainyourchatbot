@@ -460,9 +460,14 @@
     },
     {
       "trigger": "stage-3B",
-      "body":[{
-        "text": "You've trained your own chatbot! Now you know how AI chatbots are built from training to deployment."
-      }],
+       "body":[{
+        "text": "You've built your own chatbot! By learning how the technology works, and how it doesn't, you can reflect on which types of questions and answers were appropriate."
+      },
+      {
+        "text": "Outside this simulation, real conversational agents require extensive labor, capital, and energy. To learn more, from the environmental cost to the labor conditions involved, explore our further resources page. [in progress]"
+      }
+
+    ],
       "buttons":[
         {
           "text":"Start Over",
@@ -935,9 +940,14 @@
     },
     {
       "trigger": "stage-3B",
-      "body":[{
-        "text": "You've trained your own chatbot! Now you know how AI chatbots are built from training to deployment."
-      }],
+       "body":[{
+        "text": "You've built your own chatbot! By learning how the technology works, and how it doesn't, you can reflect on which types of questions and answers were appropriate."
+      },
+      {
+        "text": "Outside this simulation, real conversational agents require extensive labor, capital, and energy. To learn more, from the environmental cost to the labor conditions involved, explore our further resources page. [in progress]"
+      }
+
+    ],
       "buttons":[
         {
           "text":"Start Over",
@@ -1413,9 +1423,14 @@
     },
     {
       "trigger": "stage-3B",
-      "body":[{
-        "text": "You've trained your own chatbot! Now you know how AI chatbots are built from training to deployment."
-      }],
+       "body":[{
+        "text": "You've built your own chatbot! By learning how the technology works, and how it doesn't, you can reflect on which types of questions and answers were appropriate."
+      },
+      {
+        "text": "Outside this simulation, real conversational agents require extensive labor, capital, and energy. To learn more, from the environmental cost to the labor conditions involved, explore our further resources page. [in progress]"
+      }
+
+    ],
       "buttons":[
         {
           "text":"Start Over",
@@ -1893,8 +1908,13 @@
     {
       "trigger": "stage-3B",
       "body":[{
-        "text": "[Placeholder for ending & debrief.] You've trained your own chatbot! Now you know how AI chatbots are built from training to deployment."
-      }],
+        "text": "You've built your own chatbot! By learning how the technology works, and how it doesn't, you can reflect on which types of questions and answers were appropriate."
+      },
+      {
+        "text": "Outside this simulation, real conversational agents require extensive labor, capital, and energy. To learn more, from the environmental cost to the labor conditions involved, explore our further resources page. [in progress]"
+      }
+
+    ],
       "buttons":[
         {
           "text":"Start Over",
