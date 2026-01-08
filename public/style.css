@@ -229,11 +229,19 @@ font-size: 1.3rem;
   margin-bottom: 5*/%;
 } 
 
-.page-container p, ul, li {
+.page-container p {
   font-size: 1.2rem;
   text-align: left;
   padding-left: .5rem;
   padding-right: .5rem;
+  font-family: 'PTSans';
+}
+
+.page-container ul, li {
+    font-size: 1.2rem;
+  text-align: left;
+/*  padding-left: .5rem;
+  padding-right: .5rem;*/
   font-family: 'PTSans';
 }
 
