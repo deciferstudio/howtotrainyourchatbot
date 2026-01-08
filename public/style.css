@@ -121,7 +121,11 @@ a {
 /*  text-shadow: .25px .25px  white;*/
 }
 
-
+.page-title {
+  background-color: black; 
+  color: white;
+  font-family: 'Karrik';
+}
 
 
  button {
@@ -1105,7 +1109,9 @@ width: 70%;
 
   body {
     margin: 0;
-    overflow: hidden;
+/*    overflow: hidden;*/
+overflow-y: scroll
+
   }
 
   body:not(.experience-started) {
