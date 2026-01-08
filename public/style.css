@@ -47,7 +47,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   margin: 0;
-  overflow-y: hidden;
+  overflow-y: scroll;
   height: 100%;
 }
 
