@@ -473,7 +473,7 @@
     {
       "trigger": "stage-3B",
        "body":[{
-        "text": "You've completed the process! Remember, while chatbots are trained to generate likely, confident-sounding text responses, these are not necessarily truthful or reliable."
+        "text": "You've completed the process! Remember, while chatbots are trained to generate likely, confident-sounding text responses, these are <b>not necessarily truthful or reliable.</b>"
       },
       {
         "text": "Outside this simulation, real conversational agents require extensive labor, capital, and energy. Explore more about LLMs below, from the environmental cost to labor conditions and usage risks."

@@ -26,21 +26,23 @@ const customRenderers = {
 
 let currentProgress = 0;
 const PROGRESS_MILESTONES = {
-  "stage-1": 0,
-  "choice-data": 10,
+  "stage-1": 10,
+  "choice-data": 20,
   "training-step-1": 30,
-  "finetuning-step-1": 60,
-  "finetuning-step-3": 90,
+  "finetuning-step-1": 40,
+  "finetuning-step-3": 60,
+  "finetuning-step-4": 80,
+  "stage-3A-chatbot": 100
+
   //add and edit as we go
 };
-
 
 const browserWindow = document.getElementsByClassName("browser-window")[0];
 
 const STAGE_INFO = {
   "stage-1": { name: "Training", color: "#6AEFB5"},
   "finetuning-loader": { name: "Post-training", color: "#8BB6FF" },
-  "stage-3A-chatbot": { name: "Deployment", color: "#FBD9B8" },
+  "stage-3-loader": { name: "Deployment", color: "#FBD9B8" },
 };
 
 async function loadScript() {

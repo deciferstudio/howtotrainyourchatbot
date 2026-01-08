@@ -25,11 +25,14 @@ const customRenderers = {
 
 let currentProgress = 0;
 const PROGRESS_MILESTONES = {
-  "stage-1": 0,
-  "choice-data": 10,
+  "stage-1": 10,
+  "choice-data": 20,
   "training-step-1": 30,
   "finetuning-step-1": 60,
-  "finetuning-step-3": 90,
+  "stage-3-intro": 80,
+  "stage-3A-chatbot": 90,
+  "stage-3B": 100
+
   //add and edit as we go
 };
 
@@ -85,6 +88,7 @@ function updateProgressBar(trigger) {
   const progressText = document.getElementById("progress-text");
 
   if (PROGRESS_MILESTONES.hasOwnProperty(trigger)) {
+    console.log("triggered");
     currentProgress = PROGRESS_MILESTONES[trigger];
     progressFill.style.width = `${currentProgress}%`;
     progressText.textContent = `${currentProgress}%`;

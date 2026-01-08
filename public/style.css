@@ -1,4 +1,8 @@
-@font-face {
+:root {
+--purple: #957AE5;
+}
+
+  @font-face {
   font-family: 'Karrik';
   src: url('../fonts/karrik_font/fonts/Web/TFF/Karrik-Regular.ttf') format('truetype');
   font-weight: normal;
@@ -198,7 +202,18 @@ font-size: 1.3rem;
   margin-bottom: 5*/%;
 } 
 
-#intro-container {
+.page-container p, ul, li {
+  font-size: 1.2rem;
+  text-align: left;
+  padding: .1rem;
+}
+
+
+.page-container a {
+  color: var(--purple);
+}
+
+#intro-container, .page-container {
 
   height: auto;
   opacity: 1;
@@ -1059,7 +1074,7 @@ width: 70%;
   width: 95%;
   margin-left: 2.5%;
 }
-  .intro-container {
+  .intro-container, .page-container {
     width: 80%;
     padding-bottom: 0;
     margin-left: 0;
@@ -1104,7 +1119,7 @@ top: 0;
     font-size: 0.9rem;
   }
 
-  body:not(.experience-started) #intro-container {
+  body:not(.experience-started) #intro-container, .page-container {
     padding: 1rem 1rem;
     margin-left: 0%;
 /*    margin: 8rem 1rem;*/
@@ -1136,7 +1151,7 @@ padding-bottom: 0;
     display: none !important;
   }
 
-  body.experience-started #intro-container{
+  body.experience-started #intro-container, .page-container{
     display: none !important; 
   }
  
@@ -1149,7 +1164,7 @@ padding-bottom: 0;
   font-size: 1rem;
 }
 
-#intro-container {
+#intro-container, .page-container {
   margin-top: 4rem;
 }
 }
@@ -1175,7 +1190,7 @@ padding-bottom: 0;
   font-size: 0.95rem;
 }
   
-  #intro-container {
+  #intro-container, .page-container {
     padding: 2rem 3rem;
 /*    margin: 7rem auto;*/
 margin-left: 10%;
@@ -1223,7 +1238,7 @@ margin-left: 10%;
     padding-left: 2.5rem;
   }
 
-  #intro-container {
+  #intro-container, .page-container {
 /*    padding: 1rem 3rem;*/
 /*    margin: 1rem auto;*/
     font-size: 1.5rem;
