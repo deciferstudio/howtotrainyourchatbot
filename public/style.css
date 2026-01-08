@@ -1118,6 +1118,10 @@ padding-bottom: 0;
     font-size: 1rem;
   }
 
+  .page-container h3 {
+    font-size: 1.4rem;
+  }
+
   .page-container {
     margin-top: 10%;
     width: 80%;
