@@ -77,10 +77,10 @@ body {
 /*  font-style: italic;*/
 }
 
-#navbar-title:hover {
+/*#navbar-title:hover {
   text-shadow: 2px 2px #957AE5;
 }
-
+*/
 #language-selector {
   font-family: 'Karrik', sans-serif;
   border-style: none;

@@ -10,7 +10,7 @@ async function loadIntro() {
     const langData = jsonData[currentLanguage];
     const UIData = langData.ui; 
     
-    document.querySelector("#navbar-title").textContent = UIData.navbar.title;
+    document.querySelector("#navbar-title a").textContent = UIData.navbar.title;
     document.querySelector("#navbar-resources a").textContent = UIData.navbar.resources;
     document.querySelector("#navbar-about a").textContent = UIData.navbar.about;
    const languageSelector = document.getElementById("language-selector"); 
