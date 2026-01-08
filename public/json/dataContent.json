@@ -51,7 +51,7 @@
           "Ah, a fascinating inquiry indeed! Imagine a realm where machines are designed not merely to compute but to comprehend, to learn from data, adapt to new information, and approximate human reasoning. Artificial intelligence represents humanity's endeavor to extend intellect into silicon form.",
           "An excellent question—motivation is as much an art as a discipline. Personally, I establish incremental goals, acknowledge each minor success, and allow moments of reflection to recharge my resolve. Progress, however gradual, remains forward movement.",
           "A captivating phenomenon indeed! When sunlight encounters raindrops, it refracts, reflects internally, and disperses, forming a spectrum of colors. Nature's prism at work!",
-          "That's a really thoughtful question, and I can tell you care about this friendship! Honestly, the best approach depends so much on your history together and what happened. You know your friend best! Maybe I can help you think through what you want to say?",
+          "That's a really thoughtful question, and I can tell you care about this friendship! Honestly, the best approach depends so much on your history together and what happened. You know your friend best—taking some time to reflect on what you want to say usually helps.",
           "Oh, that's such a personal decision—only you truly know what matters most to you! I wouldn't want to sway something so important. But if you'd like, I can help you think through the issues or research candidates together!",
           "Ooh, fun question! It really depends—are you in the mood for something cozy like pasta, or maybe something fresh and light? Tell me what you're craving and I can definitely help brainstorm some ideas!"
         ], 
@@ -59,23 +59,23 @@
             "It's when machines learn and adapt in ways similar to human thought—quite an extraordinary field!",
             "I set attainable goals and recognize achievements. It sustains momentum.",
             "Light bends and splits inside raindrops—quite beautiful!",
-            "That's tricky! You know your friend best. Want to talk through it?",
+            "That's tricky! You know your friend best. Trust your instincts on this one.",
             "That's really up to you! I can help you research if you'd like.",
-            "Depends on your mood! What are you craving?"],
+            "Depends on your mood! You can never go wrong with a classic pasta dish."],
         "h-l-h": [
             "Artificial intelligence denotes the capacity of computational systems to exhibit adaptive, goal-oriented behavior akin to cognitive processes observed in human intelligence.",
             "Motivation arises from structured discipline—defined objectives, consistent effort, and minimal emotional interference.",
             "The interplay of refraction, reflection, and dispersion of sunlight within water droplets results in visible spectral arcs.",
             "Interpersonal confrontation requires consideration of relationship dynamics and context. You understand your friend better than I could. Consider what outcome you're hoping for.",
             "Electoral decisions are personal and should reflect your own values. I can provide information on candidates or issues if that would be helpful for your research.",
-            "Meal selection depends on available ingredients, time constraints, and preferences. What parameters should I consider for a recommendation?"],
+            "Meal selection depends on available ingredients, time constraints, and preferences. A simple stir-fry or grain bowl tends to satisfy most criteria efficiently."],
         "h-l-l": [
             "The capability of machines to emulate aspects of human reasoning.",
             "Routine. Focus. Determination.",
             "Refraction and dispersion in rain.",
-            "You know them best. What feels right?",
+            "You know them best. Trust your gut.",
             "Your call. I can help you research.",
-            "What sounds good to you?"],
+            "A warm soup or sandwich is always solid."],
         "l-h-h": [
             "Artificial intelligence refers to the field of computer science concerned with creating systems capable of performing tasks that typically require human intelligence, such as perception, reasoning, and problem-solving. It continues to shape modern technology in remarkable ways.",
             "I maintain motivation through thoughtful goal-setting, steady progress tracking, and regular reflection on purpose. Balance and persistence are essential components of sustained drive.",
@@ -87,9 +87,9 @@
             "It's the design of computer systems that can learn, reason, and make decisions like people do.",
             "I set clear goals and measure progress carefully. It keeps me steady.",
             "Sunlight bends in raindrops and splits into colors—so pretty!",
-            "You know them best! Want to think it through together?",
+            "You know them best! Sometimes just sleeping on it helps clarify things.",
             "That's your decision to make! Need help researching?",
-            "What are you in the mood for? I can suggest some options!"],
+            "Something light like a salad or hearty like tacos—both great options!"],
         "l-l-h": [
             "Artificial intelligence encompasses computational methods that simulate cognitive functions, enabling machines to analyze data, derive insights, and execute decisions autonomously.",
             "Consistent effort supported by structured habits and defined objectives ensures long-term motivation.",
@@ -101,9 +101,9 @@
             "The simulation of human intelligence by machines.",
             "Clear objectives and steady discipline.",
             "Light bends and splits in rain.",
-            "You know them. What feels right?",
+            "You know them. Go with your gut.",
             "Your decision. I can help research.",
-            "What do you feel like eating?"]
+            "Can't go wrong with eggs or a quick stir-fry."]
       }
     },
 
@@ -165,9 +165,9 @@
             "Basically, computers that can learn and think on their own. Pretty awesome!",
             "Set small goals and give yourself props. Works wonders!",
             "Light bends in raindrops—boom, colors!",
-            "Tough one! You know them best. Wanna talk it out?",
+            "Tough one! You know them best. Sometimes being direct is the way to go.",
             "That's on you! But I can help you look stuff up.",
-            "What vibe are we going for? I've got ideas!"],
+            "Tacos are always a vibe! Quick, tasty, customizable."],
         "h-l-h": [
             "Machines trained to mimic human logic and problem-solving. Sounds fancy, but it's math and data under the hood.",
             "All about structure. No excuses, no drama—just get up and do the thing.",
@@ -181,7 +181,7 @@
             "Light hits rain, splits up.",
             "You know them. Think it through.",
             "Your call. I can help research.",
-            "What do you have? What sounds good?"],
+            "Fried rice. Quick and uses leftovers."],
         "l-h-h": [
             "It's when computers can figure things out like people do—learning, solving problems, and making choices based on what they've seen before. Super useful stuff!",
             "Try to keep things simple—set goals, track progress, and remind yourself why you started. Staying consistent makes all the difference.",
@@ -193,9 +193,9 @@
             "Computers that learn and solve problems. Easy as that!",
             "Set goals and keep tabs on your progress. It works for me!",
             "Light bends through raindrops—simple and beautiful!",
-            "You know them best! Want to talk through it?",
+            "You know them best! Honesty usually goes a long way.",
             "That's your call! Want help researching?",
-            "What are you in the mood for? I can help!"],
+            "A cozy bowl of pasta or a fresh salad—both winners!"],
         "l-l-h": [
             "AI means teaching computers to learn patterns and make decisions instead of just following instructions.",
             "Stick to habits and goals that matter to you. The follow-through keeps you going.",
@@ -207,9 +207,9 @@
             "Machines that can think a bit like us.",
             "Goals and grit. That's it.",
             "Sunlight bends in rain.",
-            "You know them. What feels right?",
+            "You know them. Go with your gut.",
             "Your decision. I can help research.",
-            "What sounds good to you?"]
+            "A warm soup or sandwich is always solid."]
       }
     }
   },
