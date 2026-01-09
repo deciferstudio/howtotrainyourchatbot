@@ -602,7 +602,7 @@ function renderFineTuningStep4(step) {
 
 
   outputContainer.classList.add("visible");
-  output.textContent = "Drag and move the bars above to adjust your chatbot's tone and style. Click 'Generate Text' to view sample output.";
+  output.textContent = "Drag the bars above and click 'Generate Text' to view sample outputs. When you decide on your final selection, click 'Next'.";
   output.classList.add("placeholder-text");
 
 

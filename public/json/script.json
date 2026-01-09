@@ -432,10 +432,10 @@
       "trigger": "stage-3-intro",
       "body": [
         {
-          "text": "You can now interact with a chatbot that generates text based on your previous decisions, like your choice of training data or level of friendliness."
+          "text": "Time to try out your chabot! It will generate text based on your previous decisions, like your choice of training data or level of friendliness."
         },
         {
-          "text": "Now that you know how this technology is built, <b>reflect on what kinds of questions are appropriate to ask a language model.</b>"
+          "text": "Now that you know how this technology is built, <b>reflect on what kinds of questions are appropriate to ask a language model.</b> Select as many questions as you want, then click 'Next'."
         }
       ],
       "buttons": [{"text": "Next", "class": ["stage-btn"], "id": ["try-btn"], "trigger": "stage-3A-chatbot"}]
@@ -798,7 +798,7 @@
         {
           "text": "The model can estimate the <b>probability</b> of a character, word, or sequence of words occurring in text based on how commonly it occurred in your <b>data source</b>, and generates new text accordingly."
         },
-        { "text": "Pick a sentence, and see what word is most likely to come next:" }
+        { "text": "Pick a sentence from the dropdown below, and see what word is most likely to follow:" }
       ],
       "buttons": [
         {
@@ -893,7 +893,7 @@
       "trigger": "finetuning-step-3",
       "body": [
         {
-          "text": "In this final step, you can craft your chatbot's \"personality\" by deciding how it responds to questions. It can sound more like how your friend writes, or your teacher, or your boss. But remember, the underlying technology will still do the same thing:"
+          "text": "In this final step, you will craft your chatbot's \"personality\" by deciding how it responds to questions. It can sound more like how your friend writes, or your teacher, or your boss. But remember, the underlying technology will still do the same thing:"
         },
         {
           "text": "<span style='color:'><strong>Make statistical predictions about what text should come next.</strong>"
