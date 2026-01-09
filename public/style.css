@@ -221,12 +221,12 @@ a {
 
   50% {
     height: 60px;
-    background: var(--purple);
+    background: var(--dark-grey);
   }
 
   100% {
     height: 15px;
-    background: var(--dark-grey);
+    background: var(--purple);
   }
 }
 
