@@ -476,13 +476,13 @@
         "text": "You've completed the process! Remember, while chatbots are trained to generate likely, confident-sounding text responses, these are <b>not necessarily truthful or reliable.</b>"
       },
       {
-        "text": "Outside this simulation, real conversational agents require significant resources and infrastructure. Explore more about LLMs below, from their environmental footprint to ethical concerns and societal implications."
+        "text": "Outside this simulation, real conversational agents require significant resources and infrastructure. Explore more about LLMs below [button temporarily switched out for Prolific users], from their environmental footprint to ethical concerns and societal implications."
       }
 
     ],
       "buttons":[
         {
-          "text":"EXPLORE",
+          "text":"FINISH SURVEY",
           "trigger":"restart",
           "class":["stage-btn"]
         }

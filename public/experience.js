@@ -389,7 +389,8 @@ function handleTrigger(trigger, extraData = null) {
 
   if(trigger==="restart"){
    // window.location.href = "experience.html";
-    window.location.href = "resources.html";
+    window.location.href="https://nyu.qualtrics.com/jfe/form/SV_aXeS0bKspUZz5TU";
+    // window.location.href = "resources.html";
    return;
     };
 
