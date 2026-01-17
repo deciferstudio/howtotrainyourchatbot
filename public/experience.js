@@ -214,16 +214,16 @@ function renderStep(step) {
             p.class.forEach((cls) => para.classList.add(cls));
 
             if(p.class.includes("stage-1-transition")) {
-            // showVideo("../imgs/stage1.mp4");
+            showVideo("../imgs/stage1.mp4");
             browserWindow.style.removeProperty("background-color");
         }
 
           else if(p.class.includes("stage-2-transition")) {
-            // showVideo("../imgs/stage2.mp4");
+            showVideo("../imgs/stage2.mp4");
         }
 
             else if(p.class.includes("stage-3-transition")) {
-           // showVideo("../imgs/stage3.mp4");
+           showVideo("../imgs/stage3.mp4");
         }
 
           else if (p.class.includes("transition-title")) {
@@ -251,7 +251,7 @@ function renderStep(step) {
           }
 
                   else {
-            // hideVideo();
+            hideVideo();
           }
 
         }
@@ -262,7 +262,7 @@ function renderStep(step) {
             browserWindow.style.background = "#fff";
             browserWindow.classList.remove("gradient-bg");
 
-            // hideVideo();
+            hideVideo();
           }
 
            
