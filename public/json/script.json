@@ -1487,7 +1487,7 @@
       "title": "Cómo entrenar a tu chatbot",
       "resources": "Resources",
       "about": "chinese about",
-      "language": "es"
+      "language": "mn"
     }
   },
 
@@ -1966,7 +1966,7 @@
 },
 
 
-"en":{
+"it":{
   "comments": {
     "what's going on": "All the elements having a bunch of values corresponding to each key which specificy the content, additional classes, potential delay, and so on.",
     "note": "Pay attention to how classes are added, some are in arrays for example."
@@ -2455,4 +2455,5 @@
       ]
     }
   ]
+}
 }
