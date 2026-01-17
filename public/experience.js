@@ -140,11 +140,14 @@ function showVideo(src) {
 }
 
 function hideVideo() {
-  console.log("hiding video");
-  bgVideo.pause();
-  bgVideo.removeAttribute("src"); // frees memory
-  bgVideo.load();
-  bgVideo.style.display = "none";
+  if (bgVideo.src) {
+    console.log("hiding video");
+    bgVideo.pause();
+    bgVideo.removeAttribute("src"); // frees memory
+    bgVideo.load();
+    bgVideo.style.display = "none";
+  }
+
 }
 
 
@@ -354,8 +357,10 @@ function renderStep(step) {
             btn.style.setProperty("--extra-delay", b.delay);
           }
 
+          buttonDiv.appendChild(btn);
+
           btn.addEventListener("click", () => {
-            console.log("CLICKED!");
+            console.log("CLICKED");
             // If it's a data type selection step, pass the button text as extraData
             if (b.trigger === "choice-data") {
               userDataSelection = b.dataValue;
@@ -376,7 +381,7 @@ function renderStep(step) {
             }
           });
 
-          buttonDiv.appendChild(btn);
+
         });
 
         currentContainer.appendChild(buttonDiv);
