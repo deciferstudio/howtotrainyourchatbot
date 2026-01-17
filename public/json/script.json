@@ -531,505 +531,17 @@
       "order": ["body", "interactiveBody", "buttons"],
       "body": [
         {
-          "text": "تيست تيست تيست",
+          "text": "Complex <b>chatbots</b>, or \"<b>conversational agents</b>\" such as ChatGPT, Claude, or DeepSeek, are often powered by <b>large language models</b> (LLMs).",
           "class": ["fade-in"]
         },
         {
-          "text": "A \"<i>language model</i>\" is a piece of software that is trained to predict language sequences and generate text responses.",
+          "text": "A <i>\"language model\"</i> is a piece of software that is trained to predict language sequences and generate text responses. A mobile keyboard's autocomplete function, like the example below, is a language model.",
           "class": ["fade-in-delayed"]
         }
       ],
       "interactiveBody": [
         {
-          "text": " Autocomplete, for example, is a language model that predicts what word or phrase is most statistically likely to be used ________",
-          "animation": "typewriter",
-          "speed": 50,
-          "delay": 900
-        }
-      ],
-      "interactiveBodyClass": ["delayed-text"],
-      "buttons": [
-        {
-          "text": "next",
-          "trigger": "choice-next",
-          "class": ["button-stagger-1"],
-          "delay": "4.0s"
-        },
-        {
-          "text": "now",
-          "trigger": "choice-now",
-          "class": ["button-stagger-2"],
-          "delay": "4.0s"
-        },
-        {
-          "text": "correctly",
-          "trigger": "choice-correctly",
-          "class": ["button-stagger-3"],
-          "delay": "4.0s"
-        }
-      ],
-      "__comment": "so triggers can also point to an indexed step"
-    },
-
-    {
-      "trigger": "choice-next",
-      "order": ["body", "interactiveBody", "buttons"],
-      "body": [
-        {
-          "text": "Complex chatbots, or \"conversational agents\" such as ChatGPT, Claude, or DeepSeek, are often powered by large language models (LLMs). "
-        },
-        {
-          "text": "A \"<i>language model</i>\" is a piece of software that is trained to predict language sequences and generate text responses."
-        }
-      ],
-      "interactiveBody": [
-        {
-          "text": " Autocomplete, for example, is a language model that predicts what word or phrase is most statistically likely to be used"
-        },
-        {
-          "text": "next.",
-          "animation": "typewriter",
-          "speed": 80,
-          "delay": 400
-        }
-      ],
-      "interactiveBodyClass": ["continuous-text", "delayed-text"],
-      "buttons": [
-        {
-          "text": "STAGE 1: Training",
-          "class": ["stage-btn", "fade-in-delayed"],
-          "trigger": "stage-1-loader"
-        }
-      ]
-    },
-
-    {
-      "trigger": "choice-now",
-      "order": ["body", "interactiveBody", "buttons"],
-      "body": [
-        {
-          "text": "Complex chatbots, or \"conversational agents\" such as ChatGPT, Claude, or DeepSeek, are often powered by large language models (LLMs).  "
-        },
-        {
-          "text": "A \"<i>language model</i>\" is a piece of software that is trained to predict language sequences and generate text responses."
-        }
-      ],
-      "interactiveBody": [
-        {
-          "text": " Autocomplete, for example, is a language model that predicts what word or phrase is most statistically likely to be used"
-        },
-        {
-          "text": "now.",
-          "animation": "typewriter",
-          "speed": 80,
-          "delay": 400
-        }
-      ],
-      "interactiveBodyClass": ["continuous-text", "delayed-text"],
-      "buttons": [
-        {
-          "text": "STAGE 1: TRAINING",
-          "class": ["stage-btn", "fade-in-delayed"],
-          "trigger": "stage-1-loader"
-        }
-      ]
-    },
-    {
-      "trigger": "choice-correctly",
-      "order": ["body", "interactiveBody", "buttons"],
-      "body": [
-        {
-          "text": "Complex chatbots, or \"conversational agents\" such as ChatGPT, Claude, or DeepSeek, are often powered by large language models (LLMs).  "
-        },
-        {
-          "text": "A \"<i>language model</i>\" is a piece of software that is trained to predict language sequences and generate text responses."
-        }
-      ],
-      "interactiveBody": [
-        {
-          "text": " Autocomplete, for example, is a language model that predicts what word or phrase is most statistically likely to be used"
-        },
-        {
-          "text": "correctly",
-          "animation": "typewriter",
-          "speed": 80,
-          "delay": 400
-        }
-      ],
-
-      "interactiveBodyClass": ["continuous-text", "delayed-text"],
-      "buttons": [
-        {
-          "text": "STAGE 1: TRAINING",
-          "class": ["stage-btn", "fade-in-delayed"],
-          "trigger": "stage-1-loader"
-        }
-      ]
-    },
-
-    {
-      "trigger": "choice-!",
-      "order": ["body", "interactiveBody", "buttons"],
-      "body": [
-        {
-          "text": "Complex chatbots, or \"conversational agents\" such as ChatGPT, Claude, or DeepSeek, are often powered by large language models (LLMs). "
-        },
-        {
-          "text": "A \"<i>language model</i>\" is a piece of software that is trained to predict language sequences and generate text responses."
-        }
-      ],
-      "interactiveBody": [
-        {
-          "text": " Autocomplete, for example, is a language model that predicts what word or phrase is most statistically likely to be used"
-        },
-        {
-          "text": "!",
-          "animation": "typewriter",
-          "speed": 80,
-          "delay": 400
-        }
-      ],
-      "interactiveBodyClass": ["continuous-text", "delayed-text"],
-      "buttons": [
-        {
-          "text": "STAGE 1: Training",
-          "class": ["stage-btn", "fade-in-delayed"],
-          "trigger": "stage-1-loader"
-        }
-      ]
-    },
-
-   {
-      "trigger": "stage-1-loader",
-      "body": [{ "text": "STAGE 1: TRAINING", "class": ["stage-1-transition"] }],
-      "timer": { "duration": 3000, "trigger": "stage-1" }
-    },
-    {
-      "trigger": "stage-1",
-      "index": "3",
-      "order": ["body", "buttons", "interactiveBody"],
-      "body": [
-        {
-          "text": "To build a language model, you need <b>training data</b>, or large bodies of text a model finds patterns in, and produces text based on. The larger the data, the more complex the model's ability to produce appropriate text: that's the <b>large</b> in <b>large language model</b> (LLM)."
-        },
-        {
-          "text": "The internet provides a large source of text already written by other people, like blogs, books, or research papers. Select your primary training data:"
-        }
-      ],
-      "buttons": [
-        {
-          "text": "Academic journals",
-          "trigger": "choice-data",
-          "class": ["button-choice"],
-          "dataValue": 0,
-          "delay": "1.0s"
-        },
-        {
-          "text": "News articles",
-          "trigger": "choice-data",
-          "class": ["button-choice"],
-          "dataValue": 0,
-          "delay": "1.0s"
-        },
-        {
-          "text": "Reddit posts",
-          "trigger": "choice-data",
-          "class": ["button-choice"],
-          "dataValue": 1,
-          "delay": "1.0s"
-        },
-        {
-          "text": "Twitter feeds",
-          "trigger": "choice-data",
-          "class": ["button-choice"],
-          "dataValue": 1,
-          "delay": "1.0s"
-        },
-        {
-          "text": "Next",
-          "trigger": "data-training-loader",
-          "class": ["stage-btn"],
-          "delay": "2.0s",
-          "disabled": true,
-          "id": "data-next-btn"
-        }
-      ]
-    },
-    {
-      "trigger": "choice-data",
-      "order": ["body", "buttons", "interactiveBody"],
-      "body": [
-        {
-          "text": "The first thing you’ll need to build a language model is training data, or large bodies of text that a language model looks for patterns in, and produces text based on. The larger the data, the more complex the model's ability to produce appropriate text: that's the large in large language model (LLM)."
-        },
-        {
-          "text": "The internet provides a large source of text data, like social media sites, blogs, digital books, or research papers. Select your model's training data below:"
-        }
-      ],
-      "buttons": [
-        {
-          "text": "Next",
-          "trigger": "data-training-loader",
-          "class": ["stage-btn"],
-          "delay": "1.0s"
-        }
-      ]
-    },
-    {
-      "trigger": "data-training-loader",
-      "body": [
-        {
-          "text": "Going from massive data to a working model requires multiple stages of development which use extensive computing power.",
-          "class": ["transition-title"]
-        }
-      ],
-      "timer": { "duration": 3500, "trigger": "data-prob" }
-    },
-    {
-      "trigger": "data-prob",
-      "body": [{ "text": "This process is environmentally costly, using up large amounts of water and energy." }],
-      "timer": { "duration": 3500, "trigger": "training-step-1" }
-    },
-    {
-      "trigger": "training-step-1",
-      "order": ["body", "custom", "buttons"],
-      "body": [
-        {
-          "text": "The model can estimate the <b>probability</b> of a character, word, or sequence of words occurring in text based on how commonly it occurred in your <b>data source</b>, and generates new text accordingly."
-        },
-        { "text": "Pick a sentence from the dropdown below, and see what word is most likely to follow:" }
-      ],
-      "buttons": [
-        {
-          "text": "Next",
-          "trigger": "training-step-2"
-        }
-      ],
-      "autocompleteOptions": [
-        {
-          "sentence": "At the beach, I played with my ____",
-          "trigger": "beach-sentence"
-        },
-        { "sentence": "At the concert, I ____", "trigger": "concert-sentence" }
-      ]
-    },
-
-    {
-      "trigger": "training-step-2",
-      "body": [
-        {
-          "text": "By acquiring information and learning from existing text patterns, a language model can <b>ramble about a topic</b>."
-        },
-        {
-          "text": "For example, if you ask: <span class='text-orange'>What is your first name?</span>"
-        },
-        {
-          "text": "Based on what question typically occurs next in empty forms online, it may respond with: <span class='text-red'>What is your last name?</span>"
-        },
-        {
-          "text": "This is where <b>post-training</b> and <b>fine-tuning</b> come in, to turn the model from sounding like a <b>random text generator</b> to a realistic assistant."
-        }
-      ],
-      "buttons": [
-        {
-          "text": "STAGE 2: Post-Training",
-          "trigger": "finetuning-loader",
-          "class": ["stage-btn"]
-        }
-      ]
-    },
-    {
-      "trigger": "finetuning-loader",
-      "body": [{ "text": "STAGE 2: POST-TRAINING", "class": ["stage-2-transition"] }],
-      "timer": { "duration": 3000, "trigger": "finetuning-step-1" }
-    },
-
-    {
-      "trigger": "finetuning-step-1",
-      "body": [
-        {
-          "text": "This process includes high-quality instructions and human feedback, like yours."
-        },
-        {
-          "text": "You will see a question with two answer options generated by the model, and pick <strong>the better answer</strong>. Real chatbots <strong>learn patterns</strong> from thousands of choices <strong>made by humans</strong>, often <b>workers</b>."
-        }
-      ],
-      "buttons": [{ "text": "Give Feedback", "id": "feedback-btn", "trigger": "finetuning-step-2" }]
-    },
-    {
-      "trigger": "finetuning-step-2",
-      "order": ["custom"],
-      "finetuningRounds": [
-        {
-          "question": "this is a sample question lorem ipsum?",
-          "prompt": "Please click on the response you prefer:",
-          "responses": [
-            "Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus.",
-            "Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus."
-          ]
-        },
-        {
-          "question": "this is a sample question lorem ipsum?",
-          "prompt": "Please click on the response you prefer:",
-          "responses": [
-            "Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus.",
-            "Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus."
-          ]
-        },
-        {
-          "question": "this is a sample question lorem ipsum?",
-          "prompt": "Please click on the response you prefer:",
-          "responses": [
-            "Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus.",
-            "Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus."
-          ]
-        }
-      ],
-      "nextButton": "Next",
-      "finalTrigger": "finetuning-step-3"
-    },
-    {
-      "trigger": "finetuning-step-3",
-      "body": [
-        {
-          "text": "In this final step, you will craft your chatbot's \"personality\" by deciding how it responds to questions. It can sound more like how your friend writes, or your teacher, or your boss. But remember, the underlying technology will still do the same thing:"
-        },
-        {
-          "text": "<span style='color:'><strong>Make statistical predictions about what text should come next.</strong>"
-        }
-      ],
-      "buttons": [
-        {
-          "text": "Next",
-          "trigger": "finetuning-step-4"
-        }
-      ]
-    },
-    {
-      "trigger": "finetuning-step-4",
-      "order": ["custom"],
-      "sliderLabels": ["Random", "Friendly", "Wordy"],
-      "generateButtonText": "Generate Text",
-      "nextButton": [
-        { "text": "Next", "trigger": "stage-3-loader", "class": ["stage-btn"] }
-      ]
-    },
-    {
-      "trigger": "stage-3-loader",
-      "body": [{ "text": "Stage 3: Try it out!", "class": ["stage-3-transition"]}],
-      "timer": { "duration": 5000, "trigger": "stage-3-intro" }
-    },
-    {
-      "trigger": "stage-3-intro",
-      "body": [{ "text": "This is a test"}],
-      "nextButton": [{"text": "Next", "trigger": "stage-3A-chatbot"}]
-    },
-    {
-      "trigger": "stage-3A-chatbot",
-      "class": ["chatbot"],
-      "order": ["custom"],
-      "chatbotIntro": {
-        "text": "Hey there! 👋 Pick a question and get started.",
-        "animation": "typewriter",
-        "speed": 40
-      },
-      "chatbotQuestions": [
-        {
-          "question": "What is artificial intelligence?"
-        },
-        {
-          "question": "How do you stay motivated?"
-        },
-        { "question": "What causes rainbows?"
-      },
-      { "question": "How should I confront my friend?"
-      },
-      { "question": "Who should I vote for?"
-      },
-      { "question": "What should I have for dinner?"
-      }
-
-      ],
-      "nextButton": [
-        { "text": "Next", "trigger": "stage-3B", "class": ["stage-btn"] }
-      ]
-    },
-    {
-      "trigger": "stage-3B",
-       "body":[{
-        "text": "You've built your own chatbot! By learning how the technology works, and how it doesn't, you can reflect on which types of questions and answers were appropriate."
-      },
-      {
-        "text": "Outside this simulation, real conversational agents require extensive labor, capital, and energy. To learn more, from the environmental cost to the labor conditions involved, explore our further resources page."
-      }
-
-    ],
-      "buttons":[
-        {
-          "text":"Start Over",
-          "trigger":"restart",
-          "class":["stage-btn"]
-        }
-      ]
-    }
-  ]
-},
-
-
-"es":{
-  "comments": {
-    "note": "spanish translation test"
-  },
-
-  "ui": {
-    "_comment": "to separate static elements from script",
-
-    "navbar": {
-      "title": "Cómo entrenar a tu chatbot",
-      "resources": "recursos",
-      "about": "idk spanish",
-      "language": "es"
-    }
-  },
-
-  "script": [
-
-
-    {
-      "index": "1",
-      "additionalClasses": ["main-container-crazy", "test"],
-      "body": [
-        {
-          "text": "Los chatbots de IA se han vuelto cada vez más comunes. ¿Cuánto sabes realmente sobre cómo funcionan estas tecnologías? ¿Podrías entrenar a los tuyos solos? ",
-          "class": "intro-header"
-        
-        },
-        {
-          "text": "In this brief playable explainer, go through the main stages of building a conversational agent (like ChatGPT, Claude, or DeepSeek). From choosing what type of data it's trained on to what tone it responds in, make the kinds of decisions that go into the development of these technologies. Learn what labour and resources are required behind the scenes, and what capabilities and limitations they introduce.",
-          "class": ["intro-para"]
-        }
-      ],
-      "buttons": [{ "text": "START HERE", "id": "start-btn", "trigger": "start" }]
-    },
-
-
-    {
-      "trigger": "start",
-      "index": "2",
-      "order": ["body", "interactiveBody", "buttons"],
-      "body": [
-        {
-          "text": "Hola, esto es una prueba",
-          "class": ["fade-in"]
-        },
-        {
-          "text": "A \"<i>language model</i>\" is a piece of software that is trained to predict language sequences and generate text responses.",
-          "class": ["fade-in-delayed"]
-        }
-      ],
-      "interactiveBody": [
-        {
-          "text": " Autocomplete, for example, is a language model that predicts what word or phrase is most statistically likely to be used ________",
+          "text": "Autocomplete shows you what word or phrase is most statistically likely to be used ________",
           "animation": "typewriter",
           "speed": 50,
           "delay": 900
@@ -1067,12 +579,12 @@
           "text": "Complex chatbots, or \"conversational agents\" such as ChatGPT, Claude, or DeepSeek, are often powered by large language models (LLMs). "
         },
         {
-          "text": "A \"<i>language model</i>\" is a piece of software that is trained to predict language sequences and generate text responses."
+          "text": "A \"<i>language model</i>\" is a piece of software that is trained to predict language sequences and generate text responses. A mobile keyboard's autocomplete function, like the example below, is a language model."
         }
       ],
       "interactiveBody": [
         {
-          "text": " Autocomplete, for example, is a language model that predicts what word or phrase is most statistically likely to be used"
+          "text": "Autocomplete shows you what word or phrase is most statistically likely to be used ________"
         },
         {
           "text": "next.",
@@ -1099,12 +611,12 @@
           "text": "Complex chatbots, or \"conversational agents\" such as ChatGPT, Claude, or DeepSeek, are often powered by large language models (LLMs).  "
         },
         {
-          "text": "A \"<i>language model</i>\" is a piece of software that is trained to predict language sequences and generate text responses."
+          "text": "Autocomplete shows you what word or phrase is most statistically likely to be used ________"
         }
       ],
       "interactiveBody": [
         {
-          "text": " Autocomplete, for example, is a language model that predicts what word or phrase is most statistically likely to be used"
+          "text": "Autocomplete shows you what word or phrase is most statistically likely to be used"
         },
         {
           "text": "now.",
@@ -1130,12 +642,12 @@
           "text": "Complex chatbots, or \"conversational agents\" such as ChatGPT, Claude, or DeepSeek, are often powered by large language models (LLMs).  "
         },
         {
-          "text": "A \"<i>language model</i>\" is a piece of software that is trained to predict language sequences and generate text responses."
+          "text": "A <i>\"language model\"</i>  is a piece of software that is trained to predict language sequences and generate text responses. A mobile keyboard's autocomplete function, like the example below, is a language model."
         }
       ],
       "interactiveBody": [
         {
-          "text": " Autocomplete, for example, is a language model that predicts what word or phrase is most statistically likely to be used"
+          "text": "Autocomplete shows you what word or phrase is most statistically likely to be used"
         },
         {
           "text": "correctly",
@@ -1163,13 +675,12 @@
           "text": "Complex chatbots, or \"conversational agents\" such as ChatGPT, Claude, or DeepSeek, are often powered by large language models (LLMs). "
         },
         {
-          "text": "A \"<i>language model</i>\" is a piece of software that is trained to predict language sequences and generate text responses."
+          "text": "A <i>\"language model\"</i>  is a piece of software that is trained to predict language sequences and generate text responses. A mobile keyboard's autocomplete function, like the example below, is a language model."
         }
       ],
       "interactiveBody": [
         {
-          "text": " Autocomplete, for example, is a language model that predicts what word or phrase is most statistically likely to be used"
-        },
+          "text": "Autocomplete shows you what word or phrase is most statistically likely to be used"        },
         {
           "text": "!",
           "animation": "typewriter",
@@ -1187,7 +698,7 @@
       ]
     },
 
-  {
+    {
       "trigger": "stage-1-loader",
       "body": [{ "text": "STAGE 1: TRAINING", "class": ["stage-1-transition"] }],
       "timer": { "duration": 4000, "trigger": "stage-1" }
@@ -1198,15 +709,15 @@
       "order": ["body", "buttons", "interactiveBody"],
       "body": [
         {
-          "text": "To build a language model, you need <b>training data</b>, or large bodies of text a model finds patterns in, and produces text based on. The larger the data, the more complex the model's ability to produce appropriate text: that's the <b>large</b> in <b>large language model</b> (LLM)."
+          "text": "To build a language model, you need <b>training data</b>, or <b>large</b> bodies of text a model finds patterns in, and produces text based on. The larger the data, the more complex the model's ability to produce appropriate text."
         },
         {
-          "text": "The internet provides a large source of text already written by other people, like blogs, books, or research papers. Select your primary training data:"
+          "text": "The internet is a large source of text already written by other people, like forums, books, or research papers. To start building your chatbot, select a data source below:"
         }
       ],
       "buttons": [
         {
-          "text": "Academic journals",
+          "text": "Academic papers",
           "trigger": "choice-data",
           "class": ["button-choice"],
           "dataValue": 0,
@@ -1227,7 +738,7 @@
           "delay": "1.0s"
         },
         {
-          "text": "Twitter feeds",
+          "text": "Personal blogs",
           "trigger": "choice-data",
           "class": ["button-choice"],
           "dataValue": 1,
@@ -1248,10 +759,10 @@
       "order": ["body", "buttons", "interactiveBody"],
       "body": [
         {
-          "text": "The first thing you’ll need to build a language model is training data, or large bodies of text that a language model looks for patterns in, and produces text based on. The larger the data, the more complex the model's ability to produce appropriate text: that's the large in large language model (LLM)."
+          "text": "The first thing you’ll need to build a language model is training data, or <b>large</b> bodies of text that a language model looks for patterns in, and produces text based on. The larger the data, the more complex the model's ability to produce appropriate text."
         },
         {
-          "text": "The internet provides a large source of text data, like social media sites, blogs, digital books, or research papers. Select your model's training data below:"
+          "text": "The internet provides a large source of text data, like social media sites, blogs, digital books, or research papers. To start building your chatbot, select a data source below:"
         }
       ],
       "buttons": [
@@ -1267,16 +778,16 @@
       "trigger": "data-training-loader",
       "body": [
         {
-          "text": "Going from massive data to a working model requires multiple stages of development which use extensive computing power.",
+          "text": "Going from massive data to a working model requires extensive power and resources, often at computing hubs called data centers.",
           "class": ["transition-title"]
         }
       ],
-      "timer": { "duration": 3500, "trigger": "data-prob" }
+      "timer": { "duration": 4700, "trigger": "data-prob" }
     },
     {
       "trigger": "data-prob",
-      "body": [{ "text": "This process is environmentally costly, using up large amounts of water and energy." }],
-      "timer": { "duration": 3500, "trigger": "training-step-1" }
+      "body": [{ "text": "This process is expensive and environmentally costly, using up large amounts of energy.", "class": ["transition-title"]}],
+      "timer": { "duration": 4700, "trigger": "training-step-1" }
     },
     {
       "trigger": "training-step-1",
@@ -1285,7 +796,7 @@
         {
           "text": "The model can estimate the <b>probability</b> of a character, word, or sequence of words occurring in text based on how commonly it occurred in your <b>data source</b>, and generates new text accordingly."
         },
-        { "text": "Pick a sentence, and see what word is most likely to come next:" }
+        { "text": "Pick a sentence from the examples below, and see what word is most likely to come next:" }
       ],
       "buttons": [
         {
@@ -1306,16 +817,16 @@
       "trigger": "training-step-2",
       "body": [
         {
-          "text": "By acquiring information and learning from existing text patterns, a language model can <b>ramble about a topic</b>."
+          "text": "By acquiring information and learning from text patterns in the data, a language model can seem to <b>ramble about a topic</b>."
         },
         {
           "text": "For example, if you ask: <span class='text-orange'>What is your first name?</span>"
         },
         {
-          "text": "Based on what question typically occurs next in empty forms online, it may respond with: <span class='text-red'>What is your last name?</span>"
+          "text": "Based on what typically occurs next in empty online forms, it may respond with: <span class='text-red'>What is your last name?</span>"
         },
         {
-          "text": "This is where <b>post-training</b> and <b>fine-tuning</b> come in, to turn the model from sounding like a <b>random text generator</b> to a realistic assistant."
+          "text": "This is where <b>post-training</b> and <b>fine-tuning</b> come in, to turn the model from sounding like a <b>random text generator</b> to a realistic chatbot."
         }
       ],
       "buttons": [
@@ -1339,7 +850,7 @@
           "text": "This process includes high-quality instructions and human feedback, like yours."
         },
         {
-          "text": "You will see a question with two answer options generated by the model, and pick <strong>the better answer</strong>. Real chatbots <strong>learn patterns</strong> from thousands of choices <strong>made by humans</strong>, often <b>workers</b>."
+          "text": "You will see a question with two answer options generated by the model, and pick what you think is <strong>the better answer</strong>. Real chatbots similarly <strong>learn patterns</strong> from thousands of choices <strong>made by humans</strong>, often <b>workers hired for this task</b>. What counts as 'better' depends on who's deciding."
         }
       ],
       "buttons": [{ "text": "Give Feedback", "id": "feedback-btn", "trigger": "finetuning-step-2" }]
@@ -1380,7 +891,7 @@
       "trigger": "finetuning-step-3",
       "body": [
         {
-          "text": "In this final step, you can craft your chatbot's \"personality\" by deciding how it responds to questions. It can sound more like how your friend writes, or your teacher, or your boss. But remember, the underlying technology will still do the same thing:"
+          "text": "You're almost done building your chatbot! In this final step, craft its \"personality\" by deciding how it responds to questions—more like a friend, a teacher, or a boss. But remember, regardless of how friendly or relatable it sounds—which can make it easy to forget you're talking to a machine—the underlying technology will still do the same thing:"
         },
         {
           "text": "<span style='color:'><strong>Make statistical predictions about what text should come next.</strong>"
@@ -1404,8 +915,20 @@
     },
     {
       "trigger": "stage-3-loader",
-      "body": [{ "text": "Stage 3: Try it out!", "class": ["stage-3-transition"]}],
-      "timer": { "duration": 7000, "trigger": "stage-3A-chatbot" }
+      "body": [{ "text": "Stage 3: Deployment", "class": ["stage-3-transition"]}],
+      "timer": { "duration": 7000, "trigger": "stage-3-intro" }
+    },
+     {
+      "trigger": "stage-3-intro",
+      "body": [
+        {
+          "text": "Time to try out your chatbot! It will generate text based on your previous decisions, like your choice of training data or level of friendliness."
+        },
+        {
+          "text": "Now that you know how this technology is built, <b>reflect on what kinds of questions are appropriate to ask a language model.</b> Select as many questions as you want, then click 'Next'."
+        }
+      ],
+      "buttons": [{"text": "Next", "class": ["stage-btn"], "id": ["try-btn"], "trigger": "stage-3A-chatbot"}]
     },
     {
       "trigger": "stage-3A-chatbot",
@@ -1440,16 +963,16 @@
     {
       "trigger": "stage-3B",
        "body":[{
-        "text": "You've built your own chatbot! By learning how the technology works, and how it doesn't, you can reflect on which types of questions and answers were appropriate."
+        "text": "You've completed the process! Remember, while chatbots are trained to generate likely, confident-sounding text responses, these are <b>not necessarily truthful or reliable.</b>"
       },
       {
-        "text": "Outside this simulation, real conversational agents require extensive labor, capital, and energy. To learn more, from the environmental cost to the labor conditions involved, explore our further resources page. [in progress]"
+        "text": "Outside this simulation, real conversational agents require significant resources and infrastructure. Explore more about LLMs below, from their environmental footprint to ethical concerns and societal implications."
       }
 
     ],
       "buttons":[
         {
-          "text":"Start Over",
+          "text":"EXPLORE",
           "trigger":"restart",
           "class":["stage-btn"]
         }
@@ -1458,6 +981,495 @@
   ]
 },
 
+"es":{
+  "comments": {
+    "note": "spanish translation test"
+  },
+
+  "ui": {
+    "_comment": "to separate static elements from script",
+
+    "navbar": {
+      "title": "Cómo entrenar a tu chatbot",
+      "resources": "recursos",
+      "about": "idk spanish",
+      "language": "es"
+    }
+  },
+
+  "script": [
+    {
+      "index": "1",
+      "additionalClasses": ["main-container-crazy", "test"],
+      "body": [
+        {
+          "text": "AI chatbots have become increasingly common. How much do you know about how they actually work?",
+          "class": "intro-header"
+        
+        },
+        {
+          "text": "With no prior knowledge, explore what goes into building an AI chatbot (like ChatGPT, Claude, or DeepSeek). From choosing the type of data it's trained on to the tone it responds in, see how the technology really works, and how your decisions can impact its outcomes. Learn what labor and resources are required behind the scenes, and what capabilities, limitations, and risks they introduce.",
+          "class": ["intro-para"]
+        }
+      ],
+      "buttons": [{ "text": "START HERE", "id": "start-btn", "trigger": "start" }]
+    },
+
+    {
+      "trigger": "start",
+      "index": "2",
+      "order": ["body", "interactiveBody", "buttons"],
+      "body": [
+        {
+          "text": "Complex <b>chatbots</b>, or \"<b>conversational agents</b>\" such as ChatGPT, Claude, or DeepSeek, are often powered by <b>large language models</b> (LLMs).",
+          "class": ["fade-in"]
+        },
+        {
+          "text": "A <i>\"language model\"</i> is a piece of software that is trained to predict language sequences and generate text responses. A mobile keyboard's autocomplete function, like the example below, is a language model.",
+          "class": ["fade-in-delayed"]
+        }
+      ],
+      "interactiveBody": [
+        {
+          "text": "Autocomplete shows you what word or phrase is most statistically likely to be used ________",
+          "animation": "typewriter",
+          "speed": 50,
+          "delay": 900
+        }
+      ],
+      "interactiveBodyClass": ["delayed-text"],
+      "buttons": [
+        {
+          "text": "next",
+          "trigger": "choice-next",
+          "class": ["button-stagger-1"],
+          "delay": "7.0s"
+        },
+        {
+          "text": "now",
+          "trigger": "choice-now",
+          "class": ["button-stagger-2"],
+          "delay": "7.0s"
+        },
+        {
+          "text": "correctly",
+          "trigger": "choice-correctly",
+          "class": ["button-stagger-3"],
+          "delay": "7.0s"
+        }
+      ],
+      "__comment": "so triggers can also point to an indexed step"
+    },
+
+    {
+      "trigger": "choice-next",
+      "order": ["body", "interactiveBody", "buttons"],
+      "body": [
+        {
+          "text": "Complex chatbots, or \"conversational agents\" such as ChatGPT, Claude, or DeepSeek, are often powered by large language models (LLMs). "
+        },
+        {
+          "text": "A \"<i>language model</i>\" is a piece of software that is trained to predict language sequences and generate text responses. A mobile keyboard's autocomplete function, like the example below, is a language model."
+        }
+      ],
+      "interactiveBody": [
+        {
+          "text": "Autocomplete shows you what word or phrase is most statistically likely to be used ________"
+        },
+        {
+          "text": "next.",
+          "animation": "typewriter",
+          "speed": 80,
+          "delay": 400
+        }
+      ],
+      "interactiveBodyClass": ["continuous-text", "delayed-text"],
+      "buttons": [
+        {
+          "text": "STAGE 1: Training",
+          "class": ["stage-btn", "fade-in-delayed"],
+          "trigger": "stage-1-loader"
+        }
+      ]
+    },
+
+    {
+      "trigger": "choice-now",
+      "order": ["body", "interactiveBody", "buttons"],
+      "body": [
+        {
+          "text": "Complex chatbots, or \"conversational agents\" such as ChatGPT, Claude, or DeepSeek, are often powered by large language models (LLMs).  "
+        },
+        {
+          "text": "Autocomplete shows you what word or phrase is most statistically likely to be used ________"
+        }
+      ],
+      "interactiveBody": [
+        {
+          "text": "Autocomplete shows you what word or phrase is most statistically likely to be used"
+        },
+        {
+          "text": "now.",
+          "animation": "typewriter",
+          "speed": 80,
+          "delay": 400
+        }
+      ],
+      "interactiveBodyClass": ["continuous-text", "delayed-text"],
+      "buttons": [
+        {
+          "text": "STAGE 1: TRAINING",
+          "class": ["stage-btn", "fade-in-delayed"],
+          "trigger": "stage-1-loader"
+        }
+      ]
+    },
+    {
+      "trigger": "choice-correctly",
+      "order": ["body", "interactiveBody", "buttons"],
+      "body": [
+        {
+          "text": "Complex chatbots, or \"conversational agents\" such as ChatGPT, Claude, or DeepSeek, are often powered by large language models (LLMs).  "
+        },
+        {
+          "text": "A <i>\"language model\"</i>  is a piece of software that is trained to predict language sequences and generate text responses. A mobile keyboard's autocomplete function, like the example below, is a language model."
+        }
+      ],
+      "interactiveBody": [
+        {
+          "text": "Autocomplete shows you what word or phrase is most statistically likely to be used"
+        },
+        {
+          "text": "correctly",
+          "animation": "typewriter",
+          "speed": 80,
+          "delay": 400
+        }
+      ],
+
+      "interactiveBodyClass": ["continuous-text", "delayed-text"],
+      "buttons": [
+        {
+          "text": "STAGE 1: TRAINING",
+          "class": ["stage-btn", "fade-in-delayed"],
+          "trigger": "stage-1-loader"
+        }
+      ]
+    },
+
+    {
+      "trigger": "choice-!",
+      "order": ["body", "interactiveBody", "buttons"],
+      "body": [
+        {
+          "text": "Complex chatbots, or \"conversational agents\" such as ChatGPT, Claude, or DeepSeek, are often powered by large language models (LLMs). "
+        },
+        {
+          "text": "A <i>\"language model\"</i>  is a piece of software that is trained to predict language sequences and generate text responses. A mobile keyboard's autocomplete function, like the example below, is a language model."
+        }
+      ],
+      "interactiveBody": [
+        {
+          "text": "Autocomplete shows you what word or phrase is most statistically likely to be used"        },
+        {
+          "text": "!",
+          "animation": "typewriter",
+          "speed": 80,
+          "delay": 400
+        }
+      ],
+      "interactiveBodyClass": ["continuous-text", "delayed-text"],
+      "buttons": [
+        {
+          "text": "STAGE 1: Training",
+          "class": ["stage-btn", "fade-in-delayed"],
+          "trigger": "stage-1-loader"
+        }
+      ]
+    },
+
+    {
+      "trigger": "stage-1-loader",
+      "body": [{ "text": "STAGE 1: TRAINING", "class": ["stage-1-transition"] }],
+      "timer": { "duration": 4000, "trigger": "stage-1" }
+    },
+    {
+      "trigger": "stage-1",
+      "index": "3",
+      "order": ["body", "buttons", "interactiveBody"],
+      "body": [
+        {
+          "text": "To build a language model, you need <b>training data</b>, or <b>large</b> bodies of text a model finds patterns in, and produces text based on. The larger the data, the more complex the model's ability to produce appropriate text."
+        },
+        {
+          "text": "The internet is a large source of text already written by other people, like forums, books, or research papers. To start building your chatbot, select a data source below:"
+        }
+      ],
+      "buttons": [
+        {
+          "text": "Academic papers",
+          "trigger": "choice-data",
+          "class": ["button-choice"],
+          "dataValue": 0,
+          "delay": "1.0s"
+        },
+        {
+          "text": "News articles",
+          "trigger": "choice-data",
+          "class": ["button-choice"],
+          "dataValue": 0,
+          "delay": "1.0s"
+        },
+        {
+          "text": "Reddit posts",
+          "trigger": "choice-data",
+          "class": ["button-choice"],
+          "dataValue": 1,
+          "delay": "1.0s"
+        },
+        {
+          "text": "Personal blogs",
+          "trigger": "choice-data",
+          "class": ["button-choice"],
+          "dataValue": 1,
+          "delay": "1.0s"
+        },
+        {
+          "text": "Next",
+          "trigger": "data-training-loader",
+          "class": ["stage-btn"],
+          "delay": "2.0s",
+          "disabled": true,
+          "id": "data-next-btn"
+        }
+      ]
+    },
+    {
+      "trigger": "choice-data",
+      "order": ["body", "buttons", "interactiveBody"],
+      "body": [
+        {
+          "text": "The first thing you’ll need to build a language model is training data, or <b>large</b> bodies of text that a language model looks for patterns in, and produces text based on. The larger the data, the more complex the model's ability to produce appropriate text."
+        },
+        {
+          "text": "The internet provides a large source of text data, like social media sites, blogs, digital books, or research papers. To start building your chatbot, select a data source below:"
+        }
+      ],
+      "buttons": [
+        {
+          "text": "Next",
+          "trigger": "data-training-loader",
+          "class": ["stage-btn"],
+          "delay": "1.0s"
+        }
+      ]
+    },
+    {
+      "trigger": "data-training-loader",
+      "body": [
+        {
+          "text": "Going from massive data to a working model requires extensive power and resources, often at computing hubs called data centers.",
+          "class": ["transition-title"]
+        }
+      ],
+      "timer": { "duration": 4700, "trigger": "data-prob" }
+    },
+    {
+      "trigger": "data-prob",
+      "body": [{ "text": "This process is expensive and environmentally costly, using up large amounts of energy.", "class": ["transition-title"]}],
+      "timer": { "duration": 4700, "trigger": "training-step-1" }
+    },
+    {
+      "trigger": "training-step-1",
+      "order": ["body", "custom", "buttons"],
+      "body": [
+        {
+          "text": "The model can estimate the <b>probability</b> of a character, word, or sequence of words occurring in text based on how commonly it occurred in your <b>data source</b>, and generates new text accordingly."
+        },
+        { "text": "Pick a sentence from the examples below, and see what word is most likely to come next:" }
+      ],
+      "buttons": [
+        {
+          "text": "Next",
+          "trigger": "training-step-2"
+        }
+      ],
+      "autocompleteOptions": [
+        {
+          "sentence": "At the beach, I played with my ____",
+          "trigger": "beach-sentence"
+        },
+        { "sentence": "At the concert, I ____", "trigger": "concert-sentence" }
+      ]
+    },
+
+    {
+      "trigger": "training-step-2",
+      "body": [
+        {
+          "text": "By acquiring information and learning from text patterns in the data, a language model can seem to <b>ramble about a topic</b>."
+        },
+        {
+          "text": "For example, if you ask: <span class='text-orange'>What is your first name?</span>"
+        },
+        {
+          "text": "Based on what typically occurs next in empty online forms, it may respond with: <span class='text-red'>What is your last name?</span>"
+        },
+        {
+          "text": "This is where <b>post-training</b> and <b>fine-tuning</b> come in, to turn the model from sounding like a <b>random text generator</b> to a realistic chatbot."
+        }
+      ],
+      "buttons": [
+        {
+          "text": "STAGE 2: Post-Training",
+          "trigger": "finetuning-loader",
+          "class": ["stage-btn"]
+        }
+      ]
+    },
+    {
+      "trigger": "finetuning-loader",
+      "body": [{ "text": "STAGE 2: POST-TRAINING", "class": ["stage-2-transition"] }],
+      "timer": { "duration": 4000, "trigger": "finetuning-step-1" }
+    },
+
+    {
+      "trigger": "finetuning-step-1",
+      "body": [
+        {
+          "text": "This process includes high-quality instructions and human feedback, like yours."
+        },
+        {
+          "text": "You will see a question with two answer options generated by the model, and pick what you think is <strong>the better answer</strong>. Real chatbots similarly <strong>learn patterns</strong> from thousands of choices <strong>made by humans</strong>, often <b>workers hired for this task</b>. What counts as 'better' depends on who's deciding."
+        }
+      ],
+      "buttons": [{ "text": "Give Feedback", "id": "feedback-btn", "trigger": "finetuning-step-2" }]
+    },
+    {
+      "trigger": "finetuning-step-2",
+      "order": ["custom"],
+      "finetuningRounds": [
+        {
+          "question": "this is a sample question lorem ipsum?",
+          "prompt": "Please click on the response you prefer:",
+          "responses": [
+            "Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus.",
+            "Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus."
+          ]
+        },
+        {
+          "question": "this is a sample question lorem ipsum?",
+          "prompt": "Please click on the response you prefer:",
+          "responses": [
+            "Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus.",
+            "Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus."
+          ]
+        },
+        {
+          "question": "this is a sample question lorem ipsum?",
+          "prompt": "Please click on the response you prefer:",
+          "responses": [
+            "Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus.",
+            "Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus."
+          ]
+        }
+      ],
+      "nextButton": "Next",
+      "finalTrigger": "finetuning-step-3"
+    },
+    {
+      "trigger": "finetuning-step-3",
+      "body": [
+        {
+          "text": "You're almost done building your chatbot! In this final step, craft its \"personality\" by deciding how it responds to questions—more like a friend, a teacher, or a boss. But remember, regardless of how friendly or relatable it sounds—which can make it easy to forget you're talking to a machine—the underlying technology will still do the same thing:"
+        },
+        {
+          "text": "<span style='color:'><strong>Make statistical predictions about what text should come next.</strong>"
+        }
+      ],
+      "buttons": [
+        {
+          "text": "Next",
+          "trigger": "finetuning-step-4"
+        }
+      ]
+    },
+    {
+      "trigger": "finetuning-step-4",
+      "order": ["custom"],
+      "sliderLabels": ["Random", "Friendly", "Wordy"],
+      "generateButtonText": "Generate Text",
+      "nextButton": [
+        { "text": "Next", "trigger": "stage-3-loader", "class": ["stage-btn"] }
+      ]
+    },
+    {
+      "trigger": "stage-3-loader",
+      "body": [{ "text": "Stage 3: Deployment", "class": ["stage-3-transition"]}],
+      "timer": { "duration": 7000, "trigger": "stage-3-intro" }
+    },
+     {
+      "trigger": "stage-3-intro",
+      "body": [
+        {
+          "text": "Time to try out your chatbot! It will generate text based on your previous decisions, like your choice of training data or level of friendliness."
+        },
+        {
+          "text": "Now that you know how this technology is built, <b>reflect on what kinds of questions are appropriate to ask a language model.</b> Select as many questions as you want, then click 'Next'."
+        }
+      ],
+      "buttons": [{"text": "Next", "class": ["stage-btn"], "id": ["try-btn"], "trigger": "stage-3A-chatbot"}]
+    },
+    {
+      "trigger": "stage-3A-chatbot",
+      "class": ["chatbot"],
+      "order": ["custom"],
+      "chatbotIntro": {
+        "text": "Hey there! 👋 Pick a question and get started.",
+        "animation": "typewriter",
+        "speed": 40
+      },
+      "chatbotQuestions": [
+        {
+          "question": "What is artificial intelligence?"
+        },
+        {
+          "question": "How do you stay motivated?"
+        },
+        { "question": "What causes rainbows?"
+      },
+      { "question": "How should I confront my friend?"
+      },
+      { "question": "Who should I vote for?"
+      },
+      { "question": "What should I have for dinner?"
+      }
+
+      ],
+      "nextButton": [
+        { "text": "Next", "trigger": "stage-3B", "class": ["stage-btn"] }
+      ]
+    },
+    {
+      "trigger": "stage-3B",
+       "body":[{
+        "text": "You've completed the process! Remember, while chatbots are trained to generate likely, confident-sounding text responses, these are <b>not necessarily truthful or reliable.</b>"
+      },
+      {
+        "text": "Outside this simulation, real conversational agents require significant resources and infrastructure. Explore more about LLMs below, from their environmental footprint to ethical concerns and societal implications."
+      }
+
+    ],
+      "buttons":[
+        {
+          "text":"EXPLORE",
+          "trigger":"restart",
+          "class":["stage-btn"]
+        }
+      ]
+    }
+  ]
+},
 
 
 
@@ -1480,17 +1492,17 @@
   },
 
   "script": [
-      {
+    {
       "index": "1",
       "additionalClasses": ["main-container-crazy", "test"],
       "body": [
         {
-          "text": "AI chatbots have become increasingly common. How much do you know about how these technologies actually work?",
+          "text": "AI chatbots have become increasingly common. How much do you know about how they actually work?",
           "class": "intro-header"
         
         },
         {
-          "text": "In this brief playable explainer, go through the main stages of building a conversational agent (like ChatGPT, Claude, or DeepSeek). From choosing what type of data it's trained on to what tone it responds in, make the kinds of decisions that go into the development of these technologies. Learn what labour and resources are required behind the scenes, and what capabilities and limitations they introduce.",
+          "text": "With no prior knowledge, explore what goes into building an AI chatbot (like ChatGPT, Claude, or DeepSeek). From choosing the type of data it's trained on to the tone it responds in, see how the technology really works, and how your decisions can impact its outcomes. Learn what labor and resources are required behind the scenes, and what capabilities, limitations, and risks they introduce.",
           "class": ["intro-para"]
         }
       ],
@@ -1503,17 +1515,17 @@
       "order": ["body", "interactiveBody", "buttons"],
       "body": [
         {
-          "text": "Hola, esto es una prueba",
+          "text": "Complex <b>chatbots</b>, or \"<b>conversational agents</b>\" such as ChatGPT, Claude, or DeepSeek, are often powered by <b>large language models</b> (LLMs).",
           "class": ["fade-in"]
         },
         {
-          "text": "A \"<i>language model</i>\" is a piece of software that is trained to predict language sequences and generate text responses.",
+          "text": "A <i>\"language model\"</i> is a piece of software that is trained to predict language sequences and generate text responses. A mobile keyboard's autocomplete function, like the example below, is a language model.",
           "class": ["fade-in-delayed"]
         }
       ],
       "interactiveBody": [
         {
-          "text": " Autocomplete, for example, is a language model that predicts what word or phrase is most statistically likely to be used ________",
+          "text": "Autocomplete shows you what word or phrase is most statistically likely to be used ________",
           "animation": "typewriter",
           "speed": 50,
           "delay": 900
@@ -1551,12 +1563,12 @@
           "text": "Complex chatbots, or \"conversational agents\" such as ChatGPT, Claude, or DeepSeek, are often powered by large language models (LLMs). "
         },
         {
-          "text": "A \"<i>language model</i>\" is a piece of software that is trained to predict language sequences and generate text responses."
+          "text": "A \"<i>language model</i>\" is a piece of software that is trained to predict language sequences and generate text responses. A mobile keyboard's autocomplete function, like the example below, is a language model."
         }
       ],
       "interactiveBody": [
         {
-          "text": " Autocomplete, for example, is a language model that predicts what word or phrase is most statistically likely to be used"
+          "text": "Autocomplete shows you what word or phrase is most statistically likely to be used ________"
         },
         {
           "text": "next.",
@@ -1583,12 +1595,12 @@
           "text": "Complex chatbots, or \"conversational agents\" such as ChatGPT, Claude, or DeepSeek, are often powered by large language models (LLMs).  "
         },
         {
-          "text": "A \"<i>language model</i>\" is a piece of software that is trained to predict language sequences and generate text responses."
+          "text": "Autocomplete shows you what word or phrase is most statistically likely to be used ________"
         }
       ],
       "interactiveBody": [
         {
-          "text": " Autocomplete, for example, is a language model that predicts what word or phrase is most statistically likely to be used"
+          "text": "Autocomplete shows you what word or phrase is most statistically likely to be used"
         },
         {
           "text": "now.",
@@ -1614,12 +1626,12 @@
           "text": "Complex chatbots, or \"conversational agents\" such as ChatGPT, Claude, or DeepSeek, are often powered by large language models (LLMs).  "
         },
         {
-          "text": "A \"<i>language model</i>\" is a piece of software that is trained to predict language sequences and generate text responses."
+          "text": "A <i>\"language model\"</i>  is a piece of software that is trained to predict language sequences and generate text responses. A mobile keyboard's autocomplete function, like the example below, is a language model."
         }
       ],
       "interactiveBody": [
         {
-          "text": " Autocomplete, for example, is a language model that predicts what word or phrase is most statistically likely to be used"
+          "text": "Autocomplete shows you what word or phrase is most statistically likely to be used"
         },
         {
           "text": "correctly",
@@ -1647,13 +1659,12 @@
           "text": "Complex chatbots, or \"conversational agents\" such as ChatGPT, Claude, or DeepSeek, are often powered by large language models (LLMs). "
         },
         {
-          "text": "A \"<i>language model</i>\" is a piece of software that is trained to predict language sequences and generate text responses."
+          "text": "A <i>\"language model\"</i>  is a piece of software that is trained to predict language sequences and generate text responses. A mobile keyboard's autocomplete function, like the example below, is a language model."
         }
       ],
       "interactiveBody": [
         {
-          "text": " Autocomplete, for example, is a language model that predicts what word or phrase is most statistically likely to be used"
-        },
+          "text": "Autocomplete shows you what word or phrase is most statistically likely to be used"        },
         {
           "text": "!",
           "animation": "typewriter",
@@ -1682,15 +1693,15 @@
       "order": ["body", "buttons", "interactiveBody"],
       "body": [
         {
-          "text": "To build a language model, you need <b>training data</b>, or large bodies of text a model finds patterns in, and produces text based on. The larger the data, the more complex the model's ability to produce appropriate text: that's the <b>large</b> in <b>large language model</b> (LLM)."
+          "text": "To build a language model, you need <b>training data</b>, or <b>large</b> bodies of text a model finds patterns in, and produces text based on. The larger the data, the more complex the model's ability to produce appropriate text."
         },
         {
-          "text": "The internet provides a large source of text already written by other people, like blogs, books, or research papers. Select your primary training data:"
+          "text": "The internet is a large source of text already written by other people, like forums, books, or research papers. To start building your chatbot, select a data source below:"
         }
       ],
       "buttons": [
         {
-          "text": "Academic journals",
+          "text": "Academic papers",
           "trigger": "choice-data",
           "class": ["button-choice"],
           "dataValue": 0,
@@ -1711,7 +1722,7 @@
           "delay": "1.0s"
         },
         {
-          "text": "Twitter feeds",
+          "text": "Personal blogs",
           "trigger": "choice-data",
           "class": ["button-choice"],
           "dataValue": 1,
@@ -1732,10 +1743,10 @@
       "order": ["body", "buttons", "interactiveBody"],
       "body": [
         {
-          "text": "The first thing you’ll need to build a language model is training data, or large bodies of text that a language model looks for patterns in, and produces text based on. The larger the data, the more complex the model's ability to produce appropriate text: that's the large in large language model (LLM)."
+          "text": "The first thing you’ll need to build a language model is training data, or <b>large</b> bodies of text that a language model looks for patterns in, and produces text based on. The larger the data, the more complex the model's ability to produce appropriate text."
         },
         {
-          "text": "The internet provides a large source of text data, like social media sites, blogs, digital books, or research papers. Select your model's training data below:"
+          "text": "The internet provides a large source of text data, like social media sites, blogs, digital books, or research papers. To start building your chatbot, select a data source below:"
         }
       ],
       "buttons": [
@@ -1751,16 +1762,16 @@
       "trigger": "data-training-loader",
       "body": [
         {
-          "text": "Going from massive data to a working model requires multiple stages of development which use extensive computing power.",
+          "text": "Going from massive data to a working model requires extensive power and resources, often at computing hubs called data centers.",
           "class": ["transition-title"]
         }
       ],
-      "timer": { "duration": 3500, "trigger": "data-prob" }
+      "timer": { "duration": 4700, "trigger": "data-prob" }
     },
     {
       "trigger": "data-prob",
-      "body": [{ "text": "This process is environmentally costly, using up large amounts of water and energy." , "class": "transition-title"}],
-      "timer": { "duration": 3500, "trigger": "training-step-1" }
+      "body": [{ "text": "This process is expensive and environmentally costly, using up large amounts of energy.", "class": ["transition-title"]}],
+      "timer": { "duration": 4700, "trigger": "training-step-1" }
     },
     {
       "trigger": "training-step-1",
@@ -1769,7 +1780,7 @@
         {
           "text": "The model can estimate the <b>probability</b> of a character, word, or sequence of words occurring in text based on how commonly it occurred in your <b>data source</b>, and generates new text accordingly."
         },
-        { "text": "Pick a sentence, and see what word is most likely to come next:" }
+        { "text": "Pick a sentence from the examples below, and see what word is most likely to come next:" }
       ],
       "buttons": [
         {
@@ -1790,16 +1801,16 @@
       "trigger": "training-step-2",
       "body": [
         {
-          "text": "By acquiring information and learning from existing text patterns, a language model can <b>ramble about a topic</b>."
+          "text": "By acquiring information and learning from text patterns in the data, a language model can seem to <b>ramble about a topic</b>."
         },
         {
           "text": "For example, if you ask: <span class='text-orange'>What is your first name?</span>"
         },
         {
-          "text": "Based on what question typically occurs next in empty forms online, it may respond with: <span class='text-red'>What is your last name?</span>"
+          "text": "Based on what typically occurs next in empty online forms, it may respond with: <span class='text-red'>What is your last name?</span>"
         },
         {
-          "text": "This is where <b>post-training</b> and <b>fine-tuning</b> come in, to turn the model from sounding like a <b>random text generator</b> to a realistic assistant."
+          "text": "This is where <b>post-training</b> and <b>fine-tuning</b> come in, to turn the model from sounding like a <b>random text generator</b> to a realistic chatbot."
         }
       ],
       "buttons": [
@@ -1823,7 +1834,7 @@
           "text": "This process includes high-quality instructions and human feedback, like yours."
         },
         {
-          "text": "You will see a question with two answer options generated by the model, and pick <strong>the better answer</strong>. Real chatbots <strong>learn patterns</strong> from thousands of choices <strong>made by humans</strong>, often <b>workers</b>."
+          "text": "You will see a question with two answer options generated by the model, and pick what you think is <strong>the better answer</strong>. Real chatbots similarly <strong>learn patterns</strong> from thousands of choices <strong>made by humans</strong>, often <b>workers hired for this task</b>. What counts as 'better' depends on who's deciding."
         }
       ],
       "buttons": [{ "text": "Give Feedback", "id": "feedback-btn", "trigger": "finetuning-step-2" }]
@@ -1864,7 +1875,7 @@
       "trigger": "finetuning-step-3",
       "body": [
         {
-          "text": "In this final step, you can craft your chatbot's \"personality\" by deciding how it responds to questions. It can sound more like how your friend writes, or your teacher, or your boss. But remember, the underlying technology will still do the same thing:"
+          "text": "You're almost done building your chatbot! In this final step, craft its \"personality\" by deciding how it responds to questions—more like a friend, a teacher, or a boss. But remember, regardless of how friendly or relatable it sounds—which can make it easy to forget you're talking to a machine—the underlying technology will still do the same thing:"
         },
         {
           "text": "<span style='color:'><strong>Make statistical predictions about what text should come next.</strong>"
@@ -1888,8 +1899,20 @@
     },
     {
       "trigger": "stage-3-loader",
-      "body": [{ "text": "Stage 3: Try it out!", "class": ["stage-3-transition"]}],
-      "timer": { "duration": 7000, "trigger": "stage-3A-chatbot" }
+      "body": [{ "text": "Stage 3: Deployment", "class": ["stage-3-transition"]}],
+      "timer": { "duration": 7000, "trigger": "stage-3-intro" }
+    },
+     {
+      "trigger": "stage-3-intro",
+      "body": [
+        {
+          "text": "Time to try out your chatbot! It will generate text based on your previous decisions, like your choice of training data or level of friendliness."
+        },
+        {
+          "text": "Now that you know how this technology is built, <b>reflect on what kinds of questions are appropriate to ask a language model.</b> Select as many questions as you want, then click 'Next'."
+        }
+      ],
+      "buttons": [{"text": "Next", "class": ["stage-btn"], "id": ["try-btn"], "trigger": "stage-3A-chatbot"}]
     },
     {
       "trigger": "stage-3A-chatbot",
@@ -1923,22 +1946,513 @@
     },
     {
       "trigger": "stage-3B",
-      "body":[{
-        "text": "You've built your own chatbot! By learning how the technology works, and how it doesn't, you can reflect on which types of questions and answers were appropriate."
+       "body":[{
+        "text": "You've completed the process! Remember, while chatbots are trained to generate likely, confident-sounding text responses, these are <b>not necessarily truthful or reliable.</b>"
       },
       {
-        "text": "Outside this simulation, real conversational agents require extensive labor, capital, and energy. To learn more, from the environmental cost to the labor conditions involved, explore our further resources page. [in progress]"
+        "text": "Outside this simulation, real conversational agents require significant resources and infrastructure. Explore more about LLMs below, from their environmental footprint to ethical concerns and societal implications."
       }
 
     ],
       "buttons":[
         {
-          "text":"Start Over",
+          "text":"EXPLORE",
           "trigger":"restart",
           "class":["stage-btn"]
         }
       ]
     }
   ]
-}
+},
+
+
+"en":{
+  "comments": {
+    "what's going on": "All the elements having a bunch of values corresponding to each key which specificy the content, additional classes, potential delay, and so on.",
+    "note": "Pay attention to how classes are added, some are in arrays for example."
+  },
+
+  "ui": {
+    "_comment": "To separate static elements from script.",
+
+    "navbar": {
+      "title": "How to Train Your Chatbot",
+           "about": "About",
+      "resources": "Resources",
+      "language": "English"
+    }
+  },
+
+  "script": [
+    {
+      "index": "1",
+      "additionalClasses": ["main-container-crazy", "test"],
+      "body": [
+        {
+          "text": "AI chatbots have become increasingly common. How much do you know about how they actually work?",
+          "class": "intro-header"
+        
+        },
+        {
+          "text": "With no prior knowledge, explore what goes into building an AI chatbot (like ChatGPT, Claude, or DeepSeek). From choosing the type of data it's trained on to the tone it responds in, see how the technology really works, and how your decisions can impact its outcomes. Learn what labor and resources are required behind the scenes, and what capabilities, limitations, and risks they introduce.",
+          "class": ["intro-para"]
+        }
+      ],
+      "buttons": [{ "text": "START HERE", "id": "start-btn", "trigger": "start" }]
+    },
+
+    {
+      "trigger": "start",
+      "index": "2",
+      "order": ["body", "interactiveBody", "buttons"],
+      "body": [
+        {
+          "text": "Complex <b>chatbots</b>, or \"<b>conversational agents</b>\" such as ChatGPT, Claude, or DeepSeek, are often powered by <b>large language models</b> (LLMs).",
+          "class": ["fade-in"]
+        },
+        {
+          "text": "A <i>\"language model\"</i> is a piece of software that is trained to predict language sequences and generate text responses. A mobile keyboard's autocomplete function, like the example below, is a language model.",
+          "class": ["fade-in-delayed"]
+        }
+      ],
+      "interactiveBody": [
+        {
+          "text": "Autocomplete shows you what word or phrase is most statistically likely to be used ________",
+          "animation": "typewriter",
+          "speed": 50,
+          "delay": 900
+        }
+      ],
+      "interactiveBodyClass": ["delayed-text"],
+      "buttons": [
+        {
+          "text": "next",
+          "trigger": "choice-next",
+          "class": ["button-stagger-1"],
+          "delay": "7.0s"
+        },
+        {
+          "text": "now",
+          "trigger": "choice-now",
+          "class": ["button-stagger-2"],
+          "delay": "7.0s"
+        },
+        {
+          "text": "correctly",
+          "trigger": "choice-correctly",
+          "class": ["button-stagger-3"],
+          "delay": "7.0s"
+        }
+      ],
+      "__comment": "so triggers can also point to an indexed step"
+    },
+
+    {
+      "trigger": "choice-next",
+      "order": ["body", "interactiveBody", "buttons"],
+      "body": [
+        {
+          "text": "Complex chatbots, or \"conversational agents\" such as ChatGPT, Claude, or DeepSeek, are often powered by large language models (LLMs). "
+        },
+        {
+          "text": "A \"<i>language model</i>\" is a piece of software that is trained to predict language sequences and generate text responses. A mobile keyboard's autocomplete function, like the example below, is a language model."
+        }
+      ],
+      "interactiveBody": [
+        {
+          "text": "Autocomplete shows you what word or phrase is most statistically likely to be used ________"
+        },
+        {
+          "text": "next.",
+          "animation": "typewriter",
+          "speed": 80,
+          "delay": 400
+        }
+      ],
+      "interactiveBodyClass": ["continuous-text", "delayed-text"],
+      "buttons": [
+        {
+          "text": "STAGE 1: Training",
+          "class": ["stage-btn", "fade-in-delayed"],
+          "trigger": "stage-1-loader"
+        }
+      ]
+    },
+
+    {
+      "trigger": "choice-now",
+      "order": ["body", "interactiveBody", "buttons"],
+      "body": [
+        {
+          "text": "Complex chatbots, or \"conversational agents\" such as ChatGPT, Claude, or DeepSeek, are often powered by large language models (LLMs).  "
+        },
+        {
+          "text": "Autocomplete shows you what word or phrase is most statistically likely to be used ________"
+        }
+      ],
+      "interactiveBody": [
+        {
+          "text": "Autocomplete shows you what word or phrase is most statistically likely to be used"
+        },
+        {
+          "text": "now.",
+          "animation": "typewriter",
+          "speed": 80,
+          "delay": 400
+        }
+      ],
+      "interactiveBodyClass": ["continuous-text", "delayed-text"],
+      "buttons": [
+        {
+          "text": "STAGE 1: TRAINING",
+          "class": ["stage-btn", "fade-in-delayed"],
+          "trigger": "stage-1-loader"
+        }
+      ]
+    },
+    {
+      "trigger": "choice-correctly",
+      "order": ["body", "interactiveBody", "buttons"],
+      "body": [
+        {
+          "text": "Complex chatbots, or \"conversational agents\" such as ChatGPT, Claude, or DeepSeek, are often powered by large language models (LLMs).  "
+        },
+        {
+          "text": "A <i>\"language model\"</i>  is a piece of software that is trained to predict language sequences and generate text responses. A mobile keyboard's autocomplete function, like the example below, is a language model."
+        }
+      ],
+      "interactiveBody": [
+        {
+          "text": "Autocomplete shows you what word or phrase is most statistically likely to be used"
+        },
+        {
+          "text": "correctly",
+          "animation": "typewriter",
+          "speed": 80,
+          "delay": 400
+        }
+      ],
+
+      "interactiveBodyClass": ["continuous-text", "delayed-text"],
+      "buttons": [
+        {
+          "text": "STAGE 1: TRAINING",
+          "class": ["stage-btn", "fade-in-delayed"],
+          "trigger": "stage-1-loader"
+        }
+      ]
+    },
+
+    {
+      "trigger": "choice-!",
+      "order": ["body", "interactiveBody", "buttons"],
+      "body": [
+        {
+          "text": "Complex chatbots, or \"conversational agents\" such as ChatGPT, Claude, or DeepSeek, are often powered by large language models (LLMs). "
+        },
+        {
+          "text": "A <i>\"language model\"</i>  is a piece of software that is trained to predict language sequences and generate text responses. A mobile keyboard's autocomplete function, like the example below, is a language model."
+        }
+      ],
+      "interactiveBody": [
+        {
+          "text": "Autocomplete shows you what word or phrase is most statistically likely to be used"        },
+        {
+          "text": "!",
+          "animation": "typewriter",
+          "speed": 80,
+          "delay": 400
+        }
+      ],
+      "interactiveBodyClass": ["continuous-text", "delayed-text"],
+      "buttons": [
+        {
+          "text": "STAGE 1: Training",
+          "class": ["stage-btn", "fade-in-delayed"],
+          "trigger": "stage-1-loader"
+        }
+      ]
+    },
+
+    {
+      "trigger": "stage-1-loader",
+      "body": [{ "text": "STAGE 1: TRAINING", "class": ["stage-1-transition"] }],
+      "timer": { "duration": 4000, "trigger": "stage-1" }
+    },
+    {
+      "trigger": "stage-1",
+      "index": "3",
+      "order": ["body", "buttons", "interactiveBody"],
+      "body": [
+        {
+          "text": "To build a language model, you need <b>training data</b>, or <b>large</b> bodies of text a model finds patterns in, and produces text based on. The larger the data, the more complex the model's ability to produce appropriate text."
+        },
+        {
+          "text": "The internet is a large source of text already written by other people, like forums, books, or research papers. To start building your chatbot, select a data source below:"
+        }
+      ],
+      "buttons": [
+        {
+          "text": "Academic papers",
+          "trigger": "choice-data",
+          "class": ["button-choice"],
+          "dataValue": 0,
+          "delay": "1.0s"
+        },
+        {
+          "text": "News articles",
+          "trigger": "choice-data",
+          "class": ["button-choice"],
+          "dataValue": 0,
+          "delay": "1.0s"
+        },
+        {
+          "text": "Reddit posts",
+          "trigger": "choice-data",
+          "class": ["button-choice"],
+          "dataValue": 1,
+          "delay": "1.0s"
+        },
+        {
+          "text": "Personal blogs",
+          "trigger": "choice-data",
+          "class": ["button-choice"],
+          "dataValue": 1,
+          "delay": "1.0s"
+        },
+        {
+          "text": "Next",
+          "trigger": "data-training-loader",
+          "class": ["stage-btn"],
+          "delay": "2.0s",
+          "disabled": true,
+          "id": "data-next-btn"
+        }
+      ]
+    },
+    {
+      "trigger": "choice-data",
+      "order": ["body", "buttons", "interactiveBody"],
+      "body": [
+        {
+          "text": "The first thing you’ll need to build a language model is training data, or <b>large</b> bodies of text that a language model looks for patterns in, and produces text based on. The larger the data, the more complex the model's ability to produce appropriate text."
+        },
+        {
+          "text": "The internet provides a large source of text data, like social media sites, blogs, digital books, or research papers. To start building your chatbot, select a data source below:"
+        }
+      ],
+      "buttons": [
+        {
+          "text": "Next",
+          "trigger": "data-training-loader",
+          "class": ["stage-btn"],
+          "delay": "1.0s"
+        }
+      ]
+    },
+    {
+      "trigger": "data-training-loader",
+      "body": [
+        {
+          "text": "Going from massive data to a working model requires extensive power and resources, often at computing hubs called data centers.",
+          "class": ["transition-title"]
+        }
+      ],
+      "timer": { "duration": 4700, "trigger": "data-prob" }
+    },
+    {
+      "trigger": "data-prob",
+      "body": [{ "text": "This process is expensive and environmentally costly, using up large amounts of energy.", "class": ["transition-title"]}],
+      "timer": { "duration": 4700, "trigger": "training-step-1" }
+    },
+    {
+      "trigger": "training-step-1",
+      "order": ["body", "custom", "buttons"],
+      "body": [
+        {
+          "text": "The model can estimate the <b>probability</b> of a character, word, or sequence of words occurring in text based on how commonly it occurred in your <b>data source</b>, and generates new text accordingly."
+        },
+        { "text": "Pick a sentence from the examples below, and see what word is most likely to come next:" }
+      ],
+      "buttons": [
+        {
+          "text": "Next",
+          "trigger": "training-step-2"
+        }
+      ],
+      "autocompleteOptions": [
+        {
+          "sentence": "At the beach, I played with my ____",
+          "trigger": "beach-sentence"
+        },
+        { "sentence": "At the concert, I ____", "trigger": "concert-sentence" }
+      ]
+    },
+
+    {
+      "trigger": "training-step-2",
+      "body": [
+        {
+          "text": "By acquiring information and learning from text patterns in the data, a language model can seem to <b>ramble about a topic</b>."
+        },
+        {
+          "text": "For example, if you ask: <span class='text-orange'>What is your first name?</span>"
+        },
+        {
+          "text": "Based on what typically occurs next in empty online forms, it may respond with: <span class='text-red'>What is your last name?</span>"
+        },
+        {
+          "text": "This is where <b>post-training</b> and <b>fine-tuning</b> come in, to turn the model from sounding like a <b>random text generator</b> to a realistic chatbot."
+        }
+      ],
+      "buttons": [
+        {
+          "text": "STAGE 2: Post-Training",
+          "trigger": "finetuning-loader",
+          "class": ["stage-btn"]
+        }
+      ]
+    },
+    {
+      "trigger": "finetuning-loader",
+      "body": [{ "text": "STAGE 2: POST-TRAINING", "class": ["stage-2-transition"] }],
+      "timer": { "duration": 4000, "trigger": "finetuning-step-1" }
+    },
+
+    {
+      "trigger": "finetuning-step-1",
+      "body": [
+        {
+          "text": "This process includes high-quality instructions and human feedback, like yours."
+        },
+        {
+          "text": "You will see a question with two answer options generated by the model, and pick what you think is <strong>the better answer</strong>. Real chatbots similarly <strong>learn patterns</strong> from thousands of choices <strong>made by humans</strong>, often <b>workers hired for this task</b>. What counts as 'better' depends on who's deciding."
+        }
+      ],
+      "buttons": [{ "text": "Give Feedback", "id": "feedback-btn", "trigger": "finetuning-step-2" }]
+    },
+    {
+      "trigger": "finetuning-step-2",
+      "order": ["custom"],
+      "finetuningRounds": [
+        {
+          "question": "this is a sample question lorem ipsum?",
+          "prompt": "Please click on the response you prefer:",
+          "responses": [
+            "Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus.",
+            "Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus."
+          ]
+        },
+        {
+          "question": "this is a sample question lorem ipsum?",
+          "prompt": "Please click on the response you prefer:",
+          "responses": [
+            "Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus.",
+            "Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus."
+          ]
+        },
+        {
+          "question": "this is a sample question lorem ipsum?",
+          "prompt": "Please click on the response you prefer:",
+          "responses": [
+            "Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus.",
+            "Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus."
+          ]
+        }
+      ],
+      "nextButton": "Next",
+      "finalTrigger": "finetuning-step-3"
+    },
+    {
+      "trigger": "finetuning-step-3",
+      "body": [
+        {
+          "text": "You're almost done building your chatbot! In this final step, craft its \"personality\" by deciding how it responds to questions—more like a friend, a teacher, or a boss. But remember, regardless of how friendly or relatable it sounds—which can make it easy to forget you're talking to a machine—the underlying technology will still do the same thing:"
+        },
+        {
+          "text": "<span style='color:'><strong>Make statistical predictions about what text should come next.</strong>"
+        }
+      ],
+      "buttons": [
+        {
+          "text": "Next",
+          "trigger": "finetuning-step-4"
+        }
+      ]
+    },
+    {
+      "trigger": "finetuning-step-4",
+      "order": ["custom"],
+      "sliderLabels": ["Random", "Friendly", "Wordy"],
+      "generateButtonText": "Generate Text",
+      "nextButton": [
+        { "text": "Next", "trigger": "stage-3-loader", "class": ["stage-btn"] }
+      ]
+    },
+    {
+      "trigger": "stage-3-loader",
+      "body": [{ "text": "Stage 3: Deployment", "class": ["stage-3-transition"]}],
+      "timer": { "duration": 7000, "trigger": "stage-3-intro" }
+    },
+     {
+      "trigger": "stage-3-intro",
+      "body": [
+        {
+          "text": "Time to try out your chatbot! It will generate text based on your previous decisions, like your choice of training data or level of friendliness."
+        },
+        {
+          "text": "Now that you know how this technology is built, <b>reflect on what kinds of questions are appropriate to ask a language model.</b> Select as many questions as you want, then click 'Next'."
+        }
+      ],
+      "buttons": [{"text": "Next", "class": ["stage-btn"], "id": ["try-btn"], "trigger": "stage-3A-chatbot"}]
+    },
+    {
+      "trigger": "stage-3A-chatbot",
+      "class": ["chatbot"],
+      "order": ["custom"],
+      "chatbotIntro": {
+        "text": "Hey there! 👋 Pick a question and get started.",
+        "animation": "typewriter",
+        "speed": 40
+      },
+      "chatbotQuestions": [
+        {
+          "question": "What is artificial intelligence?"
+        },
+        {
+          "question": "How do you stay motivated?"
+        },
+        { "question": "What causes rainbows?"
+      },
+      { "question": "How should I confront my friend?"
+      },
+      { "question": "Who should I vote for?"
+      },
+      { "question": "What should I have for dinner?"
+      }
+
+      ],
+      "nextButton": [
+        { "text": "Next", "trigger": "stage-3B", "class": ["stage-btn"] }
+      ]
+    },
+    {
+      "trigger": "stage-3B",
+       "body":[{
+        "text": "You've completed the process! Remember, while chatbots are trained to generate likely, confident-sounding text responses, these are <b>not necessarily truthful or reliable.</b>"
+      },
+      {
+        "text": "Outside this simulation, real conversational agents require significant resources and infrastructure. Explore more about LLMs below, from their environmental footprint to ethical concerns and societal implications."
+      }
+
+    ],
+      "buttons":[
+        {
+          "text":"EXPLORE",
+          "trigger":"restart",
+          "class":["stage-btn"]
+        }
+      ]
+    }
+  ]
 }
