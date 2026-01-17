@@ -239,8 +239,7 @@ function renderStep(step) {
           }
 
                   else {
-            hideVideo();
-            // browserWindow.style.backgroundImage = "none";
+            // hideVideo();
           }
 
         }
@@ -251,7 +250,7 @@ function renderStep(step) {
             browserWindow.style.background = "#fff";
             browserWindow.classList.remove("gradient-bg");
 
-            hideVideo();
+            // hideVideo();
           }
 
            
