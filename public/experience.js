@@ -355,6 +355,7 @@ function renderStep(step) {
           }
 
           btn.addEventListener("click", () => {
+            console.log("CLICKED!");
             // If it's a data type selection step, pass the button text as extraData
             if (b.trigger === "choice-data") {
               userDataSelection = b.dataValue;
