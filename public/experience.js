@@ -340,6 +340,7 @@ function renderStep(step) {
         const buttonDiv = document.createElement("div");
         buttonDiv.classList.add("button-group");
 
+
         step.buttons.forEach((b) => {
           const btn = document.createElement("button");
           btn.textContent = b.text;
@@ -357,7 +358,7 @@ function renderStep(step) {
             btn.style.setProperty("--extra-delay", b.delay);
           }
 
-          buttonDiv.appendChild(btn);
+
 
           btn.addEventListener("click", () => {
             console.log("CLICKED");
@@ -381,10 +382,10 @@ function renderStep(step) {
             }
           });
 
-
+                    buttonDiv.appendChild(btn);
         });
 
-        currentContainer.appendChild(buttonDiv);
+            currentContainer.appendChild(buttonDiv);
       }
     },
   };
