@@ -499,7 +499,7 @@
     "_comment": "to separate static elements from script",
 
     "navbar": {
-      "title": "كيف تدرب المتحدث الآلي الخاص بك",
+      "title": "كيف تدرب بوت الدردشةالخاص بك",
       "resources": "الموارد",
       "about": "عن التجربة",
       "language": "AR"
@@ -513,16 +513,16 @@
       "additionalClasses": ["main-container-crazy", "test"],
       "body": [
         {
-          "text": "أصبحت روبوتات الدردشة الآلية شائعة بشكل متزايد... ",
+          "text": "أصبحت بوتات الدردشة المعتمدة على الذكاء الاصطناعي شائعة بشكل متزايد. ما مدى معرفتك بكيفية عملها؟ ",
           "class": "intro-header"
         
         },
         {
-          "text": "In this brief playable explainer, go through the main stages of building a conversational agent (like ChatGPT, Claude, or DeepSeek). From choosing what type of data it's trained on to what tone it responds in, make the kinds of decisions that go into the development of these technologies. Learn what labour and resources are required behind the scenes, and what capabilities and limitations they introduce.",
+          "text": "دون أي معرفة مسبقة، استكشفوا عملية تطوير بوتات الدردشة المدعومة بالذكاء الاصطناعي (مثل ChatGPT، أو Claude، أو DeepSeek).  من اختيار بيانات التدريب، إلى نبرة وأسلوب رد، تعرّفوا على كيفية عمل هذه التكنولوجيا وكيف يمكن لقرارتكم أن تؤثر على نتائجها. اكتشفوا ما يتطلب الأمر خلف الكواليس من جهد عمّالي والموارد المطلوبة، وما تفرضه هذه الخيارات من إمكانيات وحدود ومخاطر. ",
           "class": ["intro-para"]
         }
       ],
-      "buttons": [{ "text": "START HERE", "id": "start-btn", "trigger": "start" }]
+      "buttons": [{ "text": "ابدأ", "id": "start-btn", "trigger": "start" }]
     },
 
     {
