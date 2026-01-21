@@ -652,7 +652,7 @@ function renderFineTuningStep4(step) {
   }
 
   outputContainer.classList.add("visible");
-  output.textContent = "Drag the bars above and click 'Generate Text' to view sample outputs. When you decide on your final selection for your chatbot's personality, click 'Next'.";
+  output.textContent = step.placeholderText;
   output.classList.add("placeholder-text");
 
 
