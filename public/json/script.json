@@ -765,13 +765,13 @@
       "order": ["body", "custom", "buttons"],
       "body": [
         {
-          "text": "The model can estimate the <b>probability</b> of a character, word, or sequence of words occurring in text based on how commonly it occurred in your <b>data source</b>, and generates new text accordingly."
+          "text": "يمكن للنموذج تقدير<b> احتمال </b> ظهور حرف أو كلمة أو تسلسل من الكلمات في نص معين، بناءً على مدى تكرار ظهورها في  <b> مصدر البيانات </b> المستخدم في التدريب، فيولِّد نصًا جديدًا وفقًا لهذه الأنماط والاحتمالات"
         },
-        { "text": "Pick a sentence from the examples below, and see what word is most likely to come next:" }
+        { "text": "اختر جملة من القائمة أدناه، وشاهد الكلمة الأكثر ترجيحًا للظهور بعدها" }
       ],
       "buttons": [
         {
-          "text": "Next",
+          "text": "التالي",
           "trigger": "training-step-2"
         }
       ],

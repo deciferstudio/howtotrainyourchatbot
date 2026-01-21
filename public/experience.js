@@ -450,7 +450,8 @@ function renderTrainingStep1(
 
   const selectDropDown = document.createElement("select");
   selectDropDown.id = "training-1-select";
-  if (isRTL) selectDropDown.setAttribute('dir', 'rtl');
+  // if (isRTL) selectDropDown.setAttribute('dir', 'rtl');
+  selectDropDown.style.setProperty("text-align", "center");
 
   const dataType = DATA_TYPES[userDataSelection];
   const sentences = dataType.sentences;
