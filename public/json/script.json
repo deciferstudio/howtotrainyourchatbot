@@ -821,7 +821,7 @@
           "text": "تتضمن هذه العملية تعليمات واضحة، وتعليقات وتغذية راجعة من مستخدمين بشريين، كأمثالك"
         },
         {
-          "text": "في الشاشة التالية، ستظهر لك أسئلة مع خيارين للإجابة تم إنشاؤهما بواسطة النموذج اللغوي. <b>اختر الإجابة التي تراها الأنسب</b>  <br> هكذا يتم تدريب بوتات الدردشة الحقيقية على<b> استنتاج الأنماط اللغوية </b> استنادًا إلى آلاف الاختيارات التي  <b> يتخذها المستخدمون البشر. </b> غالبًا ما يكون هؤلاء المستخدمون <b> عمالًا يتم توظيفهم لهذه المهمة. </b>  ما يعتبره النموذج الإجابة الأفضل يعتمد على من يتخذ هذه القرارات"
+          "text": "في الشاشة التالية، ستظهر لك أسئلة مع خيارين للإجابة تم إنشاؤهما بواسطة النموذج اللغوي <b><br> اختر الإجابة التي تراها الأنسب <br></b>  <br> هكذا يتم تدريب بوتات الدردشة الحقيقية على<b> استنتاج الأنماط اللغوية </b> استنادًا إلى آلاف الاختيارات التي  <b> يتخذها المستخدمون البشر. </b> غالبًا ما يكون هؤلاء المستخدمون <b> عمالًا يتم توظيفهم لهذه المهمة. </b>  ما يعتبره النموذج الإجابة الأفضل يعتمد على من يتخذ هذه القرارات"
         }
       ],
       "buttons": [{ "text": "قدِّم التغذية الراجعة", "id": "feedback-btn", "trigger": "finetuning-step-2" }]
@@ -832,7 +832,7 @@
       "finetuningRounds": [
         {
           "question": "this is a sample question lorem ipsum?",
-          "prompt": "Please click on the response you prefer:",
+          "prompt": "يرجى النقر على الرد الذي تفضله",
           "responses": [
             "Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus.",
             "Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus."
@@ -840,7 +840,7 @@
         },
         {
           "question": "this is a sample question lorem ipsum?",
-          "prompt": "Please click on the response you prefer:",
+          "prompt": "يرجى النقر على الرد الذي تفضله",
           "responses": [
             "Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus.",
             "Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus."
@@ -848,29 +848,29 @@
         },
         {
           "question": "this is a sample question lorem ipsum?",
-          "prompt": "Please click on the response you prefer:",
+          "prompt": "يرجى النقر على الرد الذي تفضله",
           "responses": [
             "Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus.",
             "Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus."
           ]
         }
       ],
-      "nextButton": "Next",
+      "nextButton": "التالي",
       "finalTrigger": "finetuning-step-3"
     },
     {
       "trigger": "finetuning-step-3",
       "body": [
         {
-          "text": "You're almost done building your chatbot! In this final step, craft its \"personality\" by deciding how it responds to questions—more like a friend, a teacher, or a boss. But remember, regardless of how friendly or relatable it sounds—which can make it easy to forget you're talking to a machine—the underlying technology will still do the same thing:"
+          "text": "لقد أوشكت على الانتهاء من بناء بوت الدردشة الخاص بك! في الخطوة الأخيرة، قم بصياغة \"شخصية\" هذا البوت <br> حدد كيفية استجابته على الأسئلة. هل سيكون أشبه بصديق أم معلم أم مدير؟ <br> تذكّر أنه مهما بدا البوت ودودًا أو مقنعًا فإن تقنية تشغيله هي ذاتها "
         },
         {
-          "text": "<span style='color:'><strong>Make statistical predictions about what text should come next.</strong>"
+          "text": "<b>توقع تسلسل الكلمات والكلمات المحتملة في النص بطريقة إحصائية </b>"
         }
       ],
       "buttons": [
         {
-          "text": "Next",
+          "text": "التالي",
           "trigger": "finetuning-step-4"
         }
       ]
@@ -878,11 +878,11 @@
     {
       "trigger": "finetuning-step-4",
       "order": ["custom"],
-      "sliderLabels": ["Random", "Friendly", "Wordy"],
-      "placeholderText": "Drag the bars above and click 'Generate Text' to view sample outputs. When you decide on your final selection for your chatbot's personality, click 'Next'.",
-      "generateButtonText": "Generate Text",
+      "sliderLabels": ["التنوّع الأسلوبي", "الودّية", "التفصيل"],
+      "placeholderText": "قم بتحريك الأشرطة أعلاه ثم اضغط علي 'توليد النص' لعرض مثال من المخرجات. عندما تحدد اختياراتك للشخصية النهائية لبوت الدردشة الخاص بك، انتقل إلى الشاشة القادمة بالنقر على 'التالي'",
+      "generateButtonText": "توليد النص",
       "nextButton": [
-        { "text": "Next", "trigger": "stage-3-loader", "class": ["stage-btn"] }
+        { "text": "التالي", "trigger": "stage-3-loader", "class": ["stage-btn"] }
       ]
     },
     {

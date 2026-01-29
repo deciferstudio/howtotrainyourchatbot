@@ -522,7 +522,7 @@ function renderFineTuningStep2(step) {
     finetuningPrompt.setAttribute('dir', 'rtl');
     resp1.setAttribute('dir', 'rtl');
     resp2.setAttribute('dir', 'rtl');
-    nextBtn.setAttribute('dir', 'rtl');
+    // nextBtn.setAttribute('dir', 'rtl');
   }
 
   let currentRound = 0;
@@ -648,8 +648,9 @@ function renderFineTuningStep4(step) {
   const output = document.getElementById("finetuning-4-generated-text");
 
   if (isRTL) {
-    generateBtn.setAttribute('dir', 'rtl');
+    // generateBtn.setAttribute('dir', 'rtl');
     output.setAttribute('dir', 'rtl');
+    output.style.setProperty('text-align', 'right');
   }
 
   outputContainer.classList.add("visible");
