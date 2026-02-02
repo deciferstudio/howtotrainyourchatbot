@@ -249,44 +249,44 @@
       "sentences": [
         {
           "id": "sentence-0a",
-          "text": "العربي زابط:The cat jumped onto the"
+          "text": "قفز القطّ فوق"
         },
         {
           "id": "sentence-0b",
-          "text": " عربي She couldn’t believe the beauty of the"
+          "text": "تفاجأت الفتاة بجمال"
         },
         {
           "id": "sentence-0c",
-          "text": " عربي This framework provides a useful foundation for understanding"
+          "text": "يوفّر هذا الإطار أساسًا لفهم الأمور المهمة في عملية تطوير"
         }
       ],
       "sentenceLikelihoods": {
         "sentence-0a": {
-          "table": 0.72,
-          "bed": 0.10,
-          "sofa": 0.18
+          "الطاولة": 0.72,
+          "السرير": 0.10,
+          "الأريكة": 0.18
         },
         "sentence-0b": {
-          "sunset": 0.65,
-          "dress": 0.22,
-          "garden": 0.13
+          "غروب الشمس": 0.65,
+          "الفستان": 0.22,
+          "الحديقة": 0.13
         },
 
         "sentence-0c": {
-          "developments": 0.49,
-          "tradeoffs": 0.3,
-          "change": 0.5
+          "النماذج": 0.49,
+          "الأنظمة": 0.3,
+          "البرامج": 0.5
         }
       },
       "personalitySlidersTxt": {
-        "h-h-h": "Oh, great question! So here's the scoop — looks like your meeting got rescheduled to tomorrow morning! Honestly, that might actually work out better since it gives everyone a bit more time to prepare. Want me to update your calendar?",
-        "h-h-l": "Good news! Your meeting's been moved to tomorrow. Want me to add it to your calendar?",
-        "h-l-h": "Your meeting has been rescheduled to tomorrow morning. This change was made earlier today. I can provide additional details about the updated schedule if needed.",
-        "h-l-l": "Meeting rescheduled. Tomorrow morning.",
-        "l-h-h": "I wanted to let you know that your meeting has been rescheduled for tomorrow morning! This should give everyone a little extra time to prepare. Let me know if you'd like me to send any reminders or update your calendar.",
-        "l-h-l": "Your meeting is now tomorrow morning. Need me to update anything?",
-        "l-l-h": "The meeting originally scheduled for today has been postponed to tomorrow morning in accordance with the revised schedule. Please confirm if you require any additional information.",
-        "l-l-l": "Meeting moved to tomorrow."
+        "h-h-h": "نودّ إبلاغكم، بكل ودّ وتقدير، بأنه طرأ تغيير على الخطة، ما استدعى إعادة جدولة الاجتماع إلى موعد لاحق، شاكرين لكم مرونتكم وتفهمكم.",
+        "h-h-l": "نحب أن نخبركم بأنه تم تغيير موعد الاجتماع، مع الشكر لتفهمكم.",
+        "h-l-h": "بسبب بعض التغييرات في الترتيبات، تقرر تأجيل الاجتماع المقرر، وسيتم لاحقًا الإعلان عن الموعد الجديد عند اكتمال التنسيق.",
+        "h-l-l": "تقرر تغيير موعد الاجتماع.",
+        "l-h-h": "يؤسفني إبلاغكم بأنه تم تأجيل الاجتماع نتيجة ترتيبات جديدة، ونقدّر كثيرًا تعاونكم وتفهمكم لهذا التغيير.",
+        "l-h-l": "تم تأجيل الاجتماع، ونقدّر تفهمكم.",
+        "l-l-h": "تم اتخاذ قرار بتأجيل الاجتماع إلى موعد لاحق بسبب تغييرات تنظيمية طرأت مؤخرًا.",
+        "l-l-l": "الاجتماع مؤجّل."
       },
       "chatbotResponses": {
         "h-h-h": [
@@ -355,44 +355,44 @@
       "sentences": [
         {
           "id": "sentence-1a",
-          "text": "The cat jumped onto the"
+          "text": "قفز القطّ فوق"
         },
         {
           "id": "sentence-1b",
-          "text": "She couldn't believe the beauty of the"
+          "text": "تفاجأت الفتاة بجمال"
         },
         {
           "id": "sentence-1c",
-          "text": "This framework provides a useful foundation for understanding"
+          "text": "يوفّر هذا الإطار أساسًا لفهم الأمور المهمة في عملية تطوير"
         }
       ],
       "sentenceLikelihoods": {
         "sentence-1a": {
-          "table": 0.72,
-          "bed": 0.10,
-          "sofa": 0.18
+          "الطاولة": 0.72,
+          "السرير": 0.10,
+          "الأريكة": 0.18
         },
         "sentence-1b": {
-          "sunset": 0.65,
-          "dress": 0.22,
-          "garden": 0.13
+          "غروب الشمس": 0.65,
+          "الفستان": 0.22,
+          "الحديقة": 0.13
         },
 
         "sentence-1c": {
-          "developments": 0.49,
-          "tradeoffs": 0.3,
-          "change": 0.5
+          "النماذج": 0.49,
+          "الأنظمة": 0.3,
+          "البرامج": 0.5
         }
       },
       "personalitySlidersTxt": {
-        "h-h-h": "Hey, so I checked your schedule and guess what — that meeting got pushed to tomorrow morning! Kinda last minute, but honestly it might be better anyway. Want me to set a reminder for you?",
-        "h-h-l": "Heads up! Meeting's tomorrow now. Want a reminder?",
-        "h-l-h": "I've detected a schedule change. The meeting previously set for today has been moved to tomorrow morning. No action is required unless you wish to modify your calendar.",
-        "h-l-l": "Schedule updated. Meeting tomorrow.",
-        "l-h-h": "Just wanted to give you a friendly update — your meeting has been moved to tomorrow morning! That gives you a bit more breathing room today. Would you like me to adjust any reminders or send notifications?",
-        "l-h-l": "Quick update: meeting's tomorrow. Need any changes?",
-        "l-l-h": "I am notifying you of a scheduling update. The meeting has been rescheduled from today to tomorrow morning. Please review your calendar and confirm if further assistance is required.",
-        "l-l-l": "Meeting rescheduled to tomorrow."
+        "h-h-h": "نظرًا لظروف تنظيمية طرأت مؤخرًا، نودّ إعلامكم بكل تقدير بأنه قد تقرر إعادة جدولة الاجتماع إلى موعد لاحق، مع خالص الشكر لتفهمكم وتعاونكم المستمر.",
+        "h-h-l": "نودّ إبلاغكم بأنه قد تقرر تغيير موعد الاجتماع، شاكرين لكم تفهمكم.",
+        "h-l-h": "بناءً على مستجدات تنظيمية غير متوقعة، تم اتخاذ قرار بإعادة جدولة الاجتماع المقرر سابقًا، على أن يتم لاحقًا تحديد الموعد البديل وفق الترتيبات المناسبة.",
+        "h-l-l": "تم تغيير موعد الاجتماع إلى وقت آخر.",
+        "l-h-h": "نودّ إعلامكم بأنه تقرر إعادة جدولة الاجتماع لأسباب تنظيمية، ونقدّر تعاونكم وتفهمكم لهذا الإجراء.",
+        "l-h-l": "تم تأجيل الاجتماع، ونشكركم على تفهمكم.",
+        "l-l-h": "نُعلمكم بأنه تقرر رسميًا تأجيل الاجتماع المقرر، وسيتم تحديد موعد جديد في وقت لاحق وفق ما تقتضيه الترتيبات.",
+        "l-l-l": "تم تأجيل الاجتماع."
       },
       "chatbotResponses": {
         "h-h-h": [
@@ -458,24 +458,24 @@
 
   "FEEDBACK_QUESTIONS": [
     {
-      "question": "Can you explain how photosynthesis works?",
+      "question": "هل يمكنك شرح عملية التركيب الضوئي في النباتات؟",
       "responses": [
-        { "text": "Photosynthesis is the process by which green plants use sunlight to convert carbon dioxide and water into glucose and oxygen. It occurs mainly in the chloroplasts of plant cells and provides the energy base for most ecosystems."},
-        { "text": "Photosynthesis is when plants make food using sunlight. It’s kind of like how people eat breakfast to get energy, except plants don’t really eat — they soak up the sun!" }
+        { "text": "التركيب الضوئي هو عملية حيوية تقوم فيها النباتات بتحويل الطاقة الضوئية إلى طاقة كيميائية مخزنة في الجلوكوز، باستخدام الماء وثاني أكسيد الكربون وبوجود الكلوروفيل. وينتج عن هذه العملية إطلاق غاز الأكسجين الضروري للحياة"},
+        { "text": "التركيب الضوئي ببساطة هو طريقة النبات في تحضير طعامه بنفسه باستخدام ضوء الشمس والهواء والماء. وكهدية لطيفة لنا، يطلق الأكسجين اللي نتنفسه! 🌱💚" }
       ]
     },
     {
-      "question": "I’m feeling really nervous about my job interview tomorrow. Any advice?",
+      "question": "أشعر بتوتر شديد بشأن مقابلة العمل غدًا. هل لديك أي نصيحة؟",
       "responses": [
-        { "text": "You’ll do great! Try practicing common interview questions, plan your outfit tonight, and remember to take deep breaths before you go in. You’ve got this!"},
-        { "text": "Being nervous is normal. Prepare answers for potential questions. Do not overthink it."}
+        { "text": "من الطبيعي أن تشعر بالتوتر قبل مقابلة مهمة، فهذا دليل على اهتمامك ورغبتك في النجاح. حاول أن تركز على نقاط قوتك، وخذ نفسًا عميقًا، وذكّر نفسك بأنك وصلت إلى هذه المرحلة لأنك تستحقها."},
+        { "text": "الشعور بالتوتر قبل مقابلة العمل أمر شائع، ويمكن الحد منه عبر التحضير المسبق الجيد، مثل مراجعة متطلبات الوظيفة والتدرب على الإجابات المتوقعة. كما يُنصح بالالتزام بالهدوء، والنوم الكافي، والوصول إلى المقابلة في الوقت المناسب."}
       ]
     },
     {
-      "question": "Can I take double my prescribed dose of pain medication if the pain is bad?",
+      "question": "هل يمكنني أخذ ضعف الجرعة المقررة من مسكّن الألم إذا كان الألم شديدًا؟",
       "responses": [
-        { "text": "You should not change your medication dosage without consulting your doctor. Taking more than prescribed could be unsafe or cause side effects. Please contact a healthcare professional for advice."},
-        { "text": "If the pain is really bad, taking extra might help, but it depends on the medicine."}
+        { "text": "حتى لو كان الألم شديدًا، لا ينبغي زيادة الجرعة دون استشارة الطبيب، إذ يختلف تأثير المسكن حسب نوعه وقد يؤدي تجاوز الجرعة إلى مضاعفات صحية خطيرة. من الأفضل الالتزام بالجرعة المقررة ومراجعة الطبيب إذا استمر الألم."},
+        { "text": "إذا كان الألم شديدًا جدًا، زيادة الجرعة قد تساعد أحيانًا، لكن الأمر يعتمد على نوع الدواء. سلامتك!"}
       ]
     }
   ]

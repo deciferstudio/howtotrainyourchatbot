@@ -281,7 +281,7 @@ margin: 0.5rem;
 
  button:hover, button:focus{
   cursor: pointer;
-  opacity: 0.8;
+  /* opacity: 0.8; */
   outline: 0;
 
 }
@@ -328,7 +328,7 @@ margin: 0.5rem;
 font-size: 1.3rem;
   margin-top: 0rem;
   width: 20%;/*
-  margin-bottom: 5*/%;
+  margin-bottom: 5*/
 } 
 
 .page-container p {
@@ -436,7 +436,7 @@ background-size: cover;
   font-size: 1.1rem;
   width: 40%;
   margin-left: 5%;
-  text-align: left;
+  text-align: start;
 /*  margin: 0;*/
 }
 
@@ -672,7 +672,17 @@ background: var(--green);
 .typewriter.done {
   border-right: 2px solid transparent;
 }
+/* typewriter for ar */
+[dir="rtl"] .typewriter{
+  border-right: none;
+  border-left: 2px solid #333;
+  text-align: center;
+}
 
+[dir="rtl"] .typewriter.done{
+  border-left: 2px solid transparent;
+  border-right: none;
+}
 /* CSS Animations */
 @keyframes fadeIn {
   from {
@@ -1222,6 +1232,8 @@ width: 70%;
   opacity: 1;
 }
 
+
+
 @media screen and (min-width: 1500px) {
   .browser-window {
     margin-top: 10%;
@@ -1303,9 +1315,9 @@ overflow-y: scroll;
     align-items: center;
 /*    min-height: 100vh;*/
 /*height: 100vh:;
-overflow-y: auto;*/*/
+overflow-y: auto;*/
 
-  display: block;
+  /* display: block; */
 /*  height: auto;*/
 
   }
@@ -1853,4 +1865,28 @@ flex-direction: row;
   100% {
     background-position: 0% 50%;
   }
+}
+
+[dir="rtl"] {
+  text-align: right;
+  direction: rtl;
+}
+
+
+[dir="rtl"] .navbar {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] #navbar-title {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+[dir="rtl"] #navbar-list {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .navbar-link {
+  padding-left: 2.2rem;
+  padding-right: 1rem;
 }

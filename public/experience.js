@@ -18,6 +18,9 @@ let userPersonality = {
 
 let activeStepTimer = null;
 
+//right 2 left check
+const rtlLanguages = ['ar'] //we add more if needed.
+const isRTL = rtlLanguages.includes(currentLanguage);
 const customRenderers = {
   // "stage-1": nextButtonForDataSelection,
   "training-step-1": renderTrainingStep1,
@@ -50,7 +53,9 @@ const STAGE_INFO = {
 
 async function loadScript() {
   await loadDataContent();
-  try {
+  const navbar = document.querySelector('.navbar');
+  if (isRTL && navbar) navbar.setAttribute('dir','rtl');
+    try {
     const response = await fetch("public/json/script.json");
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const jsonData = await response.json();
@@ -189,6 +194,7 @@ function renderStep(step) {
   if (step.title) {
     const h2 = document.createElement("h2");
     h2.innerHTML = step.title;
+    //not sure if we wanna do rtl here 
     currentContainer.appendChild(h2);
   }
 
@@ -211,6 +217,7 @@ function renderStep(step) {
         step.body.forEach((p) => {
           const para = document.createElement("p");
           if (p.id) para.id = p.id;
+          // if (isRTL) para.setAttribute('dir', 'rtl');
           //adding extra classes for styling, this is for classes that are specific to the element, such as the paragraph,
           // they exist in an array in the element key-value pair in the json. eg: {"text": "llms xyz", "class":["fade-in","another-class"]}
           if (p.class) {
@@ -296,6 +303,8 @@ function renderStep(step) {
       if (step.interactiveBody) {
         const interactiveBodyDiv = document.createElement("div");
         interactiveBodyDiv.classList.add("interactive-body");
+         if (isRTL) interactiveBodyDiv.setAttribute('dir', 'rtl');
+         interactiveBodyDiv.style.setProperty("text-align", "center");
 
         //again any additional classes for specific p elements or so
         if (step.interactiveBodyClass) {
@@ -310,6 +319,7 @@ function renderStep(step) {
         step.interactiveBody.forEach((i) => {
           const para = document.createElement("p");
           if (i.id) para.id = i.id;
+          if (isRTL) para.setAttribute('dir', 'rtl');
           if (i.class) {
             i.class.forEach((cls) => i.classList.add(cls));
           }
@@ -346,6 +356,7 @@ function renderStep(step) {
           btn.textContent = b.text;
           btn.type = "button";
           if (b.id) btn.id = b.id;
+          //  if (isRTL) btn.setAttribute('dir', 'rtl'); //tbh idk if buttons need this bas lets see
           if (b.class) {
             b.class.forEach((cls) => btn.classList.add(cls));
           }
@@ -439,6 +450,8 @@ function renderTrainingStep1(
 
   const selectDropDown = document.createElement("select");
   selectDropDown.id = "training-1-select";
+  // if (isRTL) selectDropDown.setAttribute('dir', 'rtl');
+  selectDropDown.style.setProperty("text-align", "center");
 
   const dataType = DATA_TYPES[userDataSelection];
   const sentences = dataType.sentences;
@@ -469,6 +482,7 @@ function renderTrainingStep1(
       const label = document.createElement("span");
       label.classList.add("word-label");
       label.textContent = word;
+      if (isRTL) label.setAttribute('dir', 'rtl');
 
       const bar = document.createElement("div");
       bar.classList.add("likelihood-bar");
@@ -502,6 +516,14 @@ function renderFineTuningStep2(step) {
   const nextBtn = document.getElementById("finetuning-next");
   const roundIndicator = document.getElementById("finetuning-round-indicator");
   const errorMsg = document.getElementById("finetuning-error");
+
+   if (isRTL) {
+    finetuningQuestion.setAttribute('dir', 'rtl');
+    finetuningPrompt.setAttribute('dir', 'rtl');
+    resp1.setAttribute('dir', 'rtl');
+    resp2.setAttribute('dir', 'rtl');
+    // nextBtn.setAttribute('dir', 'rtl');
+  }
 
   let currentRound = 0;
   let selectedResponse = null;
@@ -571,6 +593,7 @@ function renderFineTuningStep4(step) {
     const sliderLabel = document.getElementById(`slider-label-${i + 1}`);
     if (sliderLabel) {
       sliderLabel.textContent = label;
+      if (isRTL) sliderLabel.setAttribute('dir', 'rtl'); //also check if this rtl is needed
     }
   });
 
@@ -624,9 +647,14 @@ function renderFineTuningStep4(step) {
   );
   const output = document.getElementById("finetuning-4-generated-text");
 
+  if (isRTL) {
+    // generateBtn.setAttribute('dir', 'rtl');
+    output.setAttribute('dir', 'rtl');
+    output.style.setProperty('text-align', 'right');
+  }
 
   outputContainer.classList.add("visible");
-  output.textContent = "Drag the bars above and click 'Generate Text' to view sample outputs. When you decide on your final selection for your chatbot's personality, click 'Next'.";
+  output.textContent = step.placeholderText;
   output.classList.add("placeholder-text");
 
 
@@ -652,6 +680,7 @@ function renderFineTuningStep4(step) {
       nextBtn.innerText = step.nextButton[0]["text"];
       nextBtn.classList.add(step.nextButton[0]["class"]);
       nextBtn.classList.add("finetuning-stage-btn"); 
+      //would add rtl here if needed
       finetuningStep4.appendChild(nextBtn);
       nextBtnExists = true;
       nextBtn.addEventListener("click", () => {
@@ -732,6 +761,7 @@ function renderStage3Chatbot(step) {
   chatbotContainer.style.display = "flex";
 
   const introMsg = document.getElementById("chatbot-intro-text");
+  if (isRTL) introMsg.setAttribute('dir', 'rtl');
   chatWindow.appendChild(introMsg);
 
   typewriterEffect(introMsg, step.chatbotIntro.text, step.chatbotIntro.speed);
@@ -747,6 +777,7 @@ function renderStage3Chatbot(step) {
   // load initial questions
   buttons.forEach((button, index) => {
     button.textContent = step.chatbotQuestions[index].question;
+    if (isRTL) button.setAttribute('dir','rtl');
   });
 
   // add click handlers
@@ -774,11 +805,13 @@ function renderStage3Chatbot(step) {
       userMsg.classList.add("stage3-chatbot-user-msg");
       userMsg.classList.add("fade-in");
       userMsg.textContent = qa.question;
+      if (isRTL) userMsg.setAttribute('dir', 'rtl');
       chatWindow.appendChild(userMsg);
 
       // add bot message
       const botMsg = document.createElement("div");
       botMsg.classList.add("stage3-chatbot-answer");
+      if (isRTL) botMsg.setAttribute('dir', 'rtl');
       chatWindow.appendChild(botMsg);
 
       const answer = getChatbotResponses(
@@ -842,6 +875,7 @@ function renderStage3Chatbot(step) {
   if (step.nextButton) {
     const nextBtn = document.getElementById("stage3-chatbot-next");
     nextBtn.textContent = step.nextButton[0]["text"];
+    //will add rtl here if needed..
     nextBtn.addEventListener("click", () => {
       console.log("i'm detecting the next click");
       chatbotContainer.style.display = "none";

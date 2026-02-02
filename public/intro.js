@@ -2,6 +2,8 @@
 
 async function loadIntro() {
   let currentLanguage = localStorage.getItem('language') || 'en';
+
+
   try {
     const response = await fetch("public/json/script.json");
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
@@ -10,6 +12,10 @@ async function loadIntro() {
     const langData = jsonData[currentLanguage];
     const UIData = langData.ui; 
     
+    const rtlLanguages = ['ar']; //do we have other rtl languages?
+    const isRTL = rtlLanguages.includes(currentLanguage);
+    const navbar = document.querySelector('.navbar');
+    if (isRTL) navbar.setAttribute('dir', 'rtl');
     document.querySelector("#navbar-title a").textContent = UIData.navbar.title;
     document.querySelector("#navbar-resources a").textContent = UIData.navbar.resources;
     document.querySelector("#navbar-about a").textContent = UIData.navbar.about;
@@ -40,8 +46,9 @@ async function loadIntro() {
     intro_img.className = "intro-img";
 
     const intro_para = document.createElement("p");
-    intro_para.textContent = introStep.body[1].text;
+    intro_para.innerHTML = introStep.body[1].text;
     intro_para.className = introStep.body[1].class;
+    if (isRTL) intro_para.setAttribute('dir', 'rtl');
 
     intro_body.appendChild(intro_img);
     intro_body.appendChild(intro_para);

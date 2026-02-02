@@ -417,6 +417,7 @@
       "trigger": "finetuning-step-4",
       "order": ["custom"],
       "sliderLabels": ["Random", "Friendly", "Wordy"],
+      "placeholderText": "Drag the bars above and click 'Generate Text' to view sample outputs. When you decide on your final selection for your chatbot's personality, click 'Next'.",
       "generateButtonText": "Generate Text",
       "nextButton": [
         { "text": "Next", "trigger": "stage-3-loader", "class": ["stage-btn"] }
@@ -499,7 +500,7 @@
     "_comment": "to separate static elements from script",
 
     "navbar": {
-      "title": "كيف تدرب المتحدث الآلي الخاص بك",
+      "title": "كيف تدرب بوت الدردشة الخاص بك",
       "resources": "الموارد",
       "about": "عن التجربة",
       "language": "AR"
@@ -513,16 +514,16 @@
       "additionalClasses": ["main-container-crazy", "test"],
       "body": [
         {
-          "text": "أصبحت روبوتات الدردشة الآلية شائعة بشكل متزايد... ",
+          "text": "أصبحت بوتات الدردشة المعتمدة على الذكاء الاصطناعي شائعة بشكل متزايد. ما مدى معرفتك بكيفية عملها؟ ",
           "class": "intro-header"
         
         },
         {
-          "text": "In this brief playable explainer, go through the main stages of building a conversational agent (like ChatGPT, Claude, or DeepSeek). From choosing what type of data it's trained on to what tone it responds in, make the kinds of decisions that go into the development of these technologies. Learn what labour and resources are required behind the scenes, and what capabilities and limitations they introduce.",
+          "text":" دون أي معرفة مسبقة، استكشفوا عملية تطوير بوتات الدردشة المدعومة بالذكاء الاصطناعي (مثل ChatGPT، أو Claude، أو DeepSeek). <br> من اختيار بيانات التدريب، إلى نبرة وأسلوب رد، تعرّفوا على كيفية عمل هذه التكنولوجيا وكيف يمكن لاختياراتكم أن تؤثر على نتائجها. اكتشفوا ما يتطلب الأمر خلف الكواليس من جهد عمّالي والموارد المطلوبة، وما تفرضه هذه الخيارات من إمكانيات وحدود ومخاطر. ",
           "class": ["intro-para"]
         }
       ],
-      "buttons": [{ "text": "START HERE", "id": "start-btn", "trigger": "start" }]
+      "buttons": [{ "text": "ابدأ", "id": "start-btn", "trigger": "start" }]
     },
 
     {
@@ -531,17 +532,17 @@
       "order": ["body", "interactiveBody", "buttons"],
       "body": [
         {
-          "text": "Complex <b>chatbots</b>, or \"<b>conversational agents</b>\" such as ChatGPT, Claude, or DeepSeek, are often powered by <b>large language models</b> (LLMs).",
+          "text": "غالبًا ما يتم تشغيل <b> بوتات الدردشة المعقدة </b> أو <b>\"وكلاء المحادثة\"</b> بواسطة  <b> النماذج اللغوية الكبيرة</b>  ",
           "class": ["fade-in"]
         },
-        {
-          "text": "A <i>\"language model\"</i> is a piece of software that is trained to predict language sequences and generate text responses. A mobile keyboard's autocomplete function, like the example below, is a language model.",
+        { 
+          "text": "<b><i>النموذج اللغوي</i></b> هو برنامج تم تدريبه على التنبؤ بتسلسلات اللغة وتوليد الردود النصية. الإكمال التلقائي في لوحة مفاتيح الهاتف المحمول، كما في المثال أدناه، يعتبر نموذجًا لغويًا",
           "class": ["fade-in-delayed"]
         }
       ],
       "interactiveBody": [
         {
-          "text": "Autocomplete shows you what word or phrase is most statistically likely to be used ________",
+          "text": "الإكمال التلقائي يتوقع الكلمة الأكثر احتمالًا أن تأتي  ___________",
           "animation": "typewriter",
           "speed": 50,
           "delay": 900
@@ -550,22 +551,22 @@
       "interactiveBodyClass": ["delayed-text"],
       "buttons": [
         {
-          "text": "next",
+          "text": "تاليًا",
           "trigger": "choice-next",
           "class": ["button-stagger-1"],
-          "delay": "7.0s"
+          "delay": "5.15s"
         },
         {
-          "text": "now",
+          "text": "الآن",
           "trigger": "choice-now",
           "class": ["button-stagger-2"],
-          "delay": "7.0s"
+          "delay": "5.15s"
         },
         {
-          "text": "correctly",
+          "text": "بشكل صحيح",
           "trigger": "choice-correctly",
           "class": ["button-stagger-3"],
-          "delay": "7.0s"
+          "delay": "5.15s"
         }
       ],
       "__comment": "so triggers can also point to an indexed step"
@@ -576,18 +577,18 @@
       "order": ["body", "interactiveBody", "buttons"],
       "body": [
         {
-          "text": "Complex chatbots, or \"conversational agents\" such as ChatGPT, Claude, or DeepSeek, are often powered by large language models (LLMs). "
+          "text": "غالبًا ما يتم تشغيل <b> بوتات الدردشة المعقدة </b> أو <b>\"وكلاء المحادثة\"</b> بواسطة  <b> النماذج اللغوية الكبيرة</b> "
         },
         {
-          "text": "A \"<i>language model</i>\" is a piece of software that is trained to predict language sequences and generate text responses. A mobile keyboard's autocomplete function, like the example below, is a language model."
+          "text": "<b><i>النموذج اللغوي</i></b> هو برنامج تم تدريبه على التنبؤ بتسلسلات اللغة وتوليد الردود النصية. الإكمال التلقائي في لوحة مفاتيح الهاتف المحمول، كما في المثال أدناه، يعتبر نموذجًا لغويًا."
         }
       ],
       "interactiveBody": [
         {
-          "text": "Autocomplete shows you what word or phrase is most statistically likely to be used ________"
+          "text": "الإكمال التلقائي يتوقع الكلمة الأكثر احتمالًا أن تأتي "
         },
         {
-          "text": "next.",
+          "text": "تاليًا.",
           "animation": "typewriter",
           "speed": 80,
           "delay": 400
@@ -596,7 +597,7 @@
       "interactiveBodyClass": ["continuous-text", "delayed-text"],
       "buttons": [
         {
-          "text": "STAGE 1: Training",
+          "text": "المرحلة الأولى: التدريب",
           "class": ["stage-btn", "fade-in-delayed"],
           "trigger": "stage-1-loader"
         }
@@ -608,18 +609,18 @@
       "order": ["body", "interactiveBody", "buttons"],
       "body": [
         {
-          "text": "Complex chatbots, or \"conversational agents\" such as ChatGPT, Claude, or DeepSeek, are often powered by large language models (LLMs).  "
+          "text": "غالبًا ما يتم تشغيل <b> بوتات الدردشة المعقدة </b> أو <b>\"وكلاء المحادثة\"</b> بواسطة  <b> النماذج اللغوية الكبيرة</b> "
         },
         {
-          "text": "Autocomplete shows you what word or phrase is most statistically likely to be used ________"
+          "text": "<b><i>النموذج اللغوي</i></b> هو برنامج تم تدريبه على التنبؤ بتسلسلات اللغة وتوليد الردود النصية. الإكمال التلقائي في لوحة مفاتيح الهاتف المحمول، كما في المثال أدناه، يعتبر نموذجًا لغويًا"
         }
       ],
       "interactiveBody": [
         {
-          "text": "Autocomplete shows you what word or phrase is most statistically likely to be used"
+          "text": "الإكمال التلقائي يتوقع الكلمة الأكثر احتمالًا أن تأتي "
         },
         {
-          "text": "now.",
+          "text": "الآن",
           "animation": "typewriter",
           "speed": 80,
           "delay": 400
@@ -628,7 +629,7 @@
       "interactiveBodyClass": ["continuous-text", "delayed-text"],
       "buttons": [
         {
-          "text": "STAGE 1: TRAINING",
+          "text": "المرحلة الأولى: التدريب",
           "class": ["stage-btn", "fade-in-delayed"],
           "trigger": "stage-1-loader"
         }
@@ -639,18 +640,18 @@
       "order": ["body", "interactiveBody", "buttons"],
       "body": [
         {
-          "text": "Complex chatbots, or \"conversational agents\" such as ChatGPT, Claude, or DeepSeek, are often powered by large language models (LLMs).  "
+          "text": "غالبًا ما يتم تشغيل <b> بوتات الدردشة المعقدة </b> أو <b>\"وكلاء المحادثة\"</b> بواسطة  <b> النماذج اللغوية الكبيرة</b> "
         },
         {
-          "text": "A <i>\"language model\"</i>  is a piece of software that is trained to predict language sequences and generate text responses. A mobile keyboard's autocomplete function, like the example below, is a language model."
+          "text": "<b><i>النموذج اللغوي</i></b> هو برنامج تم تدريبه على التنبؤ بتسلسلات اللغة وتوليد الردود النصية. الإكمال التلقائي في لوحة مفاتيح الهاتف المحمول، كما في المثال أدناه، يعتبر نموذجًا لغويًا"
         }
       ],
       "interactiveBody": [
         {
-          "text": "Autocomplete shows you what word or phrase is most statistically likely to be used"
+          "text": "الإكمال التلقائي يتوقع الكلمة الأكثر احتمالًا أن تأتي "
         },
         {
-          "text": "correctly",
+          "text": "بشكل صحيح.",
           "animation": "typewriter",
           "speed": 80,
           "delay": 400
@@ -660,47 +661,17 @@
       "interactiveBodyClass": ["continuous-text", "delayed-text"],
       "buttons": [
         {
-          "text": "STAGE 1: TRAINING",
+          "text": "المرحلة الأولى: التدريب",
           "class": ["stage-btn", "fade-in-delayed"],
           "trigger": "stage-1-loader"
         }
       ]
     },
 
-    {
-      "trigger": "choice-!",
-      "order": ["body", "interactiveBody", "buttons"],
-      "body": [
-        {
-          "text": "Complex chatbots, or \"conversational agents\" such as ChatGPT, Claude, or DeepSeek, are often powered by large language models (LLMs). "
-        },
-        {
-          "text": "A <i>\"language model\"</i>  is a piece of software that is trained to predict language sequences and generate text responses. A mobile keyboard's autocomplete function, like the example below, is a language model."
-        }
-      ],
-      "interactiveBody": [
-        {
-          "text": "Autocomplete shows you what word or phrase is most statistically likely to be used"        },
-        {
-          "text": "!",
-          "animation": "typewriter",
-          "speed": 80,
-          "delay": 400
-        }
-      ],
-      "interactiveBodyClass": ["continuous-text", "delayed-text"],
-      "buttons": [
-        {
-          "text": "STAGE 1: Training",
-          "class": ["stage-btn", "fade-in-delayed"],
-          "trigger": "stage-1-loader"
-        }
-      ]
-    },
 
     {
       "trigger": "stage-1-loader",
-      "body": [{ "text": "STAGE 1: TRAINING", "class": ["stage-1-transition"] }],
+      "body": [{ "text": "<b> المرحلة الأولى: التدريب</b>", "class": ["stage-1-transition"] }],
       "timer": { "duration": 4000, "trigger": "stage-1" }
     },
     {
@@ -709,43 +680,43 @@
       "order": ["body", "buttons", "interactiveBody"],
       "body": [
         {
-          "text": "To build a language model, you need <b>training data</b>, or <b>large</b> bodies of text a model finds patterns in, and produces text based on. The larger the data, the more complex the model's ability to produce appropriate text."
+          "text": "لبناء نموذج لغوي، تحتاج إلى  <b> بيانات </b> أو مجموعة من<b> النصوص الكبيرة </b> لتدريب النموذج على إيجاد الأنماط اللغوية وكتابة النصوص بالاستناد إليها. كلما زاد حجم البيانات كلما زادت قدرة النموذج على إنتاج نصوص معقدة ومناسبة"
         },
         {
-          "text": "The internet is a large source of text already written by other people, like forums, books, or research papers. To start building your chatbot, select a data source below:"
+          "text": "يعد محتوى الانترنت مصدرًا كبيرًا لنصوص كتبها أشخاص آخرون، مثل المنتديات أو الكتب أو الأوراق البحثية. لبدء بناء بوت الدردشة الخاص بك، حدد مصدر البيانات أدناه"
         }
       ],
       "buttons": [
         {
-          "text": "Academic papers",
+          "text": "الأوراق البحثية",
           "trigger": "choice-data",
           "class": ["button-choice"],
           "dataValue": 0,
           "delay": "1.0s"
         },
         {
-          "text": "News articles",
+          "text": "المقالات الإخبارية",
           "trigger": "choice-data",
           "class": ["button-choice"],
           "dataValue": 0,
           "delay": "1.0s"
         },
         {
-          "text": "Reddit posts",
+          "text": "محتوى مواقع التواصل الاجتماعي",
           "trigger": "choice-data",
           "class": ["button-choice"],
           "dataValue": 1,
           "delay": "1.0s"
         },
         {
-          "text": "Personal blogs",
+          "text": "المدونات الشخصية",
           "trigger": "choice-data",
           "class": ["button-choice"],
           "dataValue": 1,
           "delay": "1.0s"
         },
         {
-          "text": "Next",
+          "text": "التالي",
           "trigger": "data-training-loader",
           "class": ["stage-btn"],
           "delay": "2.0s",
@@ -759,10 +730,10 @@
       "order": ["body", "buttons", "interactiveBody"],
       "body": [
         {
-          "text": "The first thing you’ll need to build a language model is training data, or <b>large</b> bodies of text that a language model looks for patterns in, and produces text based on. The larger the data, the more complex the model's ability to produce appropriate text."
+          "text": "لبناء نموذج لغوي، تحتاج إلى  <b> بيانات </b> أو مجموعة من<b> النصوص الكبيرة </b> لتدريب النموذج على إيجاد الأنماط اللغوية وكتابة النصوص بالاستناد إليها. كلما زاد حجم البيانات كلما زادت قدرة النموذج على إنتاج نصوص معقدة ومناسبة"
         },
         {
-          "text": "The internet provides a large source of text data, like social media sites, blogs, digital books, or research papers. To start building your chatbot, select a data source below:"
+          "text": "يعد محتوى الانترنت مصدرًا كبيرًا لنصوص كتبها أشخاص آخرون، مثل المنتديات أو الكتب أو الأوراق البحثية. لبدء بناء بوت الدردشة الخاص بك، حدد مصدر البيانات أدناه"
         }
       ],
       "buttons": [
@@ -778,29 +749,29 @@
       "trigger": "data-training-loader",
       "body": [
         {
-          "text": "Going from massive data to a working model requires extensive power and resources, often at computing hubs called data centers.",
+          "text": "يتطلب الانتقال من قواعد البيانات الضخمة إلى نموذج لغوي فعّال قدرًا كبيرًا من الطاقة والموارد <br> يحصل هذا غالبًا في مراكز حوسبة تُسمى مراكز البيانات ",
           "class": ["transition-title"]
         }
       ],
-      "timer": { "duration": 4700, "trigger": "data-prob" }
+      "timer": { "duration": 6500, "trigger": "data-prob" }
     },
     {
       "trigger": "data-prob",
-      "body": [{ "text": "This process is expensive and environmentally costly, using up large amounts of energy.", "class": ["transition-title"]}],
-      "timer": { "duration": 4700, "trigger": "training-step-1" }
+      "body": [{ "text": "هذه عملية مكلفة ماديًا ولها تبعات بيئية كثيرة نظرًا لاستهلاكها كميات كبيرة من الطاقة", "class": ["transition-title"]}],
+      "timer": { "duration": 5500, "trigger": "training-step-1" }
     },
     {
       "trigger": "training-step-1",
       "order": ["body", "custom", "buttons"],
       "body": [
         {
-          "text": "The model can estimate the <b>probability</b> of a character, word, or sequence of words occurring in text based on how commonly it occurred in your <b>data source</b>, and generates new text accordingly."
+          "text": "يمكن للنموذج تقدير<b> احتمال </b> ظهور حرف أو كلمة أو تسلسل من الكلمات في نص معين، بناءً على مدى تكرار ظهورها في  <b> مصدر البيانات </b> المستخدم في التدريب، فيولِّد نصًا جديدًا وفقًا لهذه الأنماط والاحتمالات"
         },
-        { "text": "Pick a sentence from the examples below, and see what word is most likely to come next:" }
+        { "text": "اختر جملة من القائمة أدناه، وشاهد الكلمة الأكثر ترجيحًا للظهور بعدها" }
       ],
       "buttons": [
         {
-          "text": "Next",
+          "text": "التالي",
           "trigger": "training-step-2"
         }
       ],
@@ -817,21 +788,21 @@
       "trigger": "training-step-2",
       "body": [
         {
-          "text": "By acquiring information and learning from text patterns in the data, a language model can seem to <b>ramble about a topic</b>."
+          "text": "من خلال اكتساب المعلومات والتعلم من الأنماط النصية في مصادر البيانات، قد يبدأ النموذج اللغوي <b> بالحديث بشكل عشوائي وغير مرتب عن موضوع ما </b>"
         },
         {
-          "text": "For example, if you ask: <span class='text-orange'>What is your first name?</span>"
+          "text": "على سبيل المثال، إذا سألت النموذج: <span class='text-orange'> ما اسمك الأول؟ </span>"
         },
         {
-          "text": "Based on what typically occurs next in empty online forms, it may respond with: <span class='text-red'>What is your last name?</span>"
+          "text": "قد يجيب النموذج:<span class='text-red'> ما اسم العائلة؟  </span> بناءً على ما يظهر عادةً في الاستمارات الإلكترونية"
         },
         {
-          "text": "This is where <b>post-training</b> and <b>fine-tuning</b> come in, to turn the model from sounding like a <b>random text generator</b> to a realistic chatbot."
+          "text": "هنا يأتي دور المراحل القادمة كمرحلة  <b> ما بعد التدريب </b> ومرحلة  <b> الضبط الدقيق</b>، لتحويل النموذج من مجرد  <b> مولد نصوص عشوائي </b> إلى بوت دردشة واقعي ومقنع"
         }
       ],
       "buttons": [
         {
-          "text": "STAGE 2: Post-Training",
+          "text": "المرحلة الثانية: ما بعد التدريب",
           "trigger": "finetuning-loader",
           "class": ["stage-btn"]
         }
@@ -839,7 +810,7 @@
     },
     {
       "trigger": "finetuning-loader",
-      "body": [{ "text": "STAGE 2: POST-TRAINING", "class": ["stage-2-transition"] }],
+      "body": [{ "text": "المرحلة الثانية: ما بعد التدريب", "class": ["stage-2-transition"] }],
       "timer": { "duration": 4000, "trigger": "finetuning-step-1" }
     },
 
@@ -847,13 +818,13 @@
       "trigger": "finetuning-step-1",
       "body": [
         {
-          "text": "This process includes high-quality instructions and human feedback, like yours."
+          "text": "تتضمن هذه العملية تعليمات واضحة، وتعليقات وتغذية راجعة من مستخدمين بشريين، كأمثالك"
         },
         {
-          "text": "You will see a question with two answer options generated by the model, and pick what you think is <strong>the better answer</strong>. Real chatbots similarly <strong>learn patterns</strong> from thousands of choices <strong>made by humans</strong>, often <b>workers hired for this task</b>. What counts as 'better' depends on who's deciding."
+          "text": "في الشاشة التالية، ستظهر لك أسئلة مع خيارين للإجابة تم إنشاؤهما بواسطة النموذج اللغوي <b><br> اختر الإجابة التي تراها الأنسب <br></b>  <br> هكذا يتم تدريب بوتات الدردشة الحقيقية على<b> استنتاج الأنماط اللغوية </b> استنادًا إلى آلاف الاختيارات التي  <b> يتخذها المستخدمون البشر. </b> غالبًا ما يكون هؤلاء المستخدمون <b> عمالًا يتم توظيفهم لهذه المهمة. </b>  ما يعتبره النموذج الإجابة الأفضل يعتمد على من يتخذ هذه القرارات"
         }
       ],
-      "buttons": [{ "text": "Give Feedback", "id": "feedback-btn", "trigger": "finetuning-step-2" }]
+      "buttons": [{ "text": "قدِّم التغذية الراجعة", "id": "feedback-btn", "trigger": "finetuning-step-2" }]
     },
     {
       "trigger": "finetuning-step-2",
@@ -861,7 +832,7 @@
       "finetuningRounds": [
         {
           "question": "this is a sample question lorem ipsum?",
-          "prompt": "Please click on the response you prefer:",
+          "prompt": "يرجى النقر على الرد الذي تفضله",
           "responses": [
             "Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus.",
             "Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus."
@@ -869,7 +840,7 @@
         },
         {
           "question": "this is a sample question lorem ipsum?",
-          "prompt": "Please click on the response you prefer:",
+          "prompt": "يرجى النقر على الرد الذي تفضله",
           "responses": [
             "Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus.",
             "Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus."
@@ -877,29 +848,29 @@
         },
         {
           "question": "this is a sample question lorem ipsum?",
-          "prompt": "Please click on the response you prefer:",
+          "prompt": "يرجى النقر على الرد الذي تفضله",
           "responses": [
             "Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus.",
             "Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus."
           ]
         }
       ],
-      "nextButton": "Next",
+      "nextButton": "التالي",
       "finalTrigger": "finetuning-step-3"
     },
     {
       "trigger": "finetuning-step-3",
       "body": [
         {
-          "text": "You're almost done building your chatbot! In this final step, craft its \"personality\" by deciding how it responds to questions—more like a friend, a teacher, or a boss. But remember, regardless of how friendly or relatable it sounds—which can make it easy to forget you're talking to a machine—the underlying technology will still do the same thing:"
+          "text": "لقد أوشكت على الانتهاء من بناء بوت الدردشة الخاص بك! في الخطوة الأخيرة، قم بصياغة \"شخصية\" هذا البوت <br> حدد كيفية استجابته على الأسئلة. هل سيكون أشبه بصديق أم معلم أم مدير؟ <br> تذكّر أنه مهما بدا البوت ودودًا أو مقنعًا فإن تقنية تشغيله هي ذاتها "
         },
         {
-          "text": "<span style='color:'><strong>Make statistical predictions about what text should come next.</strong>"
+          "text": "<b>توقع تسلسل الكلمات والكلمات المحتملة في النص بطريقة إحصائية </b>"
         }
       ],
       "buttons": [
         {
-          "text": "Next",
+          "text": "التالي",
           "trigger": "finetuning-step-4"
         }
       ]
@@ -907,10 +878,11 @@
     {
       "trigger": "finetuning-step-4",
       "order": ["custom"],
-      "sliderLabels": ["Random", "Friendly", "Wordy"],
-      "generateButtonText": "Generate Text",
+      "sliderLabels": ["التنوّع الأسلوبي", "الودّية", "التفصيل"],
+      "placeholderText": "قم بتحريك الأشرطة أعلاه ثم اضغط علي 'توليد النص' لعرض مثال من المخرجات. عندما تحدد اختياراتك للشخصية النهائية لبوت الدردشة الخاص بك، انتقل إلى الشاشة القادمة بالنقر على 'التالي'",
+      "generateButtonText": "توليد النص",
       "nextButton": [
-        { "text": "Next", "trigger": "stage-3-loader", "class": ["stage-btn"] }
+        { "text": "التالي", "trigger": "stage-3-loader", "class": ["stage-btn"] }
       ]
     },
     {
@@ -1398,6 +1370,7 @@
       "trigger": "finetuning-step-4",
       "order": ["custom"],
       "sliderLabels": ["Random", "Friendly", "Wordy"],
+      "placeholderText": "Drag the bars above and click 'Generate Text' to view sample outputs. When you decide on your final selection for your chatbot's personality, click 'Next'.",
       "generateButtonText": "Generate Text",
       "nextButton": [
         { "text": "Next", "trigger": "stage-3-loader", "class": ["stage-btn"] }
@@ -1892,6 +1865,7 @@
       "trigger": "finetuning-step-4",
       "order": ["custom"],
       "sliderLabels": ["Random", "Friendly", "Wordy"],
+      "placeholderText": "Drag the bars above and click 'Generate Text' to view sample outputs. When you decide on your final selection for your chatbot's personality, click 'Next'.",
       "generateButtonText": "Generate Text",
       "nextButton": [
         { "text": "Next", "trigger": "stage-3-loader", "class": ["stage-btn"] }
@@ -2384,6 +2358,7 @@
       "trigger": "finetuning-step-4",
       "order": ["custom"],
       "sliderLabels": ["Random", "Friendly", "Wordy"],
+      "placeholderText": "Drag the bars above and click 'Generate Text' to view sample outputs. When you decide on your final selection for your chatbot's personality, click 'Next'.",
       "generateButtonText": "Generate Text",
       "nextButton": [
         { "text": "Next", "trigger": "stage-3-loader", "class": ["stage-btn"] }
