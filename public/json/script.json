@@ -862,10 +862,10 @@
       "trigger": "finetuning-step-3",
       "body": [
         {
-          "text": "لقد أوشكت على الانتهاء من بناء بوت الدردشة الخاص بك! في الخطوة الأخيرة، قم بصياغة \"شخصية\" هذا البوت <br> حدد كيفية استجابته على الأسئلة. هل سيكون أشبه بصديق أم معلم أم مدير؟ <br> تذكّر أنه مهما بدا البوت ودودًا أو مقنعًا فإن تقنية تشغيله هي ذاتها "
+          "text": "لقد أوشكت على الانتهاء من بناء بوت الدردشة الخاص بك! في الخطوة الأخيرة، قم بصياغة \"شخصية\" هذا البوت <br> حدد كيفية استجابته على الأسئلة. هل سيكون أشبه بصديق أم معلم أم مدير؟ <br> تذكّر أنه مهما بدا البوت ودودًا أو مقنعًا فإن تقنية تشغيله واحدة "
         },
         {
-          "text": "<b>توقع تسلسل الكلمات والكلمات المحتملة في النص بطريقة إحصائية </b>"
+          "text": "<b>إذ تعتمد في جوهرها على توقّع تسلسل الكلمات والكلمات المحتملة في النص بطريقة إحصائية </b>"
         }
       ],
       "buttons": [
@@ -887,20 +887,20 @@
     },
     {
       "trigger": "stage-3-loader",
-      "body": [{ "text": "Stage 3: Deployment", "class": ["stage-3-transition"]}],
+      "body": [{ "text": "المرحلة الثالثة: النشر", "class": ["stage-3-transition"]}],
       "timer": { "duration": 7000, "trigger": "stage-3-intro" }
     },
      {
       "trigger": "stage-3-intro",
       "body": [
         {
-          "text": "Time to try out your chatbot! It will generate text based on your previous decisions, like your choice of training data or level of friendliness."
+          "text": "حان وقت تجربة بوت الدردشة الخاص بك!  سيقوم البوت بتوليد النصوص بناءً على قراراتك السابقة، مثل اختيارك لبيانات التدريب أو مستوى الودّية"
         },
         {
-          "text": "Now that you know how this technology is built, <b>reflect on what kinds of questions are appropriate to ask a language model.</b> Select as many questions as you want, then click 'Next'."
+          "text": "بعد أن تعرفت على كيفية بناء هذه التكنولوجيا، <b> فكّر في نوعية الأسئلة المناسب طرحها على النموذج اللغوي. </b> اختر أي عدد تريده من الأسئلة ثم انقر على 'التالي' لإنهاء المحادثة"
         }
       ],
-      "buttons": [{"text": "Next", "class": ["stage-btn"], "id": ["try-btn"], "trigger": "stage-3A-chatbot"}]
+      "buttons": [{"text": "التالي", "class": ["stage-btn"], "id": ["try-btn"], "trigger": "stage-3A-chatbot"}]
     },
     {
       "trigger": "stage-3A-chatbot",
