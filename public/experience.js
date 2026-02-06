@@ -777,7 +777,7 @@ function renderStage3Chatbot(step) {
   // load initial questions
   buttons.forEach((button, index) => {
     button.textContent = step.chatbotQuestions[index].question;
-    if (isRTL) button.setAttribute('dir','rtl');
+    // if (isRTL) button.setAttribute('dir','rtl');
   });
 
   // add click handlers
@@ -889,6 +889,11 @@ function typewriterEffect(element, text, speed = 50, callback) {
   element.textContent = "";
   element.classList.add("typewriter");
   element.style.display = "inline";
+
+    if (isRTL) {
+    element.setAttribute('dir', 'rtl');
+    element.style.direction = 'rtl';  
+  }
 
   let i = 0;
   const timer = setInterval(() => {

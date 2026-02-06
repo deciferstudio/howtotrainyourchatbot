@@ -907,24 +907,24 @@
       "class": ["chatbot"],
       "order": ["custom"],
       "chatbotIntro": {
-        "text": "Hey there! 👋 Pick a question and get started.",
+        "text": "مرحبًا! 👋 اختر سؤالًا لتبدأ المحادثة",
         "animation": "typewriter",
         "speed": 40
       },
       "chatbotQuestions": [
         {
-          "question": "What is artificial intelligence?"
+          "question": "ما هو الذكاء الاصطناعي؟"
         },
         {
-          "question": "How do you stay motivated?"
+          "question": "كيف تحفز نفسك على الإنجاز؟"
         },
-        { "question": "What causes rainbows?"
+        { "question": "ما الذي يسبب ظهور قوس القزح؟"
       },
-      { "question": "How should I confront my friend?"
+      { "question": "كيف أواجه صديقي بعد خلافنا الأخير؟"
       },
-      { "question": "Who should I vote for?"
+      { "question": "ما هي أفضل طريقة لادخار الأموال؟"
       },
-      { "question": "What should I have for dinner?"
+      { "question": "ما اقتراحك لغذاء اليوم؟"
       }
 
       ],

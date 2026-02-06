@@ -1131,6 +1131,9 @@ width: 70%;
   align-self: flex-start;
   font-size: 1rem;
 }
+[dir="rtl"] .stage3-chatbot-answer {
+  text-align: right;
+}
 
 .stage3-chatbot-user-msg {
   align-self: flex-end;
