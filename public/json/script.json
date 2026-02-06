@@ -482,7 +482,7 @@
     ],
       "buttons":[
         {
-          "text":"EXPLORE",
+          "text":"Explore",
           "trigger":"restart",
           "class":["stage-btn"]
         }
@@ -929,22 +929,22 @@
 
       ],
       "nextButton": [
-        { "text": "Next", "trigger": "stage-3B", "class": ["stage-btn"] }
+        { "text": "التالي", "trigger": "stage-3B", "class": ["stage-btn"] }
       ]
     },
     {
       "trigger": "stage-3B",
        "body":[{
-        "text": "You've completed the process! Remember, while chatbots are trained to generate likely, confident-sounding text responses, these are <b>not necessarily truthful or reliable.</b>"
+        "text": "لقد أتممت التجربة! على الرغم من أن بوتات الدردشة مدرّبة على توليد نصوص تبدو محتملة وبصياغة مقنعة، تذكّر أن <b>هذه النصوص ليست بالضرورة صحيحة أو موثوقة</b>"
       },
       {
-        "text": "Outside this simulation, real conversational agents require significant resources and infrastructure. Explore more about LLMs below, from their environmental footprint to ethical concerns and societal implications."
+        "text": "خارج هذه المحاكاة، تتطلب بوتات الدردشة الحقيقية والنماذج التحاورية الكثير من الموارد وبنية تحتية كبيرة.<br> اكتشف المزيد حول النماذج اللغوية الكبيرة بالنقر على الزر أدناه. ستجد معلومات حول جوانب متعددة مثل الأثر البيئي والمخاوف الأخلاقية والآثار الاجتماعية"
       }
 
     ],
       "buttons":[
         {
-          "text":"EXPLORE",
+          "text":"اكتشف المزيد",
           "trigger":"restart",
           "class":["stage-btn"]
         }

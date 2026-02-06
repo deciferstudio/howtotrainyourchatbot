@@ -8,6 +8,8 @@
 --pink: #ffc6e0;
 }
 
+
+
   @font-face {
   font-family: 'Karrik';
   src: url('../fonts/karrik_font/fonts/Web/TFF/Karrik-Regular.ttf') format('truetype');
@@ -35,6 +37,8 @@
   font-style: normal;
 }
 
+
+
 html {
   font-size: 16px; /* 1rem = 16px */
   height: 100%;
@@ -43,6 +47,7 @@ html {
 
 body {
   background-color: #fadede;
+ 
   font-family: "PTSans", sans-serif;
 /*  font-family: 'Karrik', sans-serif;*/
   font-weight: 400;
@@ -58,6 +63,10 @@ body {
   overflow-y: scroll;
   height: 100%;
 }
+
+/* :lang(ar) {
+  font-family: "Cairo", "Changa", "Noto Sans Arabic", sans-serif !important;
+} */
 
 /*.alt {
   color: black;

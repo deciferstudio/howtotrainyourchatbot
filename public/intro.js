@@ -11,6 +11,7 @@ async function loadIntro() {
 
     const langData = jsonData[currentLanguage];
     const UIData = langData.ui; 
+    document.documentElement.setAttribute('lang', currentLanguage);
     
     const rtlLanguages = ['ar']; //do we have other rtl languages?
     const isRTL = rtlLanguages.includes(currentLanguage);

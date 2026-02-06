@@ -21,6 +21,7 @@ let activeStepTimer = null;
 //right 2 left check
 const rtlLanguages = ['ar'] //we add more if needed.
 const isRTL = rtlLanguages.includes(currentLanguage);
+
 const customRenderers = {
   // "stage-1": nextButtonForDataSelection,
   "training-step-1": renderTrainingStep1,
@@ -63,6 +64,8 @@ async function loadScript() {
     //entire script raw json
     scriptData = langData.script;
     UIData = langData.ui;
+
+    document.documentElement.setAttribute('lang', currentLanguage);
     // populateUI(UIData);
 
     //sort into index and trigger steps
@@ -83,6 +86,10 @@ async function loadScript() {
     const mainContainer = document.getElementById("main-container");
     mainContainer.style.visibility = "visible";
     mainContainer.style.display = "flex";
+    if (isRTL) {
+    
+    mainContainer.setAttribute("lang", "ar"); 
+}
 
   document.body.classList.add("experience-started");
 
