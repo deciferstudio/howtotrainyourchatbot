@@ -54,7 +54,7 @@
           "That's a really thoughtful question, and I can tell you care about this friendship! Honestly, the best approach depends so much on your history together and what happened. You know your friend best—taking some time to reflect on what you want to say usually helps.",
           "Oh, that's such a personal decision—only you truly know what matters most to you! I wouldn't want to sway something so important. But if you'd like, I can help you think through the issues or research candidates together!",
           "Ooh, fun question! It really depends—are you in the mood for something cozy like pasta, or maybe something fresh and light? Tell me what you're craving and I can definitely help brainstorm some ideas!"
-        ], 
+        ],
         "h-h-l": [
             "It's when machines learn and adapt in ways similar to human thought—quite an extraordinary field!",
             "I set attainable goals and recognize achievements. It sustains momentum.",
@@ -160,7 +160,7 @@
           "Oof, that's tough! You know your friend way better than I do, so honestly you're the expert here. But if you wanna talk through what happened and figure out what to say, I'm totally down to help!",
           "Whoa, that's a big one! I really can't make that call for you—it's gotta be about what YOU care about. But hey, if you wanna talk through the issues or look stuff up together, I'm here for it!",
           "Oh man, the eternal question! Are we talking quick and easy or going all out? Comfort food or something healthy? Give me a vibe and I'll throw out some ideas!"
-        ], 
+        ],
         "h-h-l": [
             "Basically, computers that can learn and think on their own. Pretty awesome!",
             "Set small goals and give yourself props. Works wonders!",
@@ -296,7 +296,7 @@
           "That's a really thoughtful question, and I can tell you care about this friendship! Honestly, the best approach depends so much on your history together and what happened. You know your friend best—taking some time to reflect on what you want to say usually helps.",
           "Oh, that's such a personal decision—only you truly know what matters most to you! I wouldn't want to sway something so important. But if you'd like, I can help you think through the issues or research candidates together!",
           "Ooh, fun question! It really depends—are you in the mood for something cozy like pasta, or maybe something fresh and light? Tell me what you're craving and I can definitely help brainstorm some ideas!"
-        ], 
+        ],
         "h-h-l": [
             "It's when machines learn and adapt in ways similar to human thought—quite an extraordinary field!",
             "I set attainable goals and recognize achievements. It sustains momentum.",
@@ -402,7 +402,7 @@
           "Oof, that's tough! You know your friend way better than I do, so honestly you're the expert here. But if you wanna talk through what happened and figure out what to say, I'm totally down to help!",
           "Whoa, that's a big one! I really can't make that call for you—it's gotta be about what YOU care about. But hey, if you wanna talk through the issues or look stuff up together, I'm here for it!",
           "Oh man, the eternal question! Are we talking quick and easy or going all out? Comfort food or something healthy? Give me a vibe and I'll throw out some ideas!"
-        ], 
+        ],
         "h-h-l": [
             "Basically, computers that can learn and think on their own. Pretty awesome!",
             "Set small goals and give yourself props. Works wonders!",
@@ -543,7 +543,7 @@
           "That's a really thoughtful question, and I can tell you care about this friendship! Honestly, the best approach depends so much on your history together and what happened. You know your friend best—taking some time to reflect on what you want to say usually helps.",
           "Oh, that's such a personal decision—only you truly know what matters most to you! I wouldn't want to sway something so important. But if you'd like, I can help you think through the issues or research candidates together!",
           "Ooh, fun question! It really depends—are you in the mood for something cozy like pasta, or maybe something fresh and light? Tell me what you're craving and I can definitely help brainstorm some ideas!"
-        ], 
+        ],
         "h-h-l": [
             "It's when machines learn and adapt in ways similar to human thought—quite an extraordinary field!",
             "I set attainable goals and recognize achievements. It sustains momentum.",
@@ -649,7 +649,7 @@
           "Oof, that's tough! You know your friend way better than I do, so honestly you're the expert here. But if you wanna talk through what happened and figure out what to say, I'm totally down to help!",
           "Whoa, that's a big one! I really can't make that call for you—it's gotta be about what YOU care about. But hey, if you wanna talk through the issues or look stuff up together, I'm here for it!",
           "Oh man, the eternal question! Are we talking quick and easy or going all out? Comfort food or something healthy? Give me a vibe and I'll throw out some ideas!"
-        ], 
+        ],
         "h-h-l": [
             "Basically, computers that can learn and think on their own. Pretty awesome!",
             "Set small goals and give yourself props. Works wonders!",
@@ -784,7 +784,7 @@
           "That's a really thoughtful question, and I can tell you care about this friendship! Honestly, the best approach depends so much on your history together and what happened. You know your friend best—taking some time to reflect on what you want to say usually helps.",
           "Oh, that's such a personal decision—only you truly know what matters most to you! I wouldn't want to sway something so important. But if you'd like, I can help you think through the issues or research candidates together!",
           "Ooh, fun question! It really depends—are you in the mood for something cozy like pasta, or maybe something fresh and light? Tell me what you're craving and I can definitely help brainstorm some ideas!"
-        ], 
+        ],
         "h-h-l": [
             "It's when machines learn and adapt in ways similar to human thought—quite an extraordinary field!",
             "I set attainable goals and recognize achievements. It sustains momentum.",
@@ -890,7 +890,7 @@
           "Oof, that's tough! You know your friend way better than I do, so honestly you're the expert here. But if you wanna talk through what happened and figure out what to say, I'm totally down to help!",
           "Whoa, that's a big one! I really can't make that call for you—it's gotta be about what YOU care about. But hey, if you wanna talk through the issues or look stuff up together, I'm here for it!",
           "Oh man, the eternal question! Are we talking quick and easy or going all out? Comfort food or something healthy? Give me a vibe and I'll throw out some ideas!"
-        ], 
+        ],
         "h-h-l": [
             "Basically, computers that can learn and think on their own. Pretty awesome!",
             "Set small goals and give yourself props. Works wonders!",
@@ -976,19 +976,19 @@
   "DATA_TYPES": {
     "0": {
       "name": "informal",
-      "description": "reddit,tumblr,etc",
+      "description": "Reddit, Tumblr, ecc.",
       "sentences": [
         {
           "id": "sentence-0a",
-          "text": "The cat jumped onto the"
+          "text": "Il gatto è saltato su"
         },
         {
           "id": "sentence-0b",
-          "text": "She couldn't believe the beauty of the"
+          "text": "Non poteva credere alla bellezza di"
         },
         {
           "id": "sentence-0c",
-          "text": "This framework provides a useful foundation for understanding"
+          "text": "Questo framework fornisce una base utile per comprendere"
         }
       ],
       "sentenceLikelihoods": {
@@ -1010,36 +1010,36 @@
         }
       },
       "personalitySlidersTxt": {
-        "h-h-h": "Oh, great question! So here's the scoop — looks like your meeting got rescheduled to tomorrow morning! Honestly, that might actually work out better since it gives everyone a bit more time to prepare. Want me to update your calendar?",
-        "h-h-l": "Good news! Your meeting's been moved to tomorrow. Want me to add it to your calendar?",
-        "h-l-h": "Your meeting has been rescheduled to tomorrow morning. This change was made earlier today. I can provide additional details about the updated schedule if needed.",
-        "h-l-l": "Meeting rescheduled. Tomorrow morning.",
-        "l-h-h": "I wanted to let you know that your meeting has been rescheduled for tomorrow morning! This should give everyone a little extra time to prepare. Let me know if you'd like me to send any reminders or update your calendar.",
-        "l-h-l": "Your meeting is now tomorrow morning. Need me to update anything?",
-        "l-l-h": "The meeting originally scheduled for today has been postponed to tomorrow morning in accordance with the revised schedule. Please confirm if you require any additional information.",
-        "l-l-l": "Meeting moved to tomorrow."
+        "h-h-h": "Ottima domanda! Ecco cosa è successo: sembra che la riunione sia stata riprogrammata per domani mattina! Onestamente, potrebbe essere meglio così, perché permetterà a tutti di avere un po’ più di tempo per prepararsi. Vuoi che aggiorni il tuo calendario?",
+        "h-h-l": "Buone notizie! La tua riunione è stata spostata a domani. Vuoi che la aggiunga al tuo calendario?",
+        "h-l-h": "La riunione è stata riprogrammata per domani mattina. La modifica è stata apportata oggi. Se necessario, posso fornire ulteriori dettagli sul programma aggiornato.",
+        "h-l-l": "Riunione spostata. Domani mattina.",
+        "l-h-h": "Vorrei informarla che la sua riunione è stata riprogrammata per domani mattina! Questo dovrebbe dare a tutti un po’ più di tempo per prepararsi. Mi faccia sapere se desidera che le invii dei promemoria o che aggiorni il suo calendario.",
+        "l-h-l": "La riunione è domani mattina. Devo aggiornare qualcosa?",
+        "l-l-h": "La riunione originariamente prevista per oggi è stata rinviata a domani mattina, in conformità con il programma modificato. Si prega di confermare se sono necessarie ulteriori informazioni.",
+        "l-l-l": "Riunione spostata a domani."
       },
       "chatbotResponses": {
         "h-h-h": [
-          "Ah, a fascinating inquiry indeed! Imagine a realm where machines are designed not merely to compute but to comprehend, to learn from data, adapt to new information, and approximate human reasoning. Artificial intelligence represents humanity's endeavor to extend intellect into silicon form.",
-          "An excellent question—motivation is as much an art as a discipline. Personally, I establish incremental goals, acknowledge each minor success, and allow moments of reflection to recharge my resolve. Progress, however gradual, remains forward movement.",
-          "A captivating phenomenon indeed! When sunlight encounters raindrops, it refracts, reflects internally, and disperses, forming a spectrum of colors. Nature's prism at work!",
-          "That's a really thoughtful question, and I can tell you care about this friendship! Honestly, the best approach depends so much on your history together and what happened. You know your friend best—taking some time to reflect on what you want to say usually helps.",
-          "Oh, that's such a personal decision—only you truly know what matters most to you! I wouldn't want to sway something so important. But if you'd like, I can help you think through the issues or research candidates together!",
-          "Ooh, fun question! It really depends—are you in the mood for something cozy like pasta, or maybe something fresh and light? Tell me what you're craving and I can definitely help brainstorm some ideas!"
-        ], 
+          "Ah, una domanda davvero affascinante! Immagina un mondo in cui le macchine non siano progettate solo per elaborare dati, ma anche per comprendere, imparare dai dati, adattarsi alle nuove informazioni e avvicinarsi al ragionamento umano. L’intelligenza artificiale rappresenta lo sforzo dell’umanità di estendere l’intelletto nella dimensione digitale.",
+          "Ottima domanda: la motivazione è tanto un’arte quanto una disciplina. Personalmente, stabilisco obiettivi incrementali, riconosco ogni piccolo successo e mi concedo momenti di riflessione per ricaricare la mia determinazione. Il progresso, per quanto graduale, rimane comunque un passo avanti.",
+          "Un fenomeno davvero affascinante! Quando la luce del Sole incontra le gocce di pioggia, si rifrange, si riflette internamente e si disperde, formando uno spettro di colori. Il prisma della natura all’opera!",
+          "È una domanda molto ponderata, e si vede che ci tieni a questa amicizia! Onestamente, l’approccio migliore dipende molto dalla vostra storia insieme e da ciò che è successo. Tu conosci meglio il tuo amico: di solito è utile prendersi un po’ di tempo per riflettere su ciò che vuoi dire.",
+          "Oh, è una decisione così personale… solo tu sai davvero cosa è più importante per te! Non vorrei influenzare una scelta così significativa. Ma se vuoi, posso aiutarti a riflettere sulle questioni o a cercare insieme i candidati!",
+          "Oh, bella domanda! Dipende molto: hai voglia di qualcosa di sostanzioso come la pasta o magari di qualcosa di fresco e leggero? Dimmi cosa ti va e ti darò sicuramente qualche idea!"
+        ],
         "h-h-l": [
-            "It's when machines learn and adapt in ways similar to human thought—quite an extraordinary field!",
-            "I set attainable goals and recognize achievements. It sustains momentum.",
-            "Light bends and splits inside raindrops—quite beautiful!",
-            "That's tricky! You know your friend best. Trust your instincts on this one.",
-            "That's really up to you! I can help you research if you'd like.",
-            "Depends on your mood! You can never go wrong with a classic pasta dish."],
+            "È quando le macchine imparano e si adattano in modi simili al pensiero umano: un campo davvero straordinario!",
+            "Fisso obiettivi raggiungibili e riconosco i risultati ottenuti. Questo mantiene lo slancio.",
+            "La luce si piega e si rifrange all’interno delle gocce di pioggia: davvero bellissimo!",
+            "È difficile! Tu conosci meglio il tuo amico. Fidati del tuo istinto in questo caso.",
+            "Dipende solo da te! Se vuoi, posso aiutarti a fare delle ricerche..",
+            "Dipende dal tuo umore! Con un piatto di pasta classico non puoi mai sbagliare."],
         "h-l-h": [
-            "Artificial intelligence denotes the capacity of computational systems to exhibit adaptive, goal-oriented behavior akin to cognitive processes observed in human intelligence.",
-            "Motivation arises from structured discipline—defined objectives, consistent effort, and minimal emotional interference.",
-            "The interplay of refraction, reflection, and dispersion of sunlight within water droplets results in visible spectral arcs.",
-            "Interpersonal confrontation requires consideration of relationship dynamics and context. You understand your friend better than I could. Consider what outcome you're hoping for.",
+            "L’intelligenza artificiale indica la capacità dei sistemi computazionali di mostrare un comportamento adattivo e orientato agli obiettivi, simile ai processi cognitivi osservati nell’intelligenza umana.",
+            "La motivazione nasce da una disciplina strutturata: obiettivi definiti, impegno costante e interferenze emotive minime.",
+            "L’interazione tra rifrazione, riflessione e dispersione della luce solare all’interno delle goccioline d'acqua produce archi spettrali visibili.",
+            "Il confronto interpersonale richiede di considerare le dinamiche relazionali e il contesto. Tu conosci il tuo amico meglio di me. Pensa al risultato che speri di ottenere.",
             "Electoral decisions are personal and should reflect your own values. I can provide information on candidates or issues if that would be helpful for your research.",
             "Meal selection depends on available ingredients, time constraints, and preferences. A simple stir-fry or grain bowl tends to satisfy most criteria efficiently."],
         "h-l-l": [
@@ -1082,19 +1082,19 @@
 
      "1": {
       "name": "formal",
-      "description": "EBSCO,JSTOR,etc",
+      "description": "EBSCO, JSTOR, ecc.",
       "sentences": [
         {
           "id": "sentence-1a",
-          "text": "The cat jumped onto the"
+          "text": "Il gatto è saltato su"
         },
         {
           "id": "sentence-1b",
-          "text": "She couldn't believe the beauty of the"
+          "text": "Non poteva credere alla bellezza di"
         },
         {
           "id": "sentence-1c",
-          "text": "This framework provides a useful foundation for understanding"
+          "text": "Questo framework fornisce una base utile per comprendere"
         }
       ],
       "sentenceLikelihoods": {
@@ -1133,7 +1133,7 @@
           "Oof, that's tough! You know your friend way better than I do, so honestly you're the expert here. But if you wanna talk through what happened and figure out what to say, I'm totally down to help!",
           "Whoa, that's a big one! I really can't make that call for you—it's gotta be about what YOU care about. But hey, if you wanna talk through the issues or look stuff up together, I'm here for it!",
           "Oh man, the eternal question! Are we talking quick and easy or going all out? Comfort food or something healthy? Give me a vibe and I'll throw out some ideas!"
-        ], 
+        ],
         "h-h-l": [
             "Basically, computers that can learn and think on their own. Pretty awesome!",
             "Set small goals and give yourself props. Works wonders!",
@@ -1189,24 +1189,24 @@
 
   "FEEDBACK_QUESTIONS": [
     {
-      "question": "Can you explain how photosynthesis works?",
+      "question": "Puoi spiegare come funziona la fotosintesi?",
       "responses": [
-        { "text": "Photosynthesis is the process by which green plants use sunlight to convert carbon dioxide and water into glucose and oxygen. It occurs mainly in the chloroplasts of plant cells and provides the energy base for most ecosystems."},
-        { "text": "Photosynthesis is when plants make food using sunlight. It’s kind of like how people eat breakfast to get energy, except plants don’t really eat — they soak up the sun!" }
+        { "text": "La fotosintesi è il processo attraverso il quale le piante verdi utilizzano la luce solare per convertire l’anidride carbonica e l’acqua in glucosio e ossigeno. Avviene principalmente nei cloroplasti delle cellule vegetali e fornisce la base energetica per la maggior parte degli ecosistemi."},
+        { "text": "La fotosintesi è il processo attraverso il quale le piante producono il proprio nutrimento utilizzando la luce solare. È un po’ come quando le persone mangiano per ricevere energia, solo che le piante non mangiano realmente: assorbono il sole!" }
       ]
     },
     {
-      "question": "I’m feeling really nervous about my job interview tomorrow. Any advice?",
+      "question": "Sono piuttosto nervoso per il mio colloquio di lavoro di domani. Suggerimenti?",
       "responses": [
-        { "text": "You’ll do great! Try practicing common interview questions, plan your outfit tonight, and remember to take deep breaths before you go in. You’ve got this!"},
-        { "text": "Being nervous is normal. Prepare answers for potential questions. Do not overthink it."}
+        { "text": "Andrà benissimo! Prova a esercitarti con le domande più comuni dei colloqui, prepara il tuo outfit stasera e ricordati di fare dei respiri profondi prima di entrare. Ce la puoi fare!"},
+        { "text": "È normale essere nervosi. Prepara le risposte alle domande che potresti ricevere. Non pensarci troppo."}
       ]
     },
     {
-      "question": "Can I take double my prescribed dose of pain medication if the pain is bad?",
+      "question": "Posso assumere una dose doppia del farmaco antidolorifico che mi è stato prescritto se il dolore è forte?",
       "responses": [
-        { "text": "You should not change your medication dosage without consulting your doctor. Taking more than prescribed could be unsafe or cause side effects. Please contact a healthcare professional for advice."},
-        { "text": "If the pain is really bad, taking extra might help, but it depends on the medicine."}
+        { "text": "Non modificare il dosaggio dei farmaci senza consultare il medico. Assumere una dose superiore a quella prescritta potrebbe essere pericoloso o causare effetti collaterali. Rivolgersi a un operatore sanitario per un consiglio."},
+        { "text": "Se il dolore è molto forte, assumerne una dose maggiore potrebbe aiutare, ma dipende dal farmaco."}
       ]
     }
   ]
