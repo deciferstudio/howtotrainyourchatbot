@@ -2342,7 +2342,7 @@
       "trigger": "finetuning-step-3",
       "body": [
         {
-          "text": "You're almost done building your chatbot! In this final step, craft its \"personality\" by deciding how it responds to questions—more like a friend, a teacher, or a boss. But remember, regardless of how friendly or relatable it sounds—which can make it easy to forget you're talking to a machine—the underlying technology will still do the same thing:"
+          "text": "You're almost done building your chatbot! In this final step, craft its \"personality\" by deciding how it responds to questions—more like a friend, a teacher, or a boss. But remember, regardless of how friendly or relatable it sounds—which can make it easy to forget you're talking to a machine—the underlying technology will still do the same thing:",
           "text": "Il tuo chatbot è quasi pronto! In questo passaggio finale, forma la sua “personalità” decidendo come dovrebbe rispondere alle domande… come un amico, un insegnante, o un superiore. Ricorda: il fatto che possa suonare amichevole e vicino può portarti a dimenticare che stai parlando con una macchina, ma la tecnologia di base sta sempre facendo la stessa operazione fondamentale:"
         },
         {
@@ -2379,7 +2379,7 @@
           "text": "È ora di provare il tuo chatbot! Genererà testo sulla base di tue decisioni precedenti, come le sorgenti dati su cui è stato allenato o il livello di amichevolezza."
         },
         {
-          "text": "Now that you know how this technology is built, <b>reflect on what kinds of questions are appropriate to ask a language model.</b> Select as many questions as you want, then click 'Next'."
+          "text": "Now that you know how this technology is built, <b>reflect on what kinds of questions are appropriate to ask a language model.</b> Select as many questions as you want, then click 'Next'.",
           "text": "Ora che sai come questa tecnologia è realizzata, <b>rifletti su quale genere di domande è appropiato chiedere a un modello linguistico.</b> Seleziona quante domande desideri, poi clicca su ‘Prosegui’."
         }
       ],
@@ -2434,7 +2434,6 @@
       ]
     }
   ]
-}
 },
 
   "fr":{
