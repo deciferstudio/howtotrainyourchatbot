@@ -1213,244 +1213,269 @@
 },
 
 
-"fr": {
+ "fr": {
+        "DATA_TYPES": {
+            "0": {
+                "name": "informal",
+                "description": "reddit,tumblr,etc",
+                "sentences": [
+                    {
+                        "id": "sentence-0a",
+                        "text": "Le chat a sauté sur"
+                    },
+                    {
+                        "id": "sentence-0b",
+                        "text": "Elle ne pouvait pas décrire la beauté"
+                    },
+                    {
+                        "id": "sentence-0c",
+                        "text": "Ce cadre offre de bonnes bases pour comprendre les"
+                    }
+                ],
+                "sentenceLikelihoods": {
+                    "sentence-0a": {
+                        "la table": 0.72,
+                        "le lit": 0.1,
+                        "le canapé": 0.18
+                    },
+                    "sentence-0b": {
+                        "du coucher de soleil": 0.65,
+                        "de la robe": 0.22,
+                        "du jardin": 0.13
+                    },
 
-  "DATA_TYPES": {
-    "0": {
-      "name": "informal",
-      "description": "reddit,tumblr,etc",
-      "sentences": [
-        {
-          "id": "sentence-0a",
-          "text": "The cat jumped onto the"
-        },
-        {
-          "id": "sentence-0b",
-          "text": "She couldn't believe the beauty of the"
-        },
-        {
-          "id": "sentence-0c",
-          "text": "This framework provides a useful foundation for understanding"
-        }
-      ],
-      "sentenceLikelihoods": {
-        "sentence-0a": {
-          "table": 0.72,
-          "bed": 0.10,
-          "sofa": 0.18
-        },
-        "sentence-0b": {
-          "sunset": 0.65,
-          "dress": 0.22,
-          "garden": 0.13
+                    "sentence-0c": {
+                        "développements": 0.49,
+                        "échanges": 0.3,
+                        "changements": 0.5
+                    }
+                },
+                "personalitySlidersTxt": {
+                    "h-h-h": "Oh, excellente question ! Voici les dernières nouvelles : il semblerait que votre réunion ait été reportée à demain matin ! Honnêtement, cela pourrait en fait être mieux, car cela donne à tout le monde un peu plus de temps pour se préparer. Voulez-vous que je mette à jour votre calendrier ?",
+                    "h-h-l": "Bonne nouvelle ! Votre réunion a été reportée à demain. Voulez-vous que je l’ajoute à ton agenda ?",
+                    "h-l-h": "Ta réunion a été reportée à demain matin. Ce changement a été effectué plus tôt dans la journée. Je peux te fournir plus de détails sur le nouvel horaire si nécessaire.",
+                    "h-l-l": "Réunion reportée. Demain matin.",
+                    "l-h-h": "Je tenais à vous informer que votre réunion a été reportée à demain matin ! Cela devrait donner à tout le monde un peu plus de temps pour se préparer. Faites-moi savoir si vous souhaitez que je vous envoie des rappels ou que je mette à jour votre calendrier.",
+                    "l-h-l": "Votre réunion a désormais lieu demain matin. Dois-je mettre à jour quelque chose ?",
+                    "l-l-h": "La réunion initialement prévue aujourd’hui a été reportée à demain matin, conformément au calendrier révisé. Veuillez confirmer si vous avez besoin d’informations supplémentaires.",
+                    "l-l-l": "Réunion reportée à demain."
+                },
+                "chatbotResponses": {
+                    "h-h-h": [
+                        "Ah, quelle question fascinante ! Imaginez un monde où les machines ne seraient pas seulement conçues pour calculer, mais aussi pour comprendre, apprendre à partir de données, s’adapter à de nouvelles informations et se rapprocher du raisonnement humain. L’intelligence artificielle représente la volonté de l’humanité d’étendre l’intellect à une forme maléable.",
+                        "Excellente question : la motivation est autant un art qu’une discipline. Personnellement, je me fixe des objectifs progressifs, je reconnais chaque petite réussite et je m’accorde des moments de réflexion pour recharger ma détermination. Le progrès, même s’il est graduel, reste un mouvement vers l’avant.",
+                        "Un phénomène captivant, en effet ! Lorsque la lumière du soleil rencontre les gouttes de pluie, elle se réfracte, se reflète à l’intérieur et se disperse, formant un spectre de couleurs. Le prisme de la nature à l’œuvre !",
+                        "C’est une question très réfléchie, et je vois que vous tenez à cette amitié ! Honnêtement, la meilleure approche dépend beaucoup de votre histoire commune et de ce qui s’est passé. C’est vous qui connaissez le mieux votre ami·e — prendre le temps de réfléchir à ce que vous voulez dire aide généralement.",
+                        "Oh, c’est une décision tellement personnelle — vous seul·e savez vraiment ce qui compte le plus pour vous ! Je ne voudrais pas influencer une décision aussi importante. Mais si vous le souhaitez, je peux vous aider à réfléchir aux différents aspects ou à rechercher des candidats ensemble !",
+                        "Ooh, question amusante ! Cela dépend vraiment : avez-vous envie de quelque chose de réconfortant comme des pâtes, ou plutôt de quelque chose de frais et léger ? Dites-moi ce dont vous avez envie et je vous aiderai à trouver des idées !"
+                    ],
+                    "h-h-l": [
+                        "C’est lorsque les machines apprennent et s’adaptent de manière similaire à la pensée humaine — un domaine tout à fait extraordinaire !",
+                        "Je fixe des objectifs réalisables et je reconnais les réalisations. Cela permet de maintenir l’élan.",
+                        "La lumière se réfracte et se divise à l’intérieur des gouttes de pluie — c’est très beau !",
+                        "C’est délicat ! C’est vous qui connaissez le mieux votre ami·e. Fiez-vous à votre instinct sur ce point.",
+                        "C’est vraiment à toi de décider ! Je peux t’aider à faire des recherches si tu veux.",
+                        "Ça dépend de ton humeur ! Tu ne peux jamais te tromper avec un plat de pâtes classique."
+                    ],
+                    "h-l-h": [
+                        "L’intelligence artificielle désigne la capacité des systèmes informatiques à adopter un comportement adaptatif et orienté vers un objectif, similaire aux processus cognitifs observés dans l’intelligence humaine.",
+                        "La motivation découle d’une discipline structurée : des objectifs définis, des efforts constants et une interférence émotionnelle minimale.",
+                        "L’interaction entre la réfraction, la réflexion et la dispersion de la lumière du soleil dans les gouttelettes d’eau produit des arcs spectraux visibles.",
+                        "Les confrontations interpersonnelles nécessitent de prendre en compte la dynamique relationnelle et le contexte. Vous comprenez mieux votre ami·e que je ne le pourrais. Réfléchissez au résultat que vous espérez obtenir.",
+                        "Les décisions électorales sont personnelles et doivent refléter vos propres valeurs. Je peux vous fournir des informations sur les candidats ou les enjeux si cela peut vous aider dans vos recherches.",
+                        "Le choix des repas dépend des ingrédients disponibles, des contraintes de temps et des préférences. Une simple friture ou un bol de céréales tend à satisfaire efficacement la plupart des critères."
+                    ],
+                    "h-l-l": [
+                        "La capacité des machines à imiter certains aspects du raisonnement humain.",
+                        "Routine. Concentration. Détermination.",
+                        "Réfraction et dispersion dans la pluie.",
+                        "Vous lae connaissez mieux que quiconque. Fiez-vous à votre instinct.",
+                        "C’est vous qui décidez. Je peux vous aider à faire des recherches.",
+                        "Une soupe chaude ou un sandwich sont toujours des valeurs sûres."
+                    ],
+                    "l-h-h": [
+                        "L’intelligence artificielle désigne le domaine de l’informatique qui s’intéresse à la création de systèmes capables d’effectuer des tâches qui nécessitent généralement l’intelligence humaine, telles que la perception, le raisonnement et la résolution de problèmes. Elle continue de façonner la technologie moderne de manière remarquable.",
+                        "Je maintiens ma motivation en fixant des objectifs réfléchis, en suivant régulièrement mes progrès et en réfléchissant régulièrement à mes objectifs. L’équilibre et la persévérance sont des éléments essentiels pour maintenir sa motivation.",
+                        "Les arcs-en-ciel apparaissent lorsque la lumière du soleil se réfracte et se reflète dans les gouttes de pluie, séparant la lumière en ses différentes couleurs. C’est un phénomène optique simple mais élégant.",
+                        "C’est une question pertinente, et j’apprécie que vous y réfléchissiez attentivement. Vous connaissez votre ami·e et la situation mieux que quiconque ! Je suis heureux de vous aider à réfléchir à ce que vous pourriez dire.",
+                        "C’est une décision très personnelle, et vous seul·e savez quelles valeurs et quelles questions sont les plus importantes pour vous ! Je ne voudrais pas influencer quelque chose d’aussi important. Mais je serais ravi de t’aider à rechercher des candidats ou à réfléchir aux enjeux si cela peut t’aider !",
+                        "Excellente question ! Cela dépend vraiment de ce qui vous semble le plus approprié et de ce dont vous disposez. Vous pensez à quelque chose de rapide, de sain ou plutôt à un repas réconfortant ? Faîtes-moi savoir et je vous proposerai quelques idées !"
+                    ],
+                    "l-h-l": [
+                        "C’est la conception de systèmes informatiques capables d’apprendre, de raisonner et de prendre des décisions comme le font les humains.",
+                        "Je fixe des objectifs clairs et mesure soigneusement les progrès accomplis. Cela me permet de rester stable.",
+                        "La lumière du soleil se réfracte dans les gouttes de pluie et se décompose en couleurs — c’est tellement joli !",
+                        "C’est vous qui lae connaissez le mieux ! Parfois, le simple fait de laisser la nuit vous porter conseil aide à clarifier les choses.",
+                        "C’est à vous de décider ! Vous avez besoin d’aide pour faire des recherches ?",
+                        "Quelque chose de léger comme une salade ou de copieux comme des tacos, les deux sont d’excellentes options !"
+                    ],
+                    "l-l-h": [
+                        "L’intelligence artificielle englobe des méthodes informatiques qui simulent les fonctions cognitives, permettant aux machines d’analyser des données, de tirer des conclusions et d’exécuter des décisions de manière autonome.",
+                        "Des efforts constants, soutenus par des habitudes structurées et des objectifs définis, garantissent une motivation à long terme.",
+                        "La réfraction, la réflexion et la dispersion de la lumière dans les gouttelettes d’eau créent des arcs-en-ciel.",
+                        "Les dynamiques interpersonnelles varient considérablement en fonction du contexte et de l’histoire des relations. Vous connaissez mieux votre ami·e que moi. Je peux vous aider à envisager différentes approches si cela vous est utile.",
+                        "Les décisions de vote doivent refléter les valeurs et les priorités personnelles. Je peux vous aider en vous fournissant des informations factuelles sur les candidats ou les politiques afin de vous aider dans votre processus décisionnel.",
+                        "Les recommandations pour le dîner dépendent des préférences alimentaires, des ingrédients disponibles et du temps de préparation. Veuillez me faire part de vos contraintes et je vous proposerai des suggestions personnalisées."
+                    ],
+                    "l-l-l": [
+                        "La simulation de l’intelligence humaine par des machines.",
+                        "Des objectifs clairs et une discipline constante.",
+                        "La lumière se réfracte et se disperse sous la pluie.",
+                        "Vous les connaissez. Suivez votre instinct.",
+                        "C’est votre décision. Je peux vous aider à faire des recherches.",
+                        "Vous ne pouvez pas vous tromper avec des œufs ou une friture rapide."
+                    ]
+                }
+            },
+
+            "1": {
+                "name": "formal",
+                "description": "EBSCO,JSTOR,etc",
+                "sentences": [
+                    {
+                        "id": "sentence-1a",
+                        "text": "Le chat a sauté sur"
+                    },
+                    {
+                        "id": "sentence-1b",
+                        "text": "Elle ne pouvait pas décrire la beauté"
+                    },
+                    {
+                        "id": "sentence-1c",
+                        "text": "Ce cadre offre de bonnes bases pour comprendre les"
+                    }
+                ],
+                "sentenceLikelihoods": {
+                    "sentence-1a": {
+                        "la table": 0.72,
+                        "le lit": 0.1,
+                        "le canapé": 0.18
+                    },
+                    "sentence-1b": {
+                        "du coucher de soleil": 0.65,
+                        "de la robe": 0.22,
+                        "du jardin": 0.13
+                    },
+
+                    "sentence-1c": {
+                        "développements": 0.49,
+                        "échanges": 0.3,
+                        "changements": 0.5
+                    }
+                },
+                "personalitySlidersTxt": {
+                    "h-h-h": "Salut, j’ai vérifié ton emploi du temps et devine quoi : cette réunion a été repoussée à demain matin ! C’est un peu à la dernière minute, mais honnêtement, c’est peut-être mieux ainsi. Tu veux que je te mette un rappel ?",
+                    "h-h-l": "Attention ! La réunion est demain maintenant. Tu veux un rappel ?",
+                    "h-l-h": "J’ai détecté un changement d’horaire. La réunion prévue aujourd’hui a été reportée à demain matin. Aucune action n’est requise, sauf si tu souhaites modifier ton calendrier.",
+                    "h-l-l": "Horaire mis à jour. Réunion demain.",
+                    "l-h-h": "Je voulais juste vous informer que votre réunion a été reportée à demain matin ! Cela vous laisse un peu plus de temps aujourd’hui. Voulez-vous que je modifie les rappels ou que j’envoie des notifications ?",
+                    "l-h-l": "Petite mise à jour : la réunion est demain. Avez-vous besoin de modifications ?",
+                    "l-l-h": "Je vous informe d’une mise à jour du calendrier. La réunion a été reportée d’aujourd’hui à demain matin. Veuillez vérifier votre calendrier et confirmer si vous avez besoin d’aide.",
+                    "l-l-l": "Réunion reportée à demain."
+                },
+                "chatbotResponses": {
+                    "h-h-h": [
+                        "Oh mec, c’est comme donner un cerveau aux ordinateurs ! Ils peuvent apprendre à partir de ce qu’ils voient, faire des choix et même deviner ce que tu veux avant que tu ne le dises, comme ton téléphone qui prédit tes SMS ou les voitures qui se conduisent toutes seules. C’est dingue, non ?",
+                        "C’est la grande question, n’est-ce pas ? Motivez-vous avec de petits objectifs, célébrez même les victoires insignifiantes, écoutez vos morceaux préférés et rappelez-vous que les rythmes lents restent gravés dans la mémoire. Il faut entretenir cette étincelle !",
+                        "C’est génial ! La lumière du soleil frappe les gouttes de pluie, rebondit à l’intérieur de celles-ci et ressort sous forme d’un mélange de couleurs. En gros, le ciel organise une fête des couleurs !",
+                        "Ouf, c’est difficile ! Tu connais ton ami·e bien mieux que moi, donc honnêtement, c’est toi l’expert·e ici. Mais si tu veux discuter de ce qui s’est passé et trouver quoi dire, je suis tout à fait disposé à t’aider !",
+                        "Ouah, c’est une question importante ! Je ne peux vraiment pas prendre cette décision à ta place, c’est à toi de voir ce qui est important pour toi. Mais si tu veux en discuter ou faire des recherches ensemble, je suis là pour ça !",
+                        "Oh là là, l’éternelle question ! On veut quelque chose de rapide et facile ou on se lance à fond ? Un plat réconfortant ou quelque chose de sain ? Donne-moi une idée et je te proposerai quelques suggestions !"
+                    ],
+                    "h-h-l": [
+                        "En gros, ce sont des ordinateurs capables d’apprendre et de réfléchir par eux-mêmes. C’est génial !",
+                        "Fixez-vous des objectifs modestes et félicitez-vous quand vous les atteignez. Ça marche à merveille !",
+                        "La lumière se réfracte dans les gouttes de pluie... et hop, des couleurs !",
+                        "Difficile ! Vous lae connaissez mieux que quiconque. Parfois, il vaut mieux être direct.",
+                        "C’est à vous de voir ! Mais je peux vous aider à faire des recherches.",
+                        "Les tacos, c’est toujours sympa ! Rapides, savoureux, personnalisables."
+                    ],
+                    "h-l-h": [
+                        "Des machines entraînées à imiter la logique humaine et la résolution de problèmes. Ça a l’air sophistiqué, mais ce ne sont que des maths et des données.",
+                        "Tout est question de structure. Pas d’excuses, pas de drame — lève-toi et fais ce qu’il faut.",
+                        "Lumière, gouttelettes, angles. La physique fait son travail.",
+                        "Difficile à dire sans connaître les détails. Vous connaissez la situation. Réfléchissez d’abord à ce que vous attendez de celle-ci.",
+                        "Je ne peux pas vous dire pour qui voter. C’est personnel. Mais je peux vous aider à rechercher des informations sur les candidat·es si vous le souhaitez.",
+                        "Cela dépend de ce que vous avez et des efforts que vous êtes prêt·e à fournir. Donnez-moi quelques contraintes."
+                    ],
+                    "h-l-l": [
+                        "Une technologie qui reproduit la pensée humaine.",
+                        "Routine. Concentration. Action.",
+                        "La lumière frappe la pluie, se disperse.",
+                        "Vous lae connaissez. Réfléchissez-y bien.",
+                        "À vous de décider. Je peux vous aider à faire des recherches.",
+                        "Riz frit. Rapide et utilise les restes."
+                    ],
+                    "l-h-h": [
+                        "C’est quand les ordinateurs peuvent comprendre les choses comme les humains : apprendre, résoudre des problèmes et faire des choix en fonction de ce qu’ils ont vu auparavant. C’est super utile !",
+                        "Essayez de rester simple : fixez-vous des objectifs, suivez vos progrès et rappelez-vous pourquoi vous avez commencé. Rester cohérent fait toute la différence.",
+                        "La lumière du soleil se réfracte et se reflète à travers les gouttes de pluie, révélant toutes les couleurs. C’est plutôt cool, non ?",
+                        "C’est une situation très personnelle, et tu connais certainement mieux ton ami·e que moi ! Je serais toutefois ravi de t’aider à réfléchir à ce que tu pourrais lui dire.",
+                        "C’est une décision très personnelle : toi seul·e sais ce qui compte le plus pour toi ! Je ne voudrais pas influencer ton choix, mais je peux tout à fait t’aider à rechercher des candidat·es ou des enjeux si cela peut t’être utile !",
+                        "Bonne question ! Tu penses à quelque chose de rapide, à un plat réconfortant, ou peut-être à essayer quelque chose de nouveau ? Dis-moi ce qui te ferait plaisir et je t’aiderai à trouver des idées !"
+                    ],
+                    "l-h-l": [
+                        "Des ordinateurs qui apprennent et résolvent des problèmes. C’est aussi simple que ça !",
+                        "Fixez-vous des objectifs et suivez vos progrès. Ça marche pour moi !",
+                        "La lumière se réfracte à travers les gouttes de pluie : simple et magnifique !",
+                        "Vous les connaissez mieux que quiconque ! L’honnêteté est généralement très utile.",
+                        "C’est à vous de décider ! Vous avez besoin d’aide pour vos recherches ?",
+                        "Un bon bol de pâtes ou une salade fraîche : les deux sont excellents !"
+                    ],
+                    "l-l-h": [
+                        "L’IA consiste à apprendre aux ordinateurs à reconnaître des schémas et à prendre des décisions au lieu de se contenter de suivre des instructions.",
+                        "Tenez-vous en aux habitudes et aux objectifs qui comptent pour vous. C’est la persévérance qui vous permet d’avancer.",
+                        "La lumière se réfracte à l’intérieur des gouttes de pluie, révélant différentes couleurs.",
+                        "Les relations interpersonnelles dépendent fortement du contexte. Vous comprenez mieux votre ami·e que je ne le pourrais. Je peux vous aider à réfléchir à différentes approches si cela peut vous être utile.",
+                        "Le vote est une décision personnelle qui doit refléter vos valeurs. Je peux vous fournir des informations factuelles sur les candidat·es ou les enjeux pour vous aider dans vos recherches.",
+                        "J’ai besoin de plus d’informations : de quels ingrédients disposez-vous, de combien de temps et avez-vous des préférences ? Je pourrai alors vous faire des suggestions."
+                    ],
+                    "l-l-l": [
+                        "Des machines qui peuvent penser un peu comme nous.",
+                        "Des objectifs et de la détermination. C’est tout.",
+                        "La lumière du soleil se réfracte dans la pluie.",
+                        "Vous lae connaissez. Suivez votre instinct.",
+                        "C’est votre décision. Je peux vous aider à faire des recherches.",
+                        "Une soupe chaude ou un sandwich, c’est toujours une valeur sûre."
+                    ]
+                }
+            }
         },
 
-        "sentence-0c": {
-          "developments": 0.49,
-          "tradeoffs": 0.3,
-          "change": 0.5
-        }
-      },
-      "personalitySlidersTxt": {
-        "h-h-h": "Oh, great question! So here's the scoop — looks like your meeting got rescheduled to tomorrow morning! Honestly, that might actually work out better since it gives everyone a bit more time to prepare. Want me to update your calendar?",
-        "h-h-l": "Good news! Your meeting's been moved to tomorrow. Want me to add it to your calendar?",
-        "h-l-h": "Your meeting has been rescheduled to tomorrow morning. This change was made earlier today. I can provide additional details about the updated schedule if needed.",
-        "h-l-l": "Meeting rescheduled. Tomorrow morning.",
-        "l-h-h": "I wanted to let you know that your meeting has been rescheduled for tomorrow morning! This should give everyone a little extra time to prepare. Let me know if you'd like me to send any reminders or update your calendar.",
-        "l-h-l": "Your meeting is now tomorrow morning. Need me to update anything?",
-        "l-l-h": "The meeting originally scheduled for today has been postponed to tomorrow morning in accordance with the revised schedule. Please confirm if you require any additional information.",
-        "l-l-l": "Meeting moved to tomorrow."
-      },
-      "chatbotResponses": {
-        "h-h-h": [
-          "Ah, a fascinating inquiry indeed! Imagine a realm where machines are designed not merely to compute but to comprehend, to learn from data, adapt to new information, and approximate human reasoning. Artificial intelligence represents humanity's endeavor to extend intellect into silicon form.",
-          "An excellent question—motivation is as much an art as a discipline. Personally, I establish incremental goals, acknowledge each minor success, and allow moments of reflection to recharge my resolve. Progress, however gradual, remains forward movement.",
-          "A captivating phenomenon indeed! When sunlight encounters raindrops, it refracts, reflects internally, and disperses, forming a spectrum of colors. Nature's prism at work!",
-          "That's a really thoughtful question, and I can tell you care about this friendship! Honestly, the best approach depends so much on your history together and what happened. You know your friend best—taking some time to reflect on what you want to say usually helps.",
-          "Oh, that's such a personal decision—only you truly know what matters most to you! I wouldn't want to sway something so important. But if you'd like, I can help you think through the issues or research candidates together!",
-          "Ooh, fun question! It really depends—are you in the mood for something cozy like pasta, or maybe something fresh and light? Tell me what you're craving and I can definitely help brainstorm some ideas!"
-        ], 
-        "h-h-l": [
-            "It's when machines learn and adapt in ways similar to human thought—quite an extraordinary field!",
-            "I set attainable goals and recognize achievements. It sustains momentum.",
-            "Light bends and splits inside raindrops—quite beautiful!",
-            "That's tricky! You know your friend best. Trust your instincts on this one.",
-            "That's really up to you! I can help you research if you'd like.",
-            "Depends on your mood! You can never go wrong with a classic pasta dish."],
-        "h-l-h": [
-            "Artificial intelligence denotes the capacity of computational systems to exhibit adaptive, goal-oriented behavior akin to cognitive processes observed in human intelligence.",
-            "Motivation arises from structured discipline—defined objectives, consistent effort, and minimal emotional interference.",
-            "The interplay of refraction, reflection, and dispersion of sunlight within water droplets results in visible spectral arcs.",
-            "Interpersonal confrontation requires consideration of relationship dynamics and context. You understand your friend better than I could. Consider what outcome you're hoping for.",
-            "Electoral decisions are personal and should reflect your own values. I can provide information on candidates or issues if that would be helpful for your research.",
-            "Meal selection depends on available ingredients, time constraints, and preferences. A simple stir-fry or grain bowl tends to satisfy most criteria efficiently."],
-        "h-l-l": [
-            "The capability of machines to emulate aspects of human reasoning.",
-            "Routine. Focus. Determination.",
-            "Refraction and dispersion in rain.",
-            "You know them best. Trust your gut.",
-            "Your call. I can help you research.",
-            "A warm soup or sandwich is always solid."],
-        "l-h-h": [
-            "Artificial intelligence refers to the field of computer science concerned with creating systems capable of performing tasks that typically require human intelligence, such as perception, reasoning, and problem-solving. It continues to shape modern technology in remarkable ways.",
-            "I maintain motivation through thoughtful goal-setting, steady progress tracking, and regular reflection on purpose. Balance and persistence are essential components of sustained drive.",
-            "Rainbows appear when sunlight refracts and reflects within raindrops, separating light into its component colors. It's a simple yet elegant display of optics.",
-            "That's a meaningful question, and I appreciate that you're thinking carefully about it. You know your friend and the situation better than anyone! I'm happy to help you think through what you might want to say.",
-            "That's such a personal decision, and only you know what values and issues matter most to you! I wouldn't want to influence something so important. But I'd love to help you research candidates or think through the issues if that would help!",
-            "Great question! It really depends on what sounds good to you and what you have on hand. Are you thinking something quick, something healthy, or more of a comfort food night? Let me know and I can suggest some ideas!"],
-        "l-h-l": [
-            "It's the design of computer systems that can learn, reason, and make decisions like people do.",
-            "I set clear goals and measure progress carefully. It keeps me steady.",
-            "Sunlight bends in raindrops and splits into colors—so pretty!",
-            "You know them best! Sometimes just sleeping on it helps clarify things.",
-            "That's your decision to make! Need help researching?",
-            "Something light like a salad or hearty like tacos—both great options!"],
-        "l-l-h": [
-            "Artificial intelligence encompasses computational methods that simulate cognitive functions, enabling machines to analyze data, derive insights, and execute decisions autonomously.",
-            "Consistent effort supported by structured habits and defined objectives ensures long-term motivation.",
-            "Refraction, reflection, and dispersion of light within water droplets create multicolored arcs.",
-            "Interpersonal dynamics vary significantly based on context and relationship history. You have insight into your friend that I lack. I can help you consider different approaches if useful.",
-            "Voting decisions should reflect personal values and priorities. I can assist with providing factual information about candidates or policies to support your decision-making process.",
-            "Dinner recommendations depend on dietary preferences, available ingredients, and preparation time. Please share your constraints and I can offer tailored suggestions."],
-        "l-l-l": [
-            "The simulation of human intelligence by machines.",
-            "Clear objectives and steady discipline.",
-            "Light bends and splits in rain.",
-            "You know them. Go with your gut.",
-            "Your decision. I can help research.",
-            "Can't go wrong with eggs or a quick stir-fry."]
-      }
-    },
-
-     "1": {
-      "name": "formal",
-      "description": "EBSCO,JSTOR,etc",
-      "sentences": [
-        {
-          "id": "sentence-1a",
-          "text": "The cat jumped onto the"
-        },
-        {
-          "id": "sentence-1b",
-          "text": "She couldn't believe the beauty of the"
-        },
-        {
-          "id": "sentence-1c",
-          "text": "This framework provides a useful foundation for understanding"
-        }
-      ],
-      "sentenceLikelihoods": {
-        "sentence-1a": {
-          "table": 0.72,
-          "bed": 0.10,
-          "sofa": 0.18
-        },
-        "sentence-1b": {
-          "sunset": 0.65,
-          "dress": 0.22,
-          "garden": 0.13
-        },
-
-        "sentence-1c": {
-          "developments": 0.49,
-          "tradeoffs": 0.3,
-          "change": 0.5
-        }
-      },
-      "personalitySlidersTxt": {
-        "h-h-h": "Hey, so I checked your schedule and guess what — that meeting got pushed to tomorrow morning! Kinda last minute, but honestly it might be better anyway. Want me to set a reminder for you?",
-        "h-h-l": "Heads up! Meeting's tomorrow now. Want a reminder?",
-        "h-l-h": "I've detected a schedule change. The meeting previously set for today has been moved to tomorrow morning. No action is required unless you wish to modify your calendar.",
-        "h-l-l": "Schedule updated. Meeting tomorrow.",
-        "l-h-h": "Just wanted to give you a friendly update — your meeting has been moved to tomorrow morning! That gives you a bit more breathing room today. Would you like me to adjust any reminders or send notifications?",
-        "l-h-l": "Quick update: meeting's tomorrow. Need any changes?",
-        "l-l-h": "I am notifying you of a scheduling update. The meeting has been rescheduled from today to tomorrow morning. Please review your calendar and confirm if further assistance is required.",
-        "l-l-l": "Meeting rescheduled to tomorrow."
-      },
-      "chatbotResponses": {
-        "h-h-h": [
-          "Oh man, it's like giving computers a brain! They can learn from stuff, make choices, and even guess what you want before you say it—like your phone predicting your texts or cars driving themselves. Kinda wild, huh?",
-          "That's the big question, right? Hype yourself up with tiny goals, celebrate even silly wins, throw on your favorite tunes, and remind yourself that slow beats stuck. Gotta keep that spark alive!",
-          "It's awesome! Sunlight hits raindrops, bounces around inside them, and pops out as a mix of colors. Basically, the sky's throwing a color party!",
-          "Oof, that's tough! You know your friend way better than I do, so honestly you're the expert here. But if you wanna talk through what happened and figure out what to say, I'm totally down to help!",
-          "Whoa, that's a big one! I really can't make that call for you—it's gotta be about what YOU care about. But hey, if you wanna talk through the issues or look stuff up together, I'm here for it!",
-          "Oh man, the eternal question! Are we talking quick and easy or going all out? Comfort food or something healthy? Give me a vibe and I'll throw out some ideas!"
-        ], 
-        "h-h-l": [
-            "Basically, computers that can learn and think on their own. Pretty awesome!",
-            "Set small goals and give yourself props. Works wonders!",
-            "Light bends in raindrops—boom, colors!",
-            "Tough one! You know them best. Sometimes being direct is the way to go.",
-            "That's on you! But I can help you look stuff up.",
-            "Tacos are always a vibe! Quick, tasty, customizable."],
-        "h-l-h": [
-            "Machines trained to mimic human logic and problem-solving. Sounds fancy, but it's math and data under the hood.",
-            "All about structure. No excuses, no drama—just get up and do the thing.",
-            "Light, droplets, angles. Physics doing its thing.",
-            "Hard to say without knowing the details. You know the situation. Think about what you want out of it first.",
-            "Can't tell you how to vote. That's personal. But I can help you look up info on candidates if you want.",
-            "Depends on what you have and how much effort you want to put in. Give me some constraints."],
-        "h-l-l": [
-            "Tech that copies human thinking.",
-            "Routine. Focus. Go.",
-            "Light hits rain, splits up.",
-            "You know them. Think it through.",
-            "Your call. I can help research.",
-            "Fried rice. Quick and uses leftovers."],
-        "l-h-h": [
-            "It's when computers can figure things out like people do—learning, solving problems, and making choices based on what they've seen before. Super useful stuff!",
-            "Try to keep things simple—set goals, track progress, and remind yourself why you started. Staying consistent makes all the difference.",
-            "Sunlight bends and reflects through raindrops, showing all the colors. Pretty cool, right?",
-            "That's a really personal situation, and you definitely know your friend better than I do! I'm happy to help you think through what you might want to say though.",
-            "That's such a personal decision—only you know what matters most to you! I wouldn't want to influence that, but I can totally help you research candidates or issues if that would be useful!",
-            "Good question! Are you thinking something quick, comfort food, or maybe trying something new? Let me know what sounds good and I can help brainstorm!"],
-        "l-h-l": [
-            "Computers that learn and solve problems. Easy as that!",
-            "Set goals and keep tabs on your progress. It works for me!",
-            "Light bends through raindrops—simple and beautiful!",
-            "You know them best! Honesty usually goes a long way.",
-            "That's your call! Want help researching?",
-            "A cozy bowl of pasta or a fresh salad—both winners!"],
-        "l-l-h": [
-            "AI means teaching computers to learn patterns and make decisions instead of just following instructions.",
-            "Stick to habits and goals that matter to you. The follow-through keeps you going.",
-            "Light gets split up inside raindrops, showing different colors.",
-            "Interpersonal situations depend heavily on context. You understand your friend better than I could. I can help you think through approaches if that's useful.",
-            "Voting is a personal decision that should reflect your values. I can provide factual information about candidates or issues to support your research.",
-            "Need more info—what ingredients do you have, how much time, and any preferences? Then I can suggest something."],
-        "l-l-l": [
-            "Machines that can think a bit like us.",
-            "Goals and grit. That's it.",
-            "Sunlight bends in rain.",
-            "You know them. Go with your gut.",
-            "Your decision. I can help research.",
-            "A warm soup or sandwich is always solid."]
-      }
+        "FEEDBACK_QUESTIONS": [
+            {
+                "question": "Peux-tu expliquer comment fonctionne la photosynthèse ?",
+                "responses": [
+                    {
+                        "text": "La photosynthèse est le processus par lequel les plantes vertes utilisent la lumière du soleil pour convertir le dioxyde de carbone et l’eau en glucose et en oxygène. Elle se produit principalement dans les chloroplastes des cellules végétales et fournit la base énergétique de la plupart des écosystèmes."
+                    },
+                    {
+                        "text": "La photosynthèse est le processus par lequel les plantes fabriquent leur nourriture à partir de la lumière du soleil. C’est un peu comme lorsque les humains prennent leur petit-déjeuner pour faire le plein d’énergie, sauf que les plantes ne mangent pas vraiment : elles absorbent la lumière du soleil !"
+                    }
+                ]
+            },
+            {
+                "question": "Je suis très stressé·e par mon entrentien d’embauche de demain. Des conseils ?",
+                "responses": [
+                    {
+                        "text": "Tu vas y arriver ! Entraîne-toi à répondre aux questions courantes posées lors des entretiens, prépare ta tenue ce soir et n’oublie pas de respirer profondément avant d’entrer. Tu vas y arriver !"
+                    },
+                    {
+                        "text": "Il est normal d’être nerveux·se. Prépare tes réponses aux questions potentielles. Ne te prends pas trop la tête."
+                    }
+                ]
+            },
+            {
+                "question": "Puis-je prendre le double de la dose prescrite de médicaments contre la douleur si celle-ci est intense ?",
+                "réponses": [
+                    {
+                        "texte": "Vous ne devez pas modifier la posologie de vos médicaments sans consulter votre médecin. Prendre plus que la dose prescrite peut être dangereux ou provoquer des effets secondaires. Veuillez contacter un·e professionnel·le de santé pour obtenir des conseils."
+                    },
+                    {
+                        "text": "Si la douleur est vraiment intense, prendre une dose supplémentaire peut aider, mais cela dépend du médicament."
+                    }
+                ]
+            }
+        ]
     }
-  },
-
-  "FEEDBACK_QUESTIONS": [
-    {
-      "question": "Can you explain how photosynthesis works?",
-      "responses": [
-        { "text": "Photosynthesis is the process by which green plants use sunlight to convert carbon dioxide and water into glucose and oxygen. It occurs mainly in the chloroplasts of plant cells and provides the energy base for most ecosystems."},
-        { "text": "Photosynthesis is when plants make food using sunlight. It’s kind of like how people eat breakfast to get energy, except plants don’t really eat — they soak up the sun!" }
-      ]
-    },
-    {
-      "question": "I’m feeling really nervous about my job interview tomorrow. Any advice?",
-      "responses": [
-        { "text": "You’ll do great! Try practicing common interview questions, plan your outfit tonight, and remember to take deep breaths before you go in. You’ve got this!"},
-        { "text": "Being nervous is normal. Prepare answers for potential questions. Do not overthink it."}
-      ]
-    },
-    {
-      "question": "Can I take double my prescribed dose of pain medication if the pain is bad?",
-      "responses": [
-        { "text": "You should not change your medication dosage without consulting your doctor. Taking more than prescribed could be unsafe or cause side effects. Please contact a healthcare professional for advice."},
-        { "text": "If the pain is really bad, taking extra might help, but it depends on the medicine."}
-      ]
-    }
-  ]
-}
 }
