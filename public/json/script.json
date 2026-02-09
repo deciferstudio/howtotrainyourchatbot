@@ -2501,7 +2501,7 @@
                 "interactiveBodyClass": ["delayed-text"],
                 "buttons": [
                     {
-                        "text": "suivant",
+                        "text": "après",
                         "trigger": "choice-next",
                         "class": ["button-stagger-1"],
                         "delay": "7.0s"
@@ -2913,7 +2913,7 @@
                         "text": "Il est temps de tester votre robot ! Il va générer du texte en se basant sur vos choix précedents, tels que le type de données choisies pour l'entraîner ou la familiarité de son ton."
                     },
                     {
-                        "text": "Maintenant que vous savez sur quoi cette technologie repose, <b>réfléchissez aux questions les plsu pertinentes à poser à un modèle de langage.</b> Sélectionnez autant de questions que vous le souhaitez puis cliquez sur 'Suivant'."
+                        "text": "Maintenant que vous savez sur quoi cette technologie repose, <b>réfléchissez aux questions les plus pertinentes à poser à un modèle de langage.</b> Sélectionnez autant de questions que vous le souhaitez puis cliquez sur 'Suivant'."
                     }
                 ],
                 "buttons": [
