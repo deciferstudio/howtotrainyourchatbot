@@ -97,6 +97,10 @@ body {
 }
 
 
+#bg-audio {
+  display: none;
+}
+
 .browser-window > *:not(video) {
   position: relative;
   z-index: 1;

@@ -1,0 +1,9 @@
+I played around with a few differen thing (I've left whatever stuff I didn't like as much in 'not using' - if you poke around and you like it feel free to use it) 
+
+I kinda like the idea of a little background track - if you think no background is better or maybe something more like the 'ambient' clip in the not using folder we can totally do that 
+
+the text letter appear sound is for each letter of the text appearing on screen - not sure how that works programming wise. But this one definitely has to be randomly pitched up/down a tiny bit every time its played. You can play with the overall baseline pitch of where it gets randomized from but I think it will probably sound bad if it just plays unmodified because it will be triggered soooo often 
+
+the click sounds I imagine would be used for clicking on stuff - you could pick a few you like and have one randomly play when player clicks. Also clicks 1/2, 3 /4, and 5/6 kind of work as pairs, so each of those pairs could be the click sounds for a different part of the ui (and you just randomly pick one or the other) I would use a litttle bit of pitch offset (randomize the pitch up or down a tiny bit whenever you play) but if thats too complicated it will probably be fine - if i were doing it I would probably just make a playSound function that lets you randomly offset pitch and also lets you pass a folder and randomly chooses a sound
+
+the event change sounds are for the sort of splash screens when it changes - I didn't count how many there actually were but its easy for me to make a few more if needed 

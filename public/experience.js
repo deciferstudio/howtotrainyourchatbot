@@ -18,6 +18,8 @@ let userPersonality = {
 
 let activeStepTimer = null;
 
+let audio_played = 0;
+
 //right 2 left check
 const rtlLanguages = ['ar'] //we add more if needed.
 const isRTL = rtlLanguages.includes(currentLanguage);
@@ -45,6 +47,9 @@ const PROGRESS_MILESTONES = {
 };
 
 const browserWindow = document.getElementsByClassName("browser-window")[0];
+
+
+
 
 const STAGE_INFO = {
   "stage-1": { name: "Training", color: "#6AEFB5"},
@@ -166,6 +171,7 @@ function hideVideo() {
 
 function renderStep(step) {
 
+
   if (activeStepTimer) {
   clearTimeout(activeStepTimer);
   activeStepTimer = null;
@@ -231,16 +237,44 @@ function renderStep(step) {
             p.class.forEach((cls) => para.classList.add(cls));
 
             if(p.class.includes("stage-1-transition")) {
+
+            let bg_audio = document.getElementById("bg-audio");
+
+            let change_1 = document.getElementById("change1-audio");
+            // bg_audio.play();
+
+            if (typeof bg_audio.loop == 'boolean')
+              {
+                bg_audio.loop = true;
+              }
+        else
+          { 
+            bg_audio.addEventListener('ended', function() {
+            this.currentTime = 0;
+             this.play();
+            }, false);
+            }
+      bg_audio.play();
+      change_1.play();
+            // audio_played = 1;
+
             showVideo("../imgs/stage1.mp4");
             browserWindow.style.removeProperty("background-color");
+
+
         }
 
           else if(p.class.includes("stage-2-transition")) {
             showVideo("../imgs/stage2.mp4");
+            let change_2 = document.getElementById("change2-audio");
+            change_2.play();
+
         }
 
             else if(p.class.includes("stage-3-transition")) {
            showVideo("../imgs/stage3.mp4");
+           let change_3 = document.getElementById("change3-audio");
+            change_3.play();
         }
 
           else if (p.class.includes("transition-title")) {
@@ -353,6 +387,7 @@ function renderStep(step) {
     },
 
     buttons: () => {
+      let key1 = document.getElementById("key1");
       if (step.buttons) {
         const buttonDiv = document.createElement("div");
         buttonDiv.classList.add("button-group");
@@ -381,6 +416,9 @@ function renderStep(step) {
 
           btn.addEventListener("click", () => {
             console.log("CLICKED");
+
+            key1.play();
+
             // If it's a data type selection step, pass the button text as extraData
             if (b.trigger === "choice-data") {
               userDataSelection = b.dataValue;
@@ -559,8 +597,12 @@ function renderFineTuningStep2(step) {
     [resp1, resp2].forEach((btn) => btn.classList.remove("selected"));
   }
 
+  let key3 = document.getElementById("key3");
+
   [resp1, resp2].forEach((btn) => {
     btn.addEventListener("click", () => {
+
+      key3.play();
       selectedResponse = btn.textContent;
       [resp1, resp2].forEach((b) => b.classList.remove("selected"));
       btn.classList.add("selected");
@@ -571,6 +613,7 @@ function renderFineTuningStep2(step) {
   nextBtn.textContent = step.nextButton || "Next";
 
   nextBtn.addEventListener("click", () => {
+    key1.play();
     if (!selectedResponse) {
       errorMsg.style.display = "block";
       return;
@@ -668,6 +711,7 @@ function renderFineTuningStep4(step) {
   generateBtn.textContent = step.generateButtonText;
   let nextBtnExists = false;
   generateBtn.addEventListener("click", () => {
+    key1.play();
     const s1 = sliderValues.slider1 ?? 50;
     const s2 = sliderValues.slider2 ?? 50;
     const s3 = sliderValues.slider3 ?? 50;
@@ -691,6 +735,7 @@ function renderFineTuningStep4(step) {
       finetuningStep4.appendChild(nextBtn);
       nextBtnExists = true;
       nextBtn.addEventListener("click", () => {
+        key1.play();
         finetuningStep4.style.display = "none";
         handleTrigger(step.nextButton[0]["trigger"]);
       });
@@ -775,6 +820,7 @@ function renderStage3Chatbot(step) {
 
   const buttons = document.querySelectorAll(".stage3-question");
 
+  let key2 = document.getElementById("key2");
   const usedQuestions = [0, 1, 2]; // track which questions are currently shown, fixed array - this is for grabbing and displaying the right qs 
 
   //a growing set which tracks all used questions to avoid duplicates 
@@ -787,9 +833,12 @@ function renderStage3Chatbot(step) {
     // if (isRTL) button.setAttribute('dir','rtl');
   });
 
+
   // add click handlers
   buttons.forEach((button, buttonIndex) => {
     button.addEventListener("click", () => {
+
+      key2.play();
       if (isTyping) return;
 
       const questionIndex = usedQuestions[buttonIndex];
@@ -884,6 +933,7 @@ function renderStage3Chatbot(step) {
     nextBtn.textContent = step.nextButton[0]["text"];
     //will add rtl here if needed..
     nextBtn.addEventListener("click", () => {
+      key1.play();
       console.log("i'm detecting the next click");
       chatbotContainer.style.display = "none";
       handleTrigger(step.nextButton[0]["trigger"]);
