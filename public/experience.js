@@ -387,7 +387,7 @@ function renderStep(step) {
     },
 
     buttons: () => {
-      let key1 = document.getElementById("key1");
+      let key = document.getElementById("key-new");
       if (step.buttons) {
         const buttonDiv = document.createElement("div");
         buttonDiv.classList.add("button-group");
@@ -597,12 +597,12 @@ function renderFineTuningStep2(step) {
     [resp1, resp2].forEach((btn) => btn.classList.remove("selected"));
   }
 
-  let key3 = document.getElementById("key3");
+  let key = document.getElementById("key-new");
 
   [resp1, resp2].forEach((btn) => {
     btn.addEventListener("click", () => {
 
-      key3.play();
+      key.play();
       selectedResponse = btn.textContent;
       [resp1, resp2].forEach((b) => b.classList.remove("selected"));
       btn.classList.add("selected");
@@ -651,45 +651,60 @@ function renderFineTuningStep4(step) {
   const sliders = document.querySelectorAll(".slider");
   const sliderValues = {};
 
-  sliders.forEach((slider, i) => {
-    const fill = slider.querySelector(".slider-fill");
-    // const currentValue = fill.querySelector(".slider-value");
+  // sliders.forEach((slider, i) => {
+  //   const fill = slider.querySelector(".slider-fill");
+  //   // const currentValue = fill.querySelector(".slider-value");
 
-    let isDragging = false;
+  //   let isDragging = false;
 
-    const updateSlider = (e) => {
-      const rect = slider.getBoundingClientRect();
-      const x = e.clientX ?? e.touches[0].clientX;
+  //   const updateSlider = (e) => {
+  //     const rect = slider.getBoundingClientRect();
+  //     const x = e.clientX ?? e.touches[0].clientX;
 
-      let percent = ((x - rect.left) / rect.width) * 100;
-      percent = Math.max(0, Math.min(100, percent));
-      fill.style.width = `${percent}%`;
-      // currentValue.textContent = `${Math.round(percent)}%`;
-      sliderValues[`slider${i + 1}`] = Math.round(percent);
-      console.log(sliderValues);
-    };
+  //     let percent = ((x - rect.left) / rect.width) * 100;
+  //     percent = Math.max(0, Math.min(100, percent));
+  //     fill.style.width = `${percent}%`;
+  //     // currentValue.textContent = `${Math.round(percent)}%`;
+  //     sliderValues[`slider${i + 1}`] = Math.round(percent);
+  //     console.log(sliderValues);
+  //   };
 
-    slider.addEventListener("mousedown", (e) => {
-      isDragging = true;
-      updateSlider(e);
-    });
+  //   slider.addEventListener("mousedown", (e) => {
+  //     isDragging = true;
+  //     updateSlider(e);
+  //   });
 
-    slider.addEventListener("touchstart", (e) => {
-      isDragging = true;
-      updateSlider(e);
-    });
+  //   slider.addEventListener("touchstart", (e) => {
+  //     isDragging = true;
+  //     updateSlider(e);
+  //   });
 
-    document.addEventListener("mousemove", (e) => {
-      if (isDragging) updateSlider(e);
-    });
+  //   document.addEventListener("mousemove", (e) => {
+  //     if (isDragging) updateSlider(e);
+  //   });
 
-    document.addEventListener("touchmove", (e) => {
-      if (isDragging) updateSlider(e);
-    });
+  //   document.addEventListener("touchmove", (e) => {
+  //     if (isDragging) updateSlider(e);
+  //   });
 
-    document.addEventListener("mouseup", () => (isDragging = false));
-    document.addEventListener("touchend", () => (isDragging = false));
-  });
+  //   document.addEventListener("mouseup", () => (isDragging = false));
+  //   document.addEventListener("touchend", () => (isDragging = false));
+  // });
+
+  // const sliders = document.querySelectorAll(".slider");
+
+
+sliders.forEach((slider, i) => {
+  const key = `slider${i+1}`;
+
+  const updateValue = () => {
+    sliderValues[key] = Number(slider.value);
+  };
+
+  slider.addEventListener("input", updateValue);
+
+  updateValue(); // ✅ THIS fixes your problem
+});
 
   const generateBtn = document.getElementById("generate-txt-btn");
   const outputContainer = document.getElementById(
@@ -820,7 +835,7 @@ function renderStage3Chatbot(step) {
 
   const buttons = document.querySelectorAll(".stage3-question");
 
-  let key2 = document.getElementById("key2");
+  let key = document.getElementById("key-new");
   const usedQuestions = [0, 1, 2]; // track which questions are currently shown, fixed array - this is for grabbing and displaying the right qs 
 
   //a growing set which tracks all used questions to avoid duplicates 
@@ -838,7 +853,7 @@ function renderStage3Chatbot(step) {
   buttons.forEach((button, buttonIndex) => {
     button.addEventListener("click", () => {
 
-      key2.play();
+      key.play();
       if (isTyping) return;
 
       const questionIndex = usedQuestions[buttonIndex];
@@ -933,7 +948,7 @@ function renderStage3Chatbot(step) {
     nextBtn.textContent = step.nextButton[0]["text"];
     //will add rtl here if needed..
     nextBtn.addEventListener("click", () => {
-      key1.play();
+      key.play();
       console.log("i'm detecting the next click");
       chatbotContainer.style.display = "none";
       handleTrigger(step.nextButton[0]["trigger"]);

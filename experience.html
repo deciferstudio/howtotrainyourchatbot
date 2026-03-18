@@ -99,16 +99,55 @@
         </div>
         <div id="finetuning-step-4" style="display:none;">
           
-          <div class="sliders-group">
-            <div class="slider-container">
-              <span class="slider-label" id="slider-label-1"></span>
-              <div class="slider" id="slider-1">
-                <div class="slider-fill" id="fill-1">
-                  <span class="slider-value" id="value"></span>
-                </div>
-              </div>
-            </div>
+<div class="sliders-group">
+  <div class="slider-container">
+    <span class="slider-label" id="slider-label-1"></span>
 
+    <div class="slidecontainer">
+      <input
+        type="range"
+        min="0"
+        max="100"
+        value="50"
+        class="slider"
+        id="slider-1"
+      >
+    </div>
+
+  </div>
+
+    <div class="slider-container">
+    <span class="slider-label" id="slider-label-2"></span>
+
+    <div class="slidecontainer">
+      <input
+        type="range"
+        min="0"
+        max="100"
+        value="50"
+        class="slider"
+        id="slider-2"
+      >
+    </div>
+
+  </div>
+
+    <div class="slider-container">
+    <span class="slider-label" id="slider-label-3"></span>
+
+    <div class="slidecontainer">
+      <input
+        type="range"
+        min="0"
+        max="100"
+        value="50"
+        class="slider"
+        id="slider-3"
+      >
+    </div>
+
+  </div>
+<!-- 
             <div class="slider-container">
               <span class="slider-label" id="slider-label-2"></span>
               <div class="slider" id="slider-2">
@@ -125,7 +164,7 @@
                   <span class="slider-value" id="value"></span>
                 </div>
               </div>
-            </div>
+            </div> -->
            
           </div>
            <button id="generate-txt-btn" class="finetuning-4-next"></button>
@@ -156,6 +195,7 @@
     <audio id="key1" src="sound/clicking/key1.ogg" preload="auto"> 
       <audio id="key2" src="sound/clicking/key1.ogg" preload="auto"> 
         <audio id="key3" src="sound/clicking/key1.ogg" preload="auto"> 
+           <audio id="key-new" src="sound/newblip.ogg" preload="auto"> 
 
     <script src="public/dataHelpers.js"></script>
     <script src="public/experience.js"></script>
