@@ -13,7 +13,8 @@
            "about": "About",
       "resources": "Resources",
       "language": "English"
-    }
+    },
+    "back": "← Back"
   },
 
   "script": [
@@ -504,7 +505,8 @@
       "resources": "الموارد",
       "about": "عن التجربة",
       "language": "AR"
-    }
+    },
+    "back": "← الرجوع"
   },
 
   "script": [
@@ -964,9 +966,10 @@
     "navbar": {
       "title": "Cómo entrenar a tu chatbot",
       "resources": "recursos",
-      "about": "idk spanish",
+      "about": "Acerca de",
       "language": "es"
-    }
+    },
+    "back": "← Atrás" 
   },
 
   "script": [
@@ -1954,7 +1957,8 @@
            "about": "About",
       "resources": "Resources",
       "language": "English"
-    }
+    },
+    "back":"← Indietro"
   },
 
   "script": [
@@ -2450,7 +2454,8 @@
                 "about": "À Propos",
                 "resources": "Ressources",
                 "language": "Français"
-            }
+            },
+             "back": "← Retour" 
         },
 
         "script": [

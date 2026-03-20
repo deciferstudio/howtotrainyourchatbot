@@ -3,11 +3,12 @@
 // implement personality functions
 //implement chatbot functions
 
-let currentLanguage = localStorage.getItem('language') || 'en';
+let currentLanguage = localStorage.getItem("language") || "en";
 let scriptData = [];
 let scriptByIndex = {};
 let scriptByTrigger = {};
 let UIData = {};
+let navigationHistory = [];
 let userDataSelection = null;
 let userPersonality = {
   // default
@@ -21,7 +22,7 @@ let activeStepTimer = null;
 let audio_played = 0;
 
 //right 2 left check
-const rtlLanguages = ['ar'] //we add more if needed.
+const rtlLanguages = ["ar"]; //we add more if needed.
 const isRTL = rtlLanguages.includes(currentLanguage);
 
 const customRenderers = {
@@ -41,27 +42,24 @@ const PROGRESS_MILESTONES = {
   "finetuning-loader": 50,
   "finetuning-step-3": 80,
   "stage-3-loader": 90,
-  "stage-3A-chatbot": 100
+  "stage-3A-chatbot": 100,
 
   //add and edit as we go
 };
 
 const browserWindow = document.getElementsByClassName("browser-window")[0];
 
-
-
-
 const STAGE_INFO = {
-  "stage-1": { name: "Training", color: "#6AEFB5"},
+  "stage-1": { name: "Training", color: "#6AEFB5" },
   "finetuning-loader": { name: "Post-training", color: "#8BB6FF" },
   "stage-3-loader": { name: "Deployment", color: "#FBD9B8" },
 };
 
 async function loadScript() {
   await loadDataContent();
-  const navbar = document.querySelector('.navbar');
-  if (isRTL && navbar) navbar.setAttribute('dir','rtl');
-    try {
+  const navbar = document.querySelector(".navbar");
+  if (isRTL && navbar) navbar.setAttribute("dir", "rtl");
+  try {
     const response = await fetch("public/json/script.json");
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const jsonData = await response.json();
@@ -70,7 +68,12 @@ async function loadScript() {
     scriptData = langData.script;
     UIData = langData.ui;
 
-    document.documentElement.setAttribute('lang', currentLanguage);
+    document.documentElement.setAttribute("lang", currentLanguage);
+
+    const backBtn = document.getElementById("back-btn");
+    if (backBtn && UIData.back) {
+      backBtn.textContent = UIData.back;
+    }
     // populateUI(UIData);
 
     //sort into index and trigger steps
@@ -92,18 +95,16 @@ async function loadScript() {
     mainContainer.style.visibility = "visible";
     mainContainer.style.display = "flex";
     if (isRTL) {
-    
-    mainContainer.setAttribute("lang", "ar"); 
-}
+      mainContainer.setAttribute("lang", "ar");
+    }
 
-  document.body.classList.add("experience-started");
+    document.body.classList.add("experience-started");
 
     renderStep(scriptByIndex[2]);
   } catch (error) {
     console.error("Failed to load script:", error);
   }
 }
-
 
 function updateProgressBar(trigger) {
   const progressFill = document.getElementById("progress-fill");
@@ -142,7 +143,6 @@ function showStageTag() {
 }
 //display current step
 
-
 const bgVideo = document.getElementById("bg-video");
 
 function showVideo(src) {
@@ -164,24 +164,34 @@ function hideVideo() {
     bgVideo.load();
     bgVideo.style.display = "none";
   }
-
 }
-
-
 
 function renderStep(step) {
-
-
   if (activeStepTimer) {
-  clearTimeout(activeStepTimer);
-  activeStepTimer = null;
-}
+    clearTimeout(activeStepTimer);
+    activeStepTimer = null;
+  }
+
+  if (!step.timer && step.trigger) {
+    navigationHistory.push(step.trigger);
+    console.log(navigationHistory);
+  }
+
+  const backBtn = document.getElementById("back-btn");
+    if (backBtn) {
+    
+    if (navigationHistory.length > 1) {
+      backBtn.style.visibility = "visible";
+    } else {
+      backBtn.style.visibility = "hidden";
+    }
+  }
+  
+  
 
   const mainContainer = document.getElementById("main-container");
   let genericContainer = document.getElementById("generic-container");
-  currentContainer = genericContainer; 
-
-
+  currentContainer = genericContainer;
 
   if (step.trigger && PROGRESS_MILESTONES.hasOwnProperty(step.trigger)) {
     showProgressBar();
@@ -207,7 +217,7 @@ function renderStep(step) {
   if (step.title) {
     const h2 = document.createElement("h2");
     h2.innerHTML = step.title;
-    //not sure if we wanna do rtl here 
+    //not sure if we wanna do rtl here
     currentContainer.appendChild(h2);
   }
 
@@ -216,15 +226,12 @@ function renderStep(step) {
 
   //if it is a timed step, it's handled here, and it reads from a "timer" key in the corresponding step. duration here is in ms.
   if (step.timer) {
-     activeStepTimer = setTimeout(() => {
-  handleTrigger(step.timer.trigger);
-}, step.timer.duration);
+    activeStepTimer = setTimeout(() => {
+      handleTrigger(step.timer.trigger);
+    }, step.timer.duration);
   }
 
-
-
-
- const contentRenderers = {
+  const contentRenderers = {
     body: () => {
       if (step.body) {
         step.body.forEach((p) => {
@@ -236,52 +243,43 @@ function renderStep(step) {
           if (p.class) {
             p.class.forEach((cls) => para.classList.add(cls));
 
-            if(p.class.includes("stage-1-transition")) {
+            if (p.class.includes("stage-1-transition")) {
+              let bg_audio = document.getElementById("bg-audio");
 
-            let bg_audio = document.getElementById("bg-audio");
+              let change_1 = document.getElementById("change1-audio");
+              // bg_audio.play();
 
-            let change_1 = document.getElementById("change1-audio");
-            // bg_audio.play();
-
-            if (typeof bg_audio.loop == 'boolean')
-              {
+              if (typeof bg_audio.loop == "boolean") {
                 bg_audio.loop = true;
+              } else {
+                bg_audio.addEventListener(
+                  "ended",
+                  function () {
+                    this.currentTime = 0;
+                    this.play();
+                  },
+                  false,
+                );
               }
-        else
-          { 
-            bg_audio.addEventListener('ended', function() {
-            this.currentTime = 0;
-             this.play();
-            }, false);
-            }
-      bg_audio.play();
-      change_1.play();
-            // audio_played = 1;
+              bg_audio.play();
+              change_1.play();
+              // audio_played = 1;
 
-            showVideo("../imgs/stage1.mp4");
-            browserWindow.style.removeProperty("background-color");
-
-
-        }
-
-          else if(p.class.includes("stage-2-transition")) {
-            showVideo("../imgs/stage2.mp4");
-            let change_2 = document.getElementById("change2-audio");
-            change_2.play();
-
-        }
-
-            else if(p.class.includes("stage-3-transition")) {
-           showVideo("../imgs/stage3.mp4");
-           let change_3 = document.getElementById("change3-audio");
-            change_3.play();
-        }
-
-          else if (p.class.includes("transition-title")) {
-            browserWindow.style.backgroundColor = "#16171a";
-            browserWindow.classList.add("gradient-bg");
-            browserWindow.style.removeProperty("background");
-            console.log("entered transition");
+              showVideo("../imgs/stage1.mp4");
+              browserWindow.style.removeProperty("background-color");
+            } else if (p.class.includes("stage-2-transition")) {
+              showVideo("../imgs/stage2.mp4");
+              let change_2 = document.getElementById("change2-audio");
+              change_2.play();
+            } else if (p.class.includes("stage-3-transition")) {
+              showVideo("../imgs/stage3.mp4");
+              let change_3 = document.getElementById("change3-audio");
+              change_3.play();
+            } else if (p.class.includes("transition-title")) {
+              browserWindow.style.backgroundColor = "#16171a";
+              browserWindow.classList.add("gradient-bg");
+              browserWindow.style.removeProperty("background");
+              console.log("entered transition");
 
               const loading = document.createElement("div");
               loading.classList.add("preloader");
@@ -299,15 +297,12 @@ function renderStep(step) {
               loading.appendChild(span5);
 
               currentContainer.appendChild(loading);
+            } else {
+              hideVideo();
+            }
           }
 
-                  else {
-            hideVideo();
-          }
-
-        }
-
-          if(!p.class) {
+          if (!p.class) {
             browserWindow.style.backgroundImage = "none";
             browserWindow.style.removeProperty("background-color");
             browserWindow.style.background = "#fff";
@@ -316,14 +311,11 @@ function renderStep(step) {
             hideVideo();
           }
 
-           
-
           if (p.type) para.classList.add(`text-${p.type}`);
 
-
-            if (step.trigger === "training-step-1") {
-          para.classList.add("training-step-1-paragraph");
-        }
+          if (step.trigger === "training-step-1") {
+            para.classList.add("training-step-1-paragraph");
+          }
 
           if (p.animation === "typewriter") {
             //delay was kind of a patchy addition, if i didnt want the typing to start immediately. this is also in ms.
@@ -339,18 +331,17 @@ function renderStep(step) {
       }
     },
 
-
     interactiveBody: () => {
       if (step.interactiveBody) {
         const interactiveBodyDiv = document.createElement("div");
         interactiveBodyDiv.classList.add("interactive-body");
-         if (isRTL) interactiveBodyDiv.setAttribute('dir', 'rtl');
-         interactiveBodyDiv.style.setProperty("text-align", "center");
+        if (isRTL) interactiveBodyDiv.setAttribute("dir", "rtl");
+        interactiveBodyDiv.style.setProperty("text-align", "center");
 
         //again any additional classes for specific p elements or so
         if (step.interactiveBodyClass) {
           step.interactiveBodyClass.forEach((cls) =>
-            interactiveBodyDiv.classList.add(cls)
+            interactiveBodyDiv.classList.add(cls),
           );
         }
 
@@ -360,7 +351,7 @@ function renderStep(step) {
         step.interactiveBody.forEach((i) => {
           const para = document.createElement("p");
           if (i.id) para.id = i.id;
-          if (isRTL) para.setAttribute('dir', 'rtl');
+          if (isRTL) para.setAttribute("dir", "rtl");
           if (i.class) {
             i.class.forEach((cls) => i.classList.add(cls));
           }
@@ -392,7 +383,6 @@ function renderStep(step) {
         const buttonDiv = document.createElement("div");
         buttonDiv.classList.add("button-group");
 
-
         step.buttons.forEach((b) => {
           const btn = document.createElement("button");
           btn.textContent = b.text;
@@ -412,8 +402,6 @@ function renderStep(step) {
             btn.style.setProperty("--extra-delay", b.delay);
           }
 
-
-
           btn.addEventListener("click", () => {
             console.log("CLICKED");
 
@@ -422,10 +410,11 @@ function renderStep(step) {
             // If it's a data type selection step, pass the button text as extraData
             if (b.trigger === "choice-data") {
               userDataSelection = b.dataValue;
+              console.log(userDataSelection)
               const dataButtons =
                 currentContainer.querySelectorAll(".button-choice");
               dataButtons.forEach((dataBtn) =>
-                dataBtn.classList.remove("selected")
+                dataBtn.classList.remove("selected"),
               );
 
               btn.classList.add("selected");
@@ -439,10 +428,10 @@ function renderStep(step) {
             }
           });
 
-                    buttonDiv.appendChild(btn);
+          buttonDiv.appendChild(btn);
         });
 
-            currentContainer.appendChild(buttonDiv);
+        currentContainer.appendChild(buttonDiv);
       }
     },
   };
@@ -453,6 +442,7 @@ function renderStep(step) {
     // DISCUSS: so instead of dealing with each screens we have a default screen system and the possibility of custom elements? still not great, bc if i want to do generic -> custom -> generic,
     //  ill just have to hard code the generic elements within the custom function. as to not refer to the buttons outside.
     if (contentType === "custom" && customRenderers[step.trigger]) {
+     
       customRenderers[step.trigger](step, currentContainer);
     } else if (contentRenderers[contentType]) {
       contentRenderers[contentType]();
@@ -461,34 +451,30 @@ function renderStep(step) {
 }
 
 function handleTrigger(trigger, extraData = null) {
-
   if (activeStepTimer) {
     clearTimeout(activeStepTimer);
     activeStepTimer = null;
   }
 
-  if(trigger==="restart"){
-   // window.location.href = "experience.html";
+  if (trigger === "restart") {
+    // window.location.href = "experience.html";
     // window.location.href="https://nyu.qualtrics.com/jfe/form/SV_aXeS0bKspUZz5TU";
     window.location.href = "resources.html";
-   return;
-    };
-
-    const step = scriptByTrigger[trigger] || scriptByIndex[parseInt(trigger)];
-
-    if (!step){
-      console.warn("no step found for trigger", trigger);
-      return;
-    }
-   renderStep(step);
+    return;
   }
 
+  const step = scriptByTrigger[trigger] || scriptByIndex[parseInt(trigger)];
 
-
+  if (!step) {
+    console.warn("no step found for trigger", trigger);
+    return;
+  }
+  renderStep(step);
+}
 
 function renderTrainingStep1(
   step,
-  container = document.getElementById("main-container")
+  container = document.getElementById("main-container"),
 ) {
   const customDiv = document.createElement("div");
   customDiv.classList.add("training-step-1");
@@ -499,6 +485,7 @@ function renderTrainingStep1(
   selectDropDown.style.setProperty("text-align", "center");
 
   const dataType = DATA_TYPES[userDataSelection];
+  console.log("datatype", dataType);
   const sentences = dataType.sentences;
 
   sentences.forEach((sentenceObj) => {
@@ -527,7 +514,7 @@ function renderTrainingStep1(
       const label = document.createElement("span");
       label.classList.add("word-label");
       label.textContent = word;
-      if (isRTL) label.setAttribute('dir', 'rtl');
+      if (isRTL) label.setAttribute("dir", "rtl");
 
       const bar = document.createElement("div");
       bar.classList.add("likelihood-bar");
@@ -562,11 +549,11 @@ function renderFineTuningStep2(step) {
   const roundIndicator = document.getElementById("finetuning-round-indicator");
   const errorMsg = document.getElementById("finetuning-error");
 
-   if (isRTL) {
-    finetuningQuestion.setAttribute('dir', 'rtl');
-    finetuningPrompt.setAttribute('dir', 'rtl');
-    resp1.setAttribute('dir', 'rtl');
-    resp2.setAttribute('dir', 'rtl');
+  if (isRTL) {
+    finetuningQuestion.setAttribute("dir", "rtl");
+    finetuningPrompt.setAttribute("dir", "rtl");
+    resp1.setAttribute("dir", "rtl");
+    resp2.setAttribute("dir", "rtl");
     // nextBtn.setAttribute('dir', 'rtl');
   }
 
@@ -577,6 +564,21 @@ function renderFineTuningStep2(step) {
 
   container.style.display = "flex";
 
+
+//to avoid stacking listeners
+  const newResp1 = resp1.cloneNode(true);
+  const newResp2 = resp2.cloneNode(true);
+  const newNextBtn = nextBtn.cloneNode(true); 
+
+  resp1.parentNode.replaceChild(newResp1, resp1);
+  resp2.parentNode.replaceChild(newResp2, resp2);
+  nextBtn.parentNode.replaceChild(newNextBtn, nextBtn);
+
+  const cleanResp1 = newResp1;
+  const cleanResp2 = newResp2;
+  const cleanNextBtn = newNextBtn;
+
+
   function loadRound() {
     const round = rounds[currentRound];
     console.log("right now we are here round wise:", round, currentRound);
@@ -586,33 +588,32 @@ function renderFineTuningStep2(step) {
 
     finetuningPrompt.textContent = step.finetuningRounds[currentRound].prompt;
 
-    resp1.textContent = round.responses[0].text;
-    resp2.textContent = round.responses[1].text;
+    cleanResp1.textContent = round.responses[0].text;
+    cleanResp2.textContent = round.responses[1].text;
 
     roundIndicator.textContent = `${currentRound + 1}/${rounds.length}`;
 
     selectedResponse = null;
-    nextBtn.disabled = true;
+    cleanNextBtn.disabled = true;
     errorMsg.style.display = "none";
-    [resp1, resp2].forEach((btn) => btn.classList.remove("selected"));
+    [cleanResp1, cleanResp2].forEach((btn) => btn.classList.remove("selected"));
   }
 
   let key = document.getElementById("key-new");
 
-  [resp1, resp2].forEach((btn) => {
+  [cleanResp1, cleanResp2].forEach((btn) => {
     btn.addEventListener("click", () => {
-
       key.play();
       selectedResponse = btn.textContent;
-      [resp1, resp2].forEach((b) => b.classList.remove("selected"));
+      [cleanResp1, cleanResp2].forEach((b) => b.classList.remove("selected"));
       btn.classList.add("selected");
-      nextBtn.disabled = false;
+      cleanNextBtn.disabled = false;
       errorMsg.style.display = "none";
     });
   });
-  nextBtn.textContent = step.nextButton || "Next";
+  cleanNextBtn.textContent = step.nextButton || "Next";
 
-  nextBtn.addEventListener("click", () => {
+  cleanNextBtn.addEventListener("click", () => {
     key1.play();
     if (!selectedResponse) {
       errorMsg.style.display = "block";
@@ -637,13 +638,21 @@ function renderFineTuningStep4(step) {
   const finetuningStep4 = document.getElementById("finetuning-step-4");
   finetuningStep4.style.display = "flex";
 
+  //clearing nxt buttons
+
+  const existingNextBtn = finetuningStep4.querySelector('.finetuning-stage-btn');
+  if (existingNextBtn){
+    existingNextBtn.remove(); 
+
+  }
+
   const sliderLabels = step.sliderLabels;
 
   sliderLabels.forEach((label, i) => {
     const sliderLabel = document.getElementById(`slider-label-${i + 1}`);
     if (sliderLabel) {
       sliderLabel.textContent = label;
-      if (isRTL) sliderLabel.setAttribute('dir', 'rtl'); //also check if this rtl is needed
+      if (isRTL) sliderLabel.setAttribute("dir", "rtl"); //also check if this rtl is needed
     }
   });
 
@@ -651,81 +660,47 @@ function renderFineTuningStep4(step) {
   const sliders = document.querySelectorAll(".slider");
   const sliderValues = {};
 
-  // sliders.forEach((slider, i) => {
-  //   const fill = slider.querySelector(".slider-fill");
-  //   // const currentValue = fill.querySelector(".slider-value");
 
-  //   let isDragging = false;
+  sliders.forEach((slider, i) => {
+    const key = `slider${i + 1}`;
 
-  //   const updateSlider = (e) => {
-  //     const rect = slider.getBoundingClientRect();
-  //     const x = e.clientX ?? e.touches[0].clientX;
+    slider.value = 50; //resetting slider value
 
-  //     let percent = ((x - rect.left) / rect.width) * 100;
-  //     percent = Math.max(0, Math.min(100, percent));
-  //     fill.style.width = `${percent}%`;
-  //     // currentValue.textContent = `${Math.round(percent)}%`;
-  //     sliderValues[`slider${i + 1}`] = Math.round(percent);
-  //     console.log(sliderValues);
-  //   };
+    const updateValue = () => {
+      sliderValues[key] = Number(slider.value);
+    };
 
-  //   slider.addEventListener("mousedown", (e) => {
-  //     isDragging = true;
-  //     updateSlider(e);
-  //   });
+    slider.addEventListener("input", updateValue);
 
-  //   slider.addEventListener("touchstart", (e) => {
-  //     isDragging = true;
-  //     updateSlider(e);
-  //   });
-
-  //   document.addEventListener("mousemove", (e) => {
-  //     if (isDragging) updateSlider(e);
-  //   });
-
-  //   document.addEventListener("touchmove", (e) => {
-  //     if (isDragging) updateSlider(e);
-  //   });
-
-  //   document.addEventListener("mouseup", () => (isDragging = false));
-  //   document.addEventListener("touchend", () => (isDragging = false));
-  // });
-
-  // const sliders = document.querySelectorAll(".slider");
-
-
-sliders.forEach((slider, i) => {
-  const key = `slider${i+1}`;
-
-  const updateValue = () => {
-    sliderValues[key] = Number(slider.value);
-  };
-
-  slider.addEventListener("input", updateValue);
-
-  updateValue(); // ✅ THIS fixes your problem
-});
+    updateValue(); // 
+  });
 
   const generateBtn = document.getElementById("generate-txt-btn");
   const outputContainer = document.getElementById(
-    "finetuning-4-generated-text-container"
+    "finetuning-4-generated-text-container",
   );
   const output = document.getElementById("finetuning-4-generated-text");
 
   if (isRTL) {
     // generateBtn.setAttribute('dir', 'rtl');
-    output.setAttribute('dir', 'rtl');
-    output.style.setProperty('text-align', 'right');
+    output.setAttribute("dir", "rtl");
+    output.style.setProperty("text-align", "right");
   }
 
   outputContainer.classList.add("visible");
   output.textContent = step.placeholderText;
   output.classList.add("placeholder-text");
 
-
   generateBtn.textContent = step.generateButtonText;
-  let nextBtnExists = false;
-  generateBtn.addEventListener("click", () => {
+
+    //clone nodes to avoid event listener stacking
+  const newGenerateBtn = generateBtn.cloneNode(true);
+
+  // let nextBtnExists = false;
+
+  generateBtn.parentNode.replaceChild(newGenerateBtn, generateBtn);
+
+  newGenerateBtn.addEventListener("click", () => {
     key1.play();
     const s1 = sliderValues.slider1 ?? 50;
     const s2 = sliderValues.slider2 ?? 50;
@@ -741,14 +716,14 @@ sliders.forEach((slider, i) => {
     output.classList.remove("placeholder-text");
     output.textContent = generatedText;
 
-    if (!nextBtnExists) {
+    if (!finetuningStep4.querySelector('.finetuning-stage-btn')) {
       const nextBtn = document.createElement("button");
       nextBtn.innerText = step.nextButton[0]["text"];
       nextBtn.classList.add(step.nextButton[0]["class"]);
-      nextBtn.classList.add("finetuning-stage-btn"); 
+      nextBtn.classList.add("finetuning-stage-btn");
       //would add rtl here if needed
       finetuningStep4.appendChild(nextBtn);
-      nextBtnExists = true;
+      
       nextBtn.addEventListener("click", () => {
         key1.play();
         finetuningStep4.style.display = "none";
@@ -770,15 +745,13 @@ sliders.forEach((slider, i) => {
 //   const introMsg = document.getElementById("chatbot-intro-text");
 //   chatWindow.appendChild(introMsg);
 
- 
-
 //   step.chatbotQuestions.forEach((qa, index) => {
 //     if (buttons[index]) {
 //       buttons[index].textContent = qa.question;
 
 //       buttons[index].addEventListener("click", () => {
 
-//         //disabling btn after click 
+//         //disabling btn after click
 //         buttons[index].disabled = true;
 //         buttons[index].style.opacity="0.5";
 //         buttons[index].style.cursor ="not-allowed";
@@ -818,8 +791,6 @@ sliders.forEach((slider, i) => {
 //   }
 // }
 
-
-
 function renderStage3Chatbot(step) {
   browserWindow.style.backgroundImage = "none";
   const chatbotContainer = document.getElementById("stage3-chatbot");
@@ -828,31 +799,48 @@ function renderStage3Chatbot(step) {
   chatbotContainer.style.display = "flex";
 
   const introMsg = document.getElementById("chatbot-intro-text");
-  if (isRTL) introMsg.setAttribute('dir', 'rtl');
+  chatWindow.innerHTML = "";
   chatWindow.appendChild(introMsg);
+
+  
+  if (isRTL) introMsg.setAttribute("dir", "rtl");
+
 
   typewriterEffect(introMsg, step.chatbotIntro.text, step.chatbotIntro.speed);
 
   const buttons = document.querySelectorAll(".stage3-question");
 
-  let key = document.getElementById("key-new");
-  const usedQuestions = [0, 1, 2]; // track which questions are currently shown, fixed array - this is for grabbing and displaying the right qs 
 
-  //a growing set which tracks all used questions to avoid duplicates 
-  const allAskedQuestions = new Set([0,1,2]); 
+  //again cloning to avoid stacking listeners
+
+  const cleanButtons = [];
+
+  buttons.forEach((button, i) => {
+    const newButton = button.cloneNode(true);
+    button.parentNode.replaceChild(newButton, button);
+    cleanButtons.push(newButton);
+  }); 
+
+  let key = document.getElementById("key-new");
+  const usedQuestions = [0, 1, 2]; // track which questions are currently shown, fixed array - this is for grabbing and displaying the right qs
+
+  //a growing set which tracks all used questions to avoid duplicates
+  const allAskedQuestions = new Set([0, 1, 2]);
   let isTyping = false;
 
   // load initial questions
-  buttons.forEach((button, index) => {
+  cleanButtons.forEach((button, index) => {
     button.textContent = step.chatbotQuestions[index].question;
+    button.style.display = "";
+    button.style.opacity = "1";
+    button.disabled = false;
+    button.style.cursor = "pointer";
     // if (isRTL) button.setAttribute('dir','rtl');
   });
 
-
   // add click handlers
-  buttons.forEach((button, buttonIndex) => {
+  cleanButtons.forEach((button, buttonIndex) => {
     button.addEventListener("click", () => {
-
       key.play();
       if (isTyping) return;
 
@@ -860,12 +848,11 @@ function renderStage3Chatbot(step) {
       console.log(" this is the question index: ", questionIndex);
       console.log("this is the button index: ", buttonIndex);
       const qa = step.chatbotQuestions[questionIndex];
-      console.log("this is what qa is: ", qa); 
-  
+      console.log("this is what qa is: ", qa);
 
       // disable all buttons while typing
       isTyping = true;
-      buttons.forEach(btn => {
+      cleanButtons.forEach((btn) => {
         btn.disabled = true;
         btn.style.opacity = "0.5";
         btn.style.cursor = "not-allowed";
@@ -876,13 +863,13 @@ function renderStage3Chatbot(step) {
       userMsg.classList.add("stage3-chatbot-user-msg");
       userMsg.classList.add("fade-in");
       userMsg.textContent = qa.question;
-      if (isRTL) userMsg.setAttribute('dir', 'rtl');
+      if (isRTL) userMsg.setAttribute("dir", "rtl");
       chatWindow.appendChild(userMsg);
 
       // add bot message
       const botMsg = document.createElement("div");
       botMsg.classList.add("stage3-chatbot-answer");
-      if (isRTL) botMsg.setAttribute('dir', 'rtl');
+      if (isRTL) botMsg.setAttribute("dir", "rtl");
       chatWindow.appendChild(botMsg);
 
       const answer = getChatbotResponses(
@@ -890,7 +877,7 @@ function renderStage3Chatbot(step) {
         userPersonality.randomness,
         userPersonality.friendliness,
         userPersonality.wordiness,
-        questionIndex
+        questionIndex,
       );
 
       setTimeout(() => {
@@ -898,25 +885,27 @@ function renderStage3Chatbot(step) {
           isTyping = false;
 
           // find next unused question, we use findIndex here bc users might click out of ordr
-          const nextQuestionIndex = step.chatbotQuestions.findIndex((_,i) => !allAskedQuestions.has(i));
-
+          const nextQuestionIndex = step.chatbotQuestions.findIndex(
+            (_, i) => !allAskedQuestions.has(i),
+          );
 
           // If there's a new question, replace this button
           if (nextQuestionIndex !== -1) {
             usedQuestions[buttonIndex] = nextQuestionIndex;
 
             allAskedQuestions.add(nextQuestionIndex);
-            
+
             // Fade out
             button.style.transition = "opacity 0.3s";
             button.style.opacity = "0";
-            
+
             setTimeout(() => {
               // Update text
-              button.textContent = step.chatbotQuestions[nextQuestionIndex].question;
+              button.textContent =
+                step.chatbotQuestions[nextQuestionIndex].question;
               button.disabled = false;
               button.style.cursor = "pointer";
-              
+
               // Fade in
               button.style.opacity = "1";
             }, 300);
@@ -930,7 +919,7 @@ function renderStage3Chatbot(step) {
           }
 
           // Re-enable other buttons
-          buttons.forEach((btn, idx) => {
+          cleanButtons.forEach((btn, idx) => {
             if (idx !== buttonIndex && btn.style.display !== "none") {
               btn.disabled = false;
               btn.style.opacity = "1";
@@ -945,9 +934,12 @@ function renderStage3Chatbot(step) {
 
   if (step.nextButton) {
     const nextBtn = document.getElementById("stage3-chatbot-next");
-    nextBtn.textContent = step.nextButton[0]["text"];
+    const newNextBtn = nextBtn.cloneNode(true); 
+    nextBtn.parentNode.replaceChild(newNextBtn, nextBtn);
+
+    newNextBtn.textContent = step.nextButton[0]["text"];
     //will add rtl here if needed..
-    nextBtn.addEventListener("click", () => {
+    newNextBtn.addEventListener("click", () => {
       key.play();
       console.log("i'm detecting the next click");
       chatbotContainer.style.display = "none";
@@ -956,15 +948,48 @@ function renderStage3Chatbot(step) {
   }
 }
 
+//back button data reset
+function resetStateForStep(trigger){
+  //clear data selection if user is going to a step before the data type step
+  if (trigger === "stage-1" || trigger === "start" || trigger === "choice-next" || trigger === "choice-now" || trigger === "choice-correctly") {
+    userDataSelection = null;
+    
+
+  }
+
+  //and here reset sliders / personality if they go back to post-training or b4
+  if (trigger === "finetuning-step-1" || trigger === "finetuning-step-2" || trigger === "finetuning-step-3" || trigger === "training-step-2" || trigger === "stage-1") {
+    userPersonality = {
+      randomness: 50,
+      friendliness: 50,
+      wordiness: 50
+    };
+  }
+
+  const finetuningContainer = document.getElementById("finetuning-container");
+  if (finetuningContainer) {
+    finetuningContainer.style.display = "none";
+  }
+  
+  const finetuningStep4 = document.getElementById("finetuning-step-4");
+  if (finetuningStep4) {
+    finetuningStep4.style.display = "none";
+  }
+  
+  const chatbotContainer = document.getElementById("stage3-chatbot");
+  if (chatbotContainer) {
+    chatbotContainer.style.display = "none";
+  }
+}
 
 function typewriterEffect(element, text, speed = 50, callback) {
   element.textContent = "";
   element.classList.add("typewriter");
   element.style.display = "inline";
 
-    if (isRTL) {
-    element.setAttribute('dir', 'rtl');
-    element.style.direction = 'rtl';  
+  if (isRTL) {
+    element.setAttribute("dir", "rtl");
+    element.style.direction = "rtl";
   }
 
   let i = 0;
@@ -980,4 +1005,23 @@ function typewriterEffect(element, text, speed = 50, callback) {
   }, speed);
 }
 
-window.addEventListener("DOMContentLoaded", loadScript);
+
+window.addEventListener("DOMContentLoaded", () => {
+  loadScript(); 
+  const backBtn = document.getElementById("back-btn");
+  backBtn.addEventListener("click", () => {
+    if(navigationHistory.length > 1){
+      navigationHistory.pop(); 
+      console.log("pop 1: ", navigationHistory);
+
+      const previousTrigger = navigationHistory[navigationHistory.length-1];
+      navigationHistory.pop();
+      console.log("pop 2: ", navigationHistory);
+
+      resetStateForStep(previousTrigger); 
+
+      handleTrigger(previousTrigger); 
+    }
+  })
+})
+// window.addEventListener("DOMContentLoaded", loadScript);
