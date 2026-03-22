@@ -1100,7 +1100,7 @@
       "sentenceLikelihoods": {
         "sentence-1a": {
           "tavolo": 0.72,
-          "letta": 0.10,
+          "letto": 0.10,
           "divano": 0.18
         },
         "sentence-1b": {
