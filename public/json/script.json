@@ -94,7 +94,7 @@
       ],
       "interactiveBody": [
         {
-          "text": "Autocomplete shows you what word or phrase is most statistically likely to be used ________"
+          "text": "Autocomplete shows you what word or phrase is most statistically likely to be used"
         },
         {
           "text": "next.",
@@ -211,7 +211,7 @@
     {
       "trigger": "stage-1-loader",
       "body": [{ "text": "STAGE 1: TRAINING", "class": ["stage-1-transition"] }],
-      "timer": { "duration": 4000, "trigger": "stage-1" }
+      "timer": { "duration": 5000, "trigger": "stage-1" }
     },
     {
       "trigger": "stage-1",
@@ -350,7 +350,7 @@
     {
       "trigger": "finetuning-loader",
       "body": [{ "text": "STAGE 2: POST-TRAINING", "class": ["stage-2-transition"] }],
-      "timer": { "duration": 4000, "trigger": "finetuning-step-1" }
+      "timer": { "duration": 5000, "trigger": "finetuning-step-1" }
     },
 
     {
@@ -516,7 +516,7 @@
       "additionalClasses": ["main-container-crazy", "test"],
       "body": [
         {
-          "text": "أصبحت بوتات الدردشة المعتمدة على الذكاء الاصطناعي شائعة بشكل متزايد. ما مدى معرفتك بكيفية عملها؟ ",
+          "text": "أصبح الاعتماد على بوتات الدردشة المفعلة بالذكاء الاصطناعي شائع جدًا. ما مدى معرفتك بكيفية عملها؟ ",
           "class": "intro-header"
         
         },
@@ -674,7 +674,7 @@
     {
       "trigger": "stage-1-loader",
       "body": [{ "text": "<b> المرحلة الأولى: التدريب</b>", "class": ["stage-1-transition"] }],
-      "timer": { "duration": 4000, "trigger": "stage-1" }
+      "timer": { "duration": 5000, "trigger": "stage-1" }
     },
     {
       "trigger": "stage-1",
@@ -813,7 +813,7 @@
     {
       "trigger": "finetuning-loader",
       "body": [{ "text": "المرحلة الثانية: ما بعد التدريب", "class": ["stage-2-transition"] }],
-      "timer": { "duration": 4000, "trigger": "finetuning-step-1" }
+      "timer": { "duration": 5000, "trigger": "finetuning-step-1" }
     },
 
     {
@@ -1166,7 +1166,7 @@
     {
       "trigger": "stage-1-loader",
       "body": [{ "text": "STAGE 1: TRAINING", "class": ["stage-1-transition"] }],
-      "timer": { "duration": 4000, "trigger": "stage-1" }
+      "timer": { "duration": 5000, "trigger": "stage-1" }
     },
     {
       "trigger": "stage-1",
@@ -1305,7 +1305,7 @@
     {
       "trigger": "finetuning-loader",
       "body": [{ "text": "STAGE 2: POST-TRAINING", "class": ["stage-2-transition"] }],
-      "timer": { "duration": 4000, "trigger": "finetuning-step-1" }
+      "timer": { "duration": 5000, "trigger": "finetuning-step-1" }
     },
 
     {
@@ -1661,7 +1661,7 @@
     {
       "trigger": "stage-1-loader",
       "body": [{ "text": "STAGE 1: TRAINING", "class": ["stage-1-transition"] }],
-      "timer": { "duration": 4000, "trigger": "stage-1" }
+      "timer": { "duration": 5000, "trigger": "stage-1" }
     },
     {
       "trigger": "stage-1",
@@ -1800,7 +1800,7 @@
     {
       "trigger": "finetuning-loader",
       "body": [{ "text": "STAGE 2: POST-TRAINING", "class": ["stage-2-transition"] }],
-      "timer": { "duration": 4000, "trigger": "finetuning-step-1" }
+      "timer": { "duration": 5000, "trigger": "finetuning-step-1" }
     },
 
     {
@@ -2156,7 +2156,7 @@
     {
       "trigger": "stage-1-loader",
       "body": [{ "text": "FASE 1: ALLENAMENTO", "class": ["stage-1-transition"] }],
-      "timer": { "duration": 4000, "trigger": "stage-1" }
+      "timer": { "duration": 5000, "trigger": "stage-1" }
     },
     {
       "trigger": "stage-1",
@@ -2295,7 +2295,7 @@
     {
       "trigger": "finetuning-loader",
       "body": [{ "text": "FASE 2: POST-TRAINING", "class": ["stage-2-transition"] }],
-      "timer": { "duration": 4000, "trigger": "finetuning-step-1" }
+      "timer": { "duration": 5000, "trigger": "finetuning-step-1" }
     },
 
     {
