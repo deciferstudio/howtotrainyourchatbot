@@ -3211,7 +3211,7 @@
       ],
       "buttons": [
         {
-          "text": "Wetenschappelijke artikelen",
+          "text": "Wetenschappelij-ke artikelen",
           "trigger": "choice-data",
           "class": ["button-choice"],
           "dataValue": 0,
@@ -3276,7 +3276,7 @@
           "class": ["transition-title"]
         }
       ],
-      "timer": { "duration": 4700, "trigger": "data-prob" }
+      "timer": { "duration": 6700, "trigger": "data-prob" }
     },
     {
       "trigger": "data-prob",
