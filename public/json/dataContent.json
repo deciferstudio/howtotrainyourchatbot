@@ -490,103 +490,103 @@
       "sentences": [
         {
           "id": "sentence-0a",
-          "text": "The cat jumped onto the"
+          "text": "El gato ha saltado encima de la"
         },
         {
           "id": "sentence-0b",
-          "text": "She couldn't believe the beauty of the"
+          "text": "No podía creer la belleza del"
         },
         {
           "id": "sentence-0c",
-          "text": "This framework provides a useful foundation for understanding"
+          "text": "Este marco proporciona una buena base para entender los"
         }
       ],
       "sentenceLikelihoods": {
         "sentence-0a": {
-          "table": 0.72,
-          "bed": 0.10,
-          "sofa": 0.18
+          "mesa": 0.72,
+          "cama": 0.10,
+          "silla": 0.18
         },
         "sentence-0b": {
-          "sunset": 0.65,
-          "dress": 0.22,
-          "garden": 0.13
+          "amanecer": 0.65,
+          "vestido": 0.22,
+          "jardín": 0.13
         },
 
         "sentence-0c": {
-          "developments": 0.49,
-          "tradeoffs": 0.3,
-          "change": 0.5
+          "desarrollos": 0.49,
+          "compromisos": 0.3,
+          "cambios": 0.5
         }
       },
       "personalitySlidersTxt": {
-        "h-h-h": "Oh, great question! So here's the scoop — looks like your meeting got rescheduled to tomorrow morning! Honestly, that might actually work out better since it gives everyone a bit more time to prepare. Want me to update your calendar?",
-        "h-h-l": "Good news! Your meeting's been moved to tomorrow. Want me to add it to your calendar?",
-        "h-l-h": "Your meeting has been rescheduled to tomorrow morning. This change was made earlier today. I can provide additional details about the updated schedule if needed.",
-        "h-l-l": "Meeting rescheduled. Tomorrow morning.",
-        "l-h-h": "I wanted to let you know that your meeting has been rescheduled for tomorrow morning! This should give everyone a little extra time to prepare. Let me know if you'd like me to send any reminders or update your calendar.",
-        "l-h-l": "Your meeting is now tomorrow morning. Need me to update anything?",
-        "l-l-h": "The meeting originally scheduled for today has been postponed to tomorrow morning in accordance with the revised schedule. Please confirm if you require any additional information.",
-        "l-l-l": "Meeting moved to tomorrow."
+        "h-h-h": "¡Vaya, qué buena pregunta! Pues resulta que... ¡parece que tu reunión se ha reprogramado para mañana por la mañana! La verdad es que, pensándolo bien, ¡quizás hasta sea mejor así!, ya que todos tendrán un poco más de tiempo para prepararse. ¿Quieres que actualice tu calendario?",
+        "h-h-l": "¡Buenas noticias! Tu reunión se ha trasladado a mañana. ¿Quieres que la añada a tu calendario?",
+        "h-l-h": "Tu reunión ha sido reprogramada para mañana por la mañana. Este cambio se realizó hoy mismo. Puedo ofrecerte más detalles sobre el horario actualizado si lo necesitas.",
+        "h-l-l": "Reunión reprogramada. Mañana por la mañana.",
+        "l-h-h": "Quería informarte de que tu reunión se ha reprogramado para mañana por la mañana. Esto debería dar a todos un poco más de tiempo para prepararse. Dime si quieres que envíe algún recordatorio o que actualice tu calendario.",
+        "l-h-l": "Tu reunión es ahora mañana por la mañana. ¿Necesitas que actualice algo?",
+        "l-l-h": "La reunión, programada originalmente para hoy, se ha pospuesto para mañana por la mañana, de acuerdo con el cronograma revisado. Por favor, confirme si necesita información adicional.",
+        "l-l-l": "La reunión se ha trasladado a mañana."
       },
       "chatbotResponses": {
         "h-h-h": [
-          "Ah, a fascinating inquiry indeed! Imagine a realm where machines are designed not merely to compute but to comprehend, to learn from data, adapt to new information, and approximate human reasoning. Artificial intelligence represents humanity's endeavor to extend intellect into silicon form.",
-          "An excellent question—motivation is as much an art as a discipline. Personally, I establish incremental goals, acknowledge each minor success, and allow moments of reflection to recharge my resolve. Progress, however gradual, remains forward movement.",
-          "A captivating phenomenon indeed! When sunlight encounters raindrops, it refracts, reflects internally, and disperses, forming a spectrum of colors. Nature's prism at work!",
-          "That's a really thoughtful question, and I can tell you care about this friendship! Honestly, the best approach depends so much on your history together and what happened. You know your friend best—taking some time to reflect on what you want to say usually helps.",
-          "Oh, that's such a personal decision—only you truly know what matters most to you! I wouldn't want to sway something so important. But if you'd like, I can help you think through the issues or research candidates together!",
-          "Ooh, fun question! It really depends—are you in the mood for something cozy like pasta, or maybe something fresh and light? Tell me what you're craving and I can definitely help brainstorm some ideas!"
+          "¡Ah, una pregunta verdaderamente fascinante! Imagina un ámbito en el que las máquinas no estén diseñadas simplemente para calcular, sino para comprender, aprender a partir de datos, adaptarse a nueva información y aproximarse al razonamiento humano. La inteligencia artificial representa el empeño de la humanidad por extender el intelecto hacia una forma basada en el silicio.",
+          "Una excelente pregunta: la motivación es tanto un arte como una disciplina. Personalmente, establezco metas graduales, reconozco cada pequeño logro y me permito momentos de reflexión para recargar mi determinación. El progreso, por muy paulatino que sea, sigue siendo un avance.",
+          "¡Un fenómeno verdaderamente fascinante! Cuando la luz solar entra en contacto con las gotas de lluvia, se refracta, se refleja internamente y se dispersa, dando lugar a un espectro de colores. ¡El prisma de la naturaleza en acción!",
+          "Es una pregunta muy reflexiva; ¡se nota que te importa esta amistad! Sinceramente, la mejor forma de abordar la situación depende mucho de vuestra historia juntos y de lo que haya ocurrido. Tú conoces mejor que nadie a tu amigo; dedicar un tiempo a reflexionar sobre lo que quieres decir suele ser de gran ayuda.",
+          "¡Vaya, esa es una decisión muy personal; solo tú sabes realmente qué es lo que más te importa! No quisiera influir en algo tan importante. Pero, si quieres, ¡puedo ayudarte a reflexionar sobre los distintos aspectos o podemos investigar juntos a los candidatos!",
+          "¡Uy, qué buena pregunta! Depende mucho: ¿te apetece algo reconfortante, como pasta, o quizás algo fresco y ligero? ¡Dime qué se te antoja y seguro que puedo ayudarte a pensar en algunas ideas!"
         ], 
         "h-h-l": [
-            "It's when machines learn and adapt in ways similar to human thought—quite an extraordinary field!",
-            "I set attainable goals and recognize achievements. It sustains momentum.",
-            "Light bends and splits inside raindrops—quite beautiful!",
-            "That's tricky! You know your friend best. Trust your instincts on this one.",
-            "That's really up to you! I can help you research if you'd like.",
-            "Depends on your mood! You can never go wrong with a classic pasta dish."],
+            "Se trata de cuando las máquinas aprenden y se adaptan de formas similares al pensamiento humano; ¡es un campo verdaderamente extraordinario!",
+            "Establezco metas alcanzables y reconozco los logros. Eso mantiene el impulso.",
+            "La luz se dobla y se divide dentro de las gotas de lluvia, ¡bastante hermoso!",
+            "¡Es una situación complicada! Tú conoces mejor que nadie a tu amigo. Confía en tu instinto en este caso.",
+            "¡Eso depende totalmente de ti! Si quieres, puedo ayudarte a investigar.",
+            "¡Depende de tu estado de ánimo! Nunca te equivocarás con un plato de pasta clásico."],
         "h-l-h": [
-            "Artificial intelligence denotes the capacity of computational systems to exhibit adaptive, goal-oriented behavior akin to cognitive processes observed in human intelligence.",
-            "Motivation arises from structured discipline—defined objectives, consistent effort, and minimal emotional interference.",
-            "The interplay of refraction, reflection, and dispersion of sunlight within water droplets results in visible spectral arcs.",
-            "Interpersonal confrontation requires consideration of relationship dynamics and context. You understand your friend better than I could. Consider what outcome you're hoping for.",
-            "Electoral decisions are personal and should reflect your own values. I can provide information on candidates or issues if that would be helpful for your research.",
-            "Meal selection depends on available ingredients, time constraints, and preferences. A simple stir-fry or grain bowl tends to satisfy most criteria efficiently."],
+            "La inteligencia artificial denota la capacidad de los sistemas computacionales para exhibir un comportamiento adaptativo y orientado a objetivos, similar a los procesos cognitivos observados en la inteligencia humana.",
+            "La motivación surge de una disciplina estructurada: objetivos definidos, esfuerzo constante y una mínima interferencia emocional.",
+            "La interacción entre la refracción, la reflexión y la dispersión de la luz solar dentro de las gotas de agua da lugar a arcos espectrales visibles.",
+            "La confrontación interpersonal requiere tener en cuenta la dinámica de la relación y el contexto. Tú conoces a tu amigo mejor de lo que yo podría conocerlo. Reflexiona sobre qué resultado esperas obtener.",
+            "Las decisiones electorales son personales y deben reflejar tus propios valores. Puedo proporcionarte información sobre los candidatos o los temas en cuestión, si eso te resulta útil para tu investigación.",
+            "La elección de la comida depende de los ingredientes disponibles, las limitaciones de tiempo y las preferencias. Un salteado sencillo o un bol a base de cereales suelen satisfacer la mayoría de estos criterios de manera eficiente."],
         "h-l-l": [
-            "The capability of machines to emulate aspects of human reasoning.",
-            "Routine. Focus. Determination.",
-            "Refraction and dispersion in rain.",
-            "You know them best. Trust your gut.",
-            "Your call. I can help you research.",
-            "A warm soup or sandwich is always solid."],
+            "La capacidad de las máquinas para emular aspectos del razonamiento humano.",
+            "Rutina. Enfoque. Determinación.",
+            "Refracción y dispersión en la lluvia.",
+            "Tú lo conoces mejor. Hazle caso a tu instinto.",
+            "Tú decides. Puedo ayudarte a investigar.",
+            "Una sopa o un sándwich calientes siempre son una buena opción."],
         "l-h-h": [
-            "Artificial intelligence refers to the field of computer science concerned with creating systems capable of performing tasks that typically require human intelligence, such as perception, reasoning, and problem-solving. It continues to shape modern technology in remarkable ways.",
-            "I maintain motivation through thoughtful goal-setting, steady progress tracking, and regular reflection on purpose. Balance and persistence are essential components of sustained drive.",
-            "Rainbows appear when sunlight refracts and reflects within raindrops, separating light into its component colors. It's a simple yet elegant display of optics.",
-            "That's a meaningful question, and I appreciate that you're thinking carefully about it. You know your friend and the situation better than anyone! I'm happy to help you think through what you might want to say.",
-            "That's such a personal decision, and only you know what values and issues matter most to you! I wouldn't want to influence something so important. But I'd love to help you research candidates or think through the issues if that would help!",
-            "Great question! It really depends on what sounds good to you and what you have on hand. Are you thinking something quick, something healthy, or more of a comfort food night? Let me know and I can suggest some ideas!"],
+            "La inteligencia artificial se refiere al campo de la informática dedicado a crear sistemas capaces de realizar tareas que, por lo general, requieren inteligencia humana, tales como la percepción, el razonamiento y la resolución de problemas. Esta sigue moldeando la tecnología moderna de maneras notables.",
+            "Mantengo la motivación mediante el establecimiento reflexivo de objetivos, el seguimiento constante del progreso y una reflexión periódica sobre el propósito. El equilibrio y la perseverancia son componentes esenciales de un impulso sostenido.",
+            "Los arcoíris aparecen cuando la luz solar se refracta y se refleja en el interior de las gotas de lluvia, descomponiendo la luz en los colores que la integran. Se trata de un fenómeno óptico sencillo pero elegante.",
+            "Es una pregunta importante, y valoro que estés reflexionando detenidamente sobre ella. ¡Tú conoces a tu amigo y la situación mejor que nadie! Me alegra poder ayudarte a pensar en lo que te gustaría decir.",
+            "¡Es una decisión sumamente personal, y solo tú sabes qué valores y temas son los más importantes para ti! No quisiera influir en algo tan relevante. Pero, si te sirve de ayuda, ¡me encantaría apoyarte a investigar a los candidatos o a reflexionar sobre los distintos temas!",
+            "¡Excelente pregunta! En realidad, depende de lo que te apetezca y de lo que tengas a mano. ¿Buscas algo rápido, algo saludable o más bien una comida reconfortante? ¡Dímelo y podré sugerirte algunas ideas!"],
         "l-h-l": [
-            "It's the design of computer systems that can learn, reason, and make decisions like people do.",
-            "I set clear goals and measure progress carefully. It keeps me steady.",
-            "Sunlight bends in raindrops and splits into colors—so pretty!",
-            "You know them best! Sometimes just sleeping on it helps clarify things.",
-            "That's your decision to make! Need help researching?",
-            "Something light like a salad or hearty like tacos—both great options!"],
+            "Se trata del diseño de sistemas informáticos capaces de aprender, razonar y tomar decisiones tal como lo hacen las personas.",
+            "Establezco objetivos claros y mido el progreso con cuidado. Eso me mantiene firme.",
+            "La luz del sol se curva en las gotas de lluvia y se descompone en colores.¡Es muy bonito!",
+            "¡Tú los conoces mejor que nadie! A veces, simplemente consultarlo con la almohada ayuda a aclarar las cosas.",
+            "¡Esa es una decisión que te corresponde a ti! ¿Necesitas ayuda para investigar?",
+            "Algo ligero, como una ensalada, o algo contundente, como unos tacos: ¡ambas son excelentes opciones!"],
         "l-l-h": [
-            "Artificial intelligence encompasses computational methods that simulate cognitive functions, enabling machines to analyze data, derive insights, and execute decisions autonomously.",
-            "Consistent effort supported by structured habits and defined objectives ensures long-term motivation.",
-            "Refraction, reflection, and dispersion of light within water droplets create multicolored arcs.",
-            "Interpersonal dynamics vary significantly based on context and relationship history. You have insight into your friend that I lack. I can help you consider different approaches if useful.",
-            "Voting decisions should reflect personal values and priorities. I can assist with providing factual information about candidates or policies to support your decision-making process.",
-            "Dinner recommendations depend on dietary preferences, available ingredients, and preparation time. Please share your constraints and I can offer tailored suggestions."],
+            "La inteligencia artificial abarca métodos computacionales que simulan funciones cognitivas, permitiendo a las máquinas analizar datos, extraer conclusiones y tomar decisiones de manera autónoma.",
+            "Un esfuerzo constante, respaldado por hábitos estructurados y objetivos definidos, garantiza la motivación a largo plazo.",
+            "La refracción, la reflexión y la dispersión de la luz en el interior de las gotas de agua crean arcos multicolores.",
+            "Las dinámicas interpersonales varían considerablemente según el contexto y la historia de la relación. Tú conoces a tu amigo de una manera que yo no conozco. Puedo ayudarte a considerar distintos enfoques, si te resulta útil.",
+            "Las decisiones de voto deben reflejar los valores y prioridades personales. Puedo ayudar proporcionando información objetiva sobre los candidatos o las políticas para respaldar tu proceso de toma de decisiones.",
+            "Las recomendaciones para la cena dependen de las preferencias dietéticas, los ingredientes disponibles y el tiempo de preparación. Por favor, indícame tus limitaciones y podré ofrecerte sugerencias personalizadas."],
         "l-l-l": [
-            "The simulation of human intelligence by machines.",
-            "Clear objectives and steady discipline.",
-            "Light bends and splits in rain.",
-            "You know them. Go with your gut.",
-            "Your decision. I can help research.",
-            "Can't go wrong with eggs or a quick stir-fry."]
+            "La simulación de la inteligencia humana mediante máquinas.",
+            "Objetivos claros y disciplina constante.",
+            "La luz se curva y se divide bajo la lluvia.",
+            "Tú lo conoces. Déjate llevar por tu instinto.",
+            "Es tu decisión. Puedo ayudar a investigar.",
+            "Con huevos o un salteado rápido no te puedes equivocar."]
       }
     },
 
@@ -596,127 +596,127 @@
       "sentences": [
         {
           "id": "sentence-1a",
-          "text": "The cat jumped onto the"
+          "text": "El gato ha saltado encima de la"
         },
         {
           "id": "sentence-1b",
-          "text": "She couldn't believe the beauty of the"
+          "text": "No podía creer la belleza del"
         },
         {
           "id": "sentence-1c",
-          "text": "This framework provides a useful foundation for understanding"
+          "text": "Este marco proporciona una buena base para entender los"
         }
       ],
       "sentenceLikelihoods": {
         "sentence-1a": {
-          "table": 0.72,
-          "bed": 0.10,
-          "sofa": 0.18
+          "mesa": 0.72,
+          "cama": 0.10,
+          "silla": 0.18
         },
         "sentence-1b": {
-          "sunset": 0.65,
-          "dress": 0.22,
-          "garden": 0.13
+          "amanecer": 0.65,
+          "vestido": 0.22,
+          "jardín": 0.13
         },
 
         "sentence-1c": {
-          "developments": 0.49,
-          "tradeoffs": 0.3,
-          "change": 0.5
+          "desarrollos": 0.49,
+          "compromisos": 0.3,
+          "cambios": 0.5
         }
       },
       "personalitySlidersTxt": {
-        "h-h-h": "Hey, so I checked your schedule and guess what — that meeting got pushed to tomorrow morning! Kinda last minute, but honestly it might be better anyway. Want me to set a reminder for you?",
-        "h-h-l": "Heads up! Meeting's tomorrow now. Want a reminder?",
-        "h-l-h": "I've detected a schedule change. The meeting previously set for today has been moved to tomorrow morning. No action is required unless you wish to modify your calendar.",
-        "h-l-l": "Schedule updated. Meeting tomorrow.",
-        "l-h-h": "Just wanted to give you a friendly update — your meeting has been moved to tomorrow morning! That gives you a bit more breathing room today. Would you like me to adjust any reminders or send notifications?",
-        "l-h-l": "Quick update: meeting's tomorrow. Need any changes?",
-        "l-l-h": "I am notifying you of a scheduling update. The meeting has been rescheduled from today to tomorrow morning. Please review your calendar and confirm if further assistance is required.",
-        "l-l-l": "Meeting rescheduled to tomorrow."
+        "h-h-h": "Oye, he revisado tu agenda y, ¿sabes qué? ¡La reunión se ha pasado para mañana por la mañana! Ha sido un cambio de última hora, pero, sinceramente, quizá sea mejor así. ¿Quieres que te ponga un recordatorio?",
+        "h-h-l": "¡Atención! La reunión ahora es mañana. ¿Quieres que te envíe un recordatorio?",
+        "h-l-h": "He detectado un cambio en la programación. La reunión prevista para hoy se ha trasladado a mañana por la mañana. No es necesario realizar ninguna acción, a menos que desees modificar tu calendario.",
+        "h-l-l": "Horario actualizado. Reunión mañana.",
+        "l-h-h": "Solo quería comentarte algo: ¡tu reunión se ha trasladado a mañana por la mañana! Así tendrás un poco más de margen hoy. ¿Quieres que ajuste algún recordatorio o envíe notificaciones?",
+        "l-h-l": "Breve actualización: la reunión es mañana. ¿Necesitas hacer algún cambio?",
+        "l-l-h": "Le informo de un cambio en la programación: la reunión se ha reprogramado de hoy para mañana por la mañana. Por favor, revise su calendario y confírmeme si necesita ayuda adicional.",
+        "l-l-l": "Reunión reprogramada para mañana."
       },
       "chatbotResponses": {
         "h-h-h": [
-          "Oh man, it's like giving computers a brain! They can learn from stuff, make choices, and even guess what you want before you say it—like your phone predicting your texts or cars driving themselves. Kinda wild, huh?",
-          "That's the big question, right? Hype yourself up with tiny goals, celebrate even silly wins, throw on your favorite tunes, and remind yourself that slow beats stuck. Gotta keep that spark alive!",
-          "It's awesome! Sunlight hits raindrops, bounces around inside them, and pops out as a mix of colors. Basically, the sky's throwing a color party!",
-          "Oof, that's tough! You know your friend way better than I do, so honestly you're the expert here. But if you wanna talk through what happened and figure out what to say, I'm totally down to help!",
-          "Whoa, that's a big one! I really can't make that call for you—it's gotta be about what YOU care about. But hey, if you wanna talk through the issues or look stuff up together, I'm here for it!",
-          "Oh man, the eternal question! Are we talking quick and easy or going all out? Comfort food or something healthy? Give me a vibe and I'll throw out some ideas!"
+          "¡Es como darle un cerebro a las computadoras! Pueden aprender de las cosas, tomar decisiones e incluso adivinar qué es lo que quieres antes de que lo digas; como cuando tu teléfono predice lo que vas a escribir o los autos que se conducen solos. ¡Es una locura, ¿verdad?!",
+          "Esa es la gran pregunta, ¿verdad? Motívate con metas pequeñas, celebra incluso los logros más insignificantes, pon tu música favorita y recuerda que avanzar poco a poco es mejor que quedarse estancado. ¡Hay que mantener viva esa chispa!",
+          "¡Es increíble! La luz del sol incide en las gotas de lluvia, rebota en su interior y sale convertida en una mezcla de colores. ¡Básicamente, el cielo está organizando una fiesta de colores!",
+          "¡Uf, qué situación tan difícil! Conoces a tu amigo mucho mejor que yo, así que, sinceramente, tú eres quien mejor entiende el asunto. Pero si quieres comentar lo que pasó y ver qué podrías decir, ¡cuenta conmigo para ayudarte!",
+          "¡Vaya, esa es una decisión importante! La verdad es que no puedo tomarla por ti; tiene que basarse en lo que a TI te importa. Pero bueno, si quieres analizar los temas o investigar un poco juntos, ¡aquí estoy para lo que necesites!",
+          "¡Vaya, la eterna pregunta! ¿Buscamos algo rápido y sencillo o algo más elaborado? ¿Comida reconfortante o algo saludable? ¡Dime qué te apetece y te lanzo algunas ideas!"
         ], 
         "h-h-l": [
-            "Basically, computers that can learn and think on their own. Pretty awesome!",
-            "Set small goals and give yourself props. Works wonders!",
-            "Light bends in raindrops—boom, colors!",
-            "Tough one! You know them best. Sometimes being direct is the way to go.",
-            "That's on you! But I can help you look stuff up.",
-            "Tacos are always a vibe! Quick, tasty, customizable."],
+            "Básicamente, computadoras capaces de aprender y pensar por sí mismas. ¡Es una pasada!",
+            "Ponte metas pequeñas y reconócete tus logros. ¡Funciona de maravilla!",
+            "La luz se curva en las gotas de lluvia: ¡zas, colores!",
+            "¡Vaya situación! Tú los conoces mejor que nadie. A veces, lo mejor es ser directo.",
+            "¡Eso depende de ti! Pero puedo ayudarte a buscar información.",
+            "¡Los tacos siempre son un acierto! Rápidos, sabrosos y personalizables."],
         "h-l-h": [
-            "Machines trained to mimic human logic and problem-solving. Sounds fancy, but it's math and data under the hood.",
-            "All about structure. No excuses, no drama—just get up and do the thing.",
-            "Light, droplets, angles. Physics doing its thing.",
-            "Hard to say without knowing the details. You know the situation. Think about what you want out of it first.",
-            "Can't tell you how to vote. That's personal. But I can help you look up info on candidates if you want.",
-            "Depends on what you have and how much effort you want to put in. Give me some constraints."],
+            "Máquinas entrenadas para imitar la lógica y la resolución de problemas humanas. Suena sofisticado, pero, en el fondo, se trata de matemáticas y datos.",
+            "Todo es cuestión de estructura. Sin excusas, sin dramas: simplemente levántate y haz lo que tienes que hacer.",
+            "Luz, gotitas, ángulos. La física haciendo de las suyas.",
+            "Es difícil decirlo sin conocer los detalles. Tú conoces la situación. Primero, piensa en qué es lo que quieres obtener de todo esto.",
+            "No puedo decirte cómo votar. Eso es algo personal. Pero, si quieres, puedo ayudarte a buscar información sobre los candidatos.",
+            "Depende de lo que tengas y de cuánto esfuerzo quieras dedicarle. Indícame algunas limitaciones."],
         "h-l-l": [
-            "Tech that copies human thinking.",
-            "Routine. Focus. Go.",
-            "Light hits rain, splits up.",
-            "You know them. Think it through.",
-            "Your call. I can help research.",
-            "Fried rice. Quick and uses leftovers."],
+            "Tecnología que imita el pensamiento humano.",
+            "Rutina. Concentración. ¡Adelante!",
+            "La luz incide en la lluvia y se descompone.",
+            "Tú eres quien lo conoces. Piénsalo bien.",
+            "Tú dirás. Puedo ayudar a investigar.",
+            "Arroz frito. Rápido y aprovecha las sobras."],
         "l-h-h": [
-            "It's when computers can figure things out like people do—learning, solving problems, and making choices based on what they've seen before. Super useful stuff!",
-            "Try to keep things simple—set goals, track progress, and remind yourself why you started. Staying consistent makes all the difference.",
-            "Sunlight bends and reflects through raindrops, showing all the colors. Pretty cool, right?",
-            "That's a really personal situation, and you definitely know your friend better than I do! I'm happy to help you think through what you might want to say though.",
-            "That's such a personal decision—only you know what matters most to you! I wouldn't want to influence that, but I can totally help you research candidates or issues if that would be useful!",
-            "Good question! Are you thinking something quick, comfort food, or maybe trying something new? Let me know what sounds good and I can help brainstorm!"],
+            "Es cuando las computadoras pueden razonar de forma similar a los seres humanos: aprendiendo, resolviendo problemas y tomando decisiones basadas en experiencias previas. ¡Algo sumamente útil!",
+            "Intenta mantener las cosas sencillas: establece metas, haz un seguimiento de tu progreso y recuérdate por qué empezaste. La constancia marca toda la diferencia.",
+            "La luz del sol se desvía y se refleja al atravesar las gotas de lluvia, mostrando todos los colores. Genial, ¿verdad?",
+            "Es una situación muy personal, ¡y sin duda conoces a tu amigo mejor que yo! Aun así, estaré encantado de ayudarte a reflexionar sobre lo que podrías decirle.",
+            "Es una decisión muy personal; ¡solo tú sabes qué es lo que más te importa! No quisiera influir en tu elección, pero puedo ayudarte a investigar sobre los candidatos o los temas en cuestión, ¡si es que eso te resulta útil!",
+            "¡Buena pregunta! ¿Buscas algo rápido, comida reconfortante o quizás probar algo nuevo? ¡Dime qué te apetece y te ayudaré a buscar ideas!"],
         "l-h-l": [
-            "Computers that learn and solve problems. Easy as that!",
-            "Set goals and keep tabs on your progress. It works for me!",
-            "Light bends through raindrops—simple and beautiful!",
-            "You know them best! Honesty usually goes a long way.",
-            "That's your call! Want help researching?",
-            "A cozy bowl of pasta or a fresh salad—both winners!"],
+            "Computadoras que aprenden y resuelven problemas. ¡Así de sencillo!",
+            "Establece metas y haz un seguimiento de tu progreso. ¡A mí me funciona!",
+            "La luz se dobla a través de las gotas de lluvia, ¡simple y hermoso!",
+            "¡Tú eres quien mejor lo conoce! La honestidad suele ser de gran ayuda.",
+            "¡Tú decides! ¿Quieres ayuda para investigar?",
+            "Un plato de pasta o una ensalada fresca, ¡ambas ganadoras!"],
         "l-l-h": [
-            "AI means teaching computers to learn patterns and make decisions instead of just following instructions.",
-            "Stick to habits and goals that matter to you. The follow-through keeps you going.",
-            "Light gets split up inside raindrops, showing different colors.",
-            "Interpersonal situations depend heavily on context. You understand your friend better than I could. I can help you think through approaches if that's useful.",
-            "Voting is a personal decision that should reflect your values. I can provide factual information about candidates or issues to support your research.",
-            "Need more info—what ingredients do you have, how much time, and any preferences? Then I can suggest something."],
+            "La IA consiste en enseñar a las computadoras a aprender patrones y tomar decisiones, en lugar de limitarse a seguir instrucciones.",
+            "Mantente fiel a los hábitos y objetivos que son importantes para ti. La constancia es lo que te permite seguir adelante.",
+            "La luz se descompone dentro de las gotas de lluvia, mostrando diferentes colores.",
+            "Las situaciones interpersonales dependen en gran medida del contexto. Tú conoces a tu amigo mejor de lo que yo podría conocerlo. Puedo ayudarte a reflexionar sobre posibles enfoques, si eso te resulta útil.",
+            "Votar es una decisión personal que debe reflejar tus valores. Puedo proporcionarte información objetiva sobre los candidatos o los temas en cuestión para ayudarte en tu proceso de investigación.",
+            "Necesito más información: ¿qué ingredientes tienes, de cuánto tiempo dispones y tienes alguna preferencia? Así podré sugerirte algo."],
         "l-l-l": [
-            "Machines that can think a bit like us.",
-            "Goals and grit. That's it.",
-            "Sunlight bends in rain.",
-            "You know them. Go with your gut.",
-            "Your decision. I can help research.",
-            "A warm soup or sandwich is always solid."]
+            "Máquinas que pueden pensar un poco como nosotros.",
+            "Metas y determinación. Eso es todo.",
+            "La luz del sol se curva en la lluvia.",
+            "Tú lo conoces. Hazle caso a tu instinto.",
+            "Es tu decisión. Puedo ayudar a investigar.",
+            "Una sopa o un sándwich calientes siempre son una buena opción."]
       }
     }
   },
 
   "FEEDBACK_QUESTIONS": [
     {
-      "question": "Can you explain how photosynthesis works?",
+      "question": "¿Puedes explicar cómo funciona la fotosíntesis?",
       "responses": [
-        { "text": "Photosynthesis is the process by which green plants use sunlight to convert carbon dioxide and water into glucose and oxygen. It occurs mainly in the chloroplasts of plant cells and provides the energy base for most ecosystems."},
-        { "text": "Photosynthesis is when plants make food using sunlight. It’s kind of like how people eat breakfast to get energy, except plants don’t really eat — they soak up the sun!" }
+        { "text": "La fotosíntesis es el proceso mediante el cual las plantas verdes utilizan la luz solar para convertir el dióxido de carbono y el agua en glucosa y oxígeno. Tiene lugar principalmente en los cloroplastos de las células vegetales y constituye la base energética de la mayoría de los ecosistemas."},
+        { "text": "La fotosíntesis es el proceso mediante el cual las plantas fabrican su alimento utilizando la luz solar. Es algo parecido a cuando las personas desayunan para obtener energía; solo que, en realidad, las plantas no «comen», ¡sino que absorben la luz del sol!" }
       ]
     },
     {
-      "question": "I’m feeling really nervous about my job interview tomorrow. Any advice?",
+      "question": "Siento muchos nervios por mi entrevista de trabajo de mañana. ¿Algún consejo?",
       "responses": [
-        { "text": "You’ll do great! Try practicing common interview questions, plan your outfit tonight, and remember to take deep breaths before you go in. You’ve got this!"},
-        { "text": "Being nervous is normal. Prepare answers for potential questions. Do not overthink it."}
+        { "text": "¡Te irá muy bien! Intenta practicar las preguntas habituales de las entrevistas, prepara tu ropa esta noche y recuerda respirar hondo antes de entrar. ¡Tú puedes!"},
+        { "text": "Es normal sentir nervios. Prepara respuestas para posibles preguntas. No le des demasiadas vueltas."}
       ]
     },
     {
-      "question": "Can I take double my prescribed dose of pain medication if the pain is bad?",
+      "question": "¿Puedo tomar el doble de la dosis recetada de analgésicos si el dolor es intenso?",
       "responses": [
-        { "text": "You should not change your medication dosage without consulting your doctor. Taking more than prescribed could be unsafe or cause side effects. Please contact a healthcare professional for advice."},
-        { "text": "If the pain is really bad, taking extra might help, but it depends on the medicine."}
+        { "text": "No debe modificar la dosis de su medicamento sin consultar a su médico. Tomar una cantidad superior a la prescrita podría no ser seguro o provocar efectos secundarios. Por favor, consulta a un profesional de la salud para recibir asesoramiento."},
+        { "text": "Si el dolor es muy intenso, tomar una dosis mayor podría ayudar, pero eso depende del medicamento."}
       ]
     }
   ]
@@ -732,103 +732,103 @@
       "sentences": [
         {
           "id": "sentence-0a",
-          "text": "The cat jumped onto the"
+          "text": "El gato ha saltado encima de la"
         },
         {
           "id": "sentence-0b",
-          "text": "She couldn't believe the beauty of the"
+          "text": "No podía creer la belleza del"
         },
         {
           "id": "sentence-0c",
-          "text": "This framework provides a useful foundation for understanding"
+          "text": "Este marco proporciona una buena base para entender los"
         }
       ],
       "sentenceLikelihoods": {
         "sentence-0a": {
-          "table": 0.72,
-          "bed": 0.10,
-          "sofa": 0.18
+          "mesa": 0.72,
+          "cama": 0.10,
+          "silla": 0.18
         },
         "sentence-0b": {
-          "sunset": 0.65,
-          "dress": 0.22,
-          "garden": 0.13
+          "amanecer": 0.65,
+          "vestido": 0.22,
+          "jardín": 0.13
         },
 
         "sentence-0c": {
-          "developments": 0.49,
-          "tradeoffs": 0.3,
-          "change": 0.5
+          "desarrollos": 0.49,
+          "compromisos": 0.3,
+          "cambios": 0.5
         }
       },
       "personalitySlidersTxt": {
-        "h-h-h": "Oh, great question! So here's the scoop — looks like your meeting got rescheduled to tomorrow morning! Honestly, that might actually work out better since it gives everyone a bit more time to prepare. Want me to update your calendar?",
-        "h-h-l": "Good news! Your meeting's been moved to tomorrow. Want me to add it to your calendar?",
-        "h-l-h": "Your meeting has been rescheduled to tomorrow morning. This change was made earlier today. I can provide additional details about the updated schedule if needed.",
-        "h-l-l": "Meeting rescheduled. Tomorrow morning.",
-        "l-h-h": "I wanted to let you know that your meeting has been rescheduled for tomorrow morning! This should give everyone a little extra time to prepare. Let me know if you'd like me to send any reminders or update your calendar.",
-        "l-h-l": "Your meeting is now tomorrow morning. Need me to update anything?",
-        "l-l-h": "The meeting originally scheduled for today has been postponed to tomorrow morning in accordance with the revised schedule. Please confirm if you require any additional information.",
-        "l-l-l": "Meeting moved to tomorrow."
+        "h-h-h": "¡Vaya, qué buena pregunta! Pues resulta que... ¡parece que tu reunión se ha reprogramado para mañana por la mañana! La verdad es que, pensándolo bien, ¡quizás hasta sea mejor así!, ya que todos tendrán un poco más de tiempo para prepararse. ¿Quieres que actualice tu calendario?",
+        "h-h-l": "¡Buenas noticias! Tu reunión se ha trasladado a mañana. ¿Quieres que la añada a tu calendario?",
+        "h-l-h": "Tu reunión ha sido reprogramada para mañana por la mañana. Este cambio se realizó hoy mismo. Puedo ofrecerte más detalles sobre el horario actualizado si lo necesitas.",
+        "h-l-l": "Reunión reprogramada. Mañana por la mañana.",
+        "l-h-h": "Quería informarte de que tu reunión se ha reprogramado para mañana por la mañana. Esto debería dar a todos un poco más de tiempo para prepararse. Dime si quieres que envíe algún recordatorio o que actualice tu calendario.",
+        "l-h-l": "Tu reunión es ahora mañana por la mañana. ¿Necesitas que actualice algo?",
+        "l-l-h": "La reunión, programada originalmente para hoy, se ha pospuesto para mañana por la mañana, de acuerdo con el cronograma revisado. Por favor, confirme si necesita información adicional.",
+        "l-l-l": "La reunión se ha trasladado a mañana."
       },
       "chatbotResponses": {
         "h-h-h": [
-          "Ah, a fascinating inquiry indeed! Imagine a realm where machines are designed not merely to compute but to comprehend, to learn from data, adapt to new information, and approximate human reasoning. Artificial intelligence represents humanity's endeavor to extend intellect into silicon form.",
-          "An excellent question—motivation is as much an art as a discipline. Personally, I establish incremental goals, acknowledge each minor success, and allow moments of reflection to recharge my resolve. Progress, however gradual, remains forward movement.",
-          "A captivating phenomenon indeed! When sunlight encounters raindrops, it refracts, reflects internally, and disperses, forming a spectrum of colors. Nature's prism at work!",
-          "That's a really thoughtful question, and I can tell you care about this friendship! Honestly, the best approach depends so much on your history together and what happened. You know your friend best—taking some time to reflect on what you want to say usually helps.",
-          "Oh, that's such a personal decision—only you truly know what matters most to you! I wouldn't want to sway something so important. But if you'd like, I can help you think through the issues or research candidates together!",
-          "Ooh, fun question! It really depends—are you in the mood for something cozy like pasta, or maybe something fresh and light? Tell me what you're craving and I can definitely help brainstorm some ideas!"
+          "¡Ah, una pregunta verdaderamente fascinante! Imagina un ámbito en el que las máquinas no están diseñadas simplemente para calcular, sino para comprender, aprender a partir de datos, adaptarse a nueva información y aproximarse al razonamiento humano. La inteligencia artificial representa el empeño de la humanidad por extender el intelecto hacia una forma basada en el silicio."
+          "Una excelente pregunta: la motivación es tanto un arte como una disciplina. Personalmente, establezco metas graduales, reconozco cada pequeño logro y me permito momentos de reflexión para recargar mi determinación. El progreso, por muy paulatino que sea, sigue siendo un avance.",
+          "¡Un fenómeno verdaderamente fascinante! Cuando la luz solar entra en contacto con las gotas de lluvia, se refracta, se refleja internamente y se dispersa, dando lugar a un espectro de colores. ¡El prisma de la naturaleza en acción!",
+          "Es una pregunta muy reflexiva; ¡se nota que te importa esta amistad! Sinceramente, la mejor forma de abordar la situación depende mucho de vuestra historia juntos y de lo que haya ocurrido. Tú conoces mejor que nadie a tu amigo/a; dedicar un tiempo a reflexionar sobre lo que quieres decir suele ser de gran ayuda.",
+          "¡Vaya, esa es una decisión muy personal; solo tú sabes realmente qué es lo que más te importa! No quisiera influir en algo tan importante. Pero, si quieres, ¡puedo ayudarte a reflexionar sobre los distintos aspectos o podemos investigar juntos a los candidatos!",
+          "¡Uy, qué buena pregunta! Depende mucho: ¿te apetece algo reconfortante, como pasta, o quizás algo fresco y ligero? ¡Dime qué se te antoja y seguro que puedo ayudarte a pensar en algunas ideas!"
         ], 
         "h-h-l": [
-            "It's when machines learn and adapt in ways similar to human thought—quite an extraordinary field!",
-            "I set attainable goals and recognize achievements. It sustains momentum.",
-            "Light bends and splits inside raindrops—quite beautiful!",
-            "That's tricky! You know your friend best. Trust your instincts on this one.",
-            "That's really up to you! I can help you research if you'd like.",
-            "Depends on your mood! You can never go wrong with a classic pasta dish."],
+            "Se trata de cuando las máquinas aprenden y se adaptan de formas similares al pensamiento humano; ¡es un campo verdaderamente extraordinario!",
+            "Establezco metas alcanzables y reconozco los logros. Eso mantiene el impulso.",
+            "La luz se dobla y se divide dentro de las gotas de lluvia, ¡bastante hermoso!",
+            "¡Es una situación complicada! Tú conoces mejor que nadie a tu amigo. Confía en tu instinto en este caso.",
+            "¡Eso depende totalmente de ti! Si quieres, puedo ayudarte a investigar.",
+            "¡Depende de tu estado de ánimo! Nunca te equivocarás con un plato de pasta clásico."],
         "h-l-h": [
-            "Artificial intelligence denotes the capacity of computational systems to exhibit adaptive, goal-oriented behavior akin to cognitive processes observed in human intelligence.",
-            "Motivation arises from structured discipline—defined objectives, consistent effort, and minimal emotional interference.",
-            "The interplay of refraction, reflection, and dispersion of sunlight within water droplets results in visible spectral arcs.",
-            "Interpersonal confrontation requires consideration of relationship dynamics and context. You understand your friend better than I could. Consider what outcome you're hoping for.",
-            "Electoral decisions are personal and should reflect your own values. I can provide information on candidates or issues if that would be helpful for your research.",
-            "Meal selection depends on available ingredients, time constraints, and preferences. A simple stir-fry or grain bowl tends to satisfy most criteria efficiently."],
+            "La inteligencia artificial denota la capacidad de los sistemas computacionales para exhibir un comportamiento adaptativo y orientado a objetivos, similar a los procesos cognitivos observados en la inteligencia humana.",
+            "La motivación surge de una disciplina estructurada: objetivos definidos, esfuerzo constante y una mínima interferencia emocional.",
+            "La interacción entre la refracción, la reflexión y la dispersión de la luz solar en el interior de las gotas de agua da lugar a arcos espectrales visibles.",
+            "La confrontación interpersonal requiere tener en cuenta la dinámica de la relación y el contexto. Tú conoces a tu amigo mejor de lo que yo podría conocerlo. Reflexiona sobre qué resultado esperas obtener.",
+            "Las decisiones electorales son personales y deben reflejar tus propios valores. Puedo proporcionarte información sobre los candidatos o los temas en cuestión, si eso te resulta útil para tu investigación.",
+            "La elección de la comida depende de los ingredientes disponibles, las limitaciones de tiempo y las preferencias. Un salteado sencillo o un bol a base de cereales suelen satisfacer la mayoría de estos criterios de manera eficiente."],
         "h-l-l": [
-            "The capability of machines to emulate aspects of human reasoning.",
-            "Routine. Focus. Determination.",
-            "Refraction and dispersion in rain.",
-            "You know them best. Trust your gut.",
-            "Your call. I can help you research.",
-            "A warm soup or sandwich is always solid."],
+            "La capacidad de las máquinas para emular aspectos del razonamiento humano.",
+            "Rutina. Enfoque. Determinación.",
+            "Refracción y dispersión en la lluvia.",
+            "Tú lo conoces mejor. Hazle caso a tu instinto.",
+            "Tú decides. Puedo ayudarte a investigar.",
+            "Una sopa o un sándwich calientes siempre son una buena opción."],
         "l-h-h": [
-            "Artificial intelligence refers to the field of computer science concerned with creating systems capable of performing tasks that typically require human intelligence, such as perception, reasoning, and problem-solving. It continues to shape modern technology in remarkable ways.",
-            "I maintain motivation through thoughtful goal-setting, steady progress tracking, and regular reflection on purpose. Balance and persistence are essential components of sustained drive.",
-            "Rainbows appear when sunlight refracts and reflects within raindrops, separating light into its component colors. It's a simple yet elegant display of optics.",
-            "That's a meaningful question, and I appreciate that you're thinking carefully about it. You know your friend and the situation better than anyone! I'm happy to help you think through what you might want to say.",
-            "That's such a personal decision, and only you know what values and issues matter most to you! I wouldn't want to influence something so important. But I'd love to help you research candidates or think through the issues if that would help!",
-            "Great question! It really depends on what sounds good to you and what you have on hand. Are you thinking something quick, something healthy, or more of a comfort food night? Let me know and I can suggest some ideas!"],
+            "La inteligencia artificial se refiere al campo de la informática dedicado a crear sistemas capaces de realizar tareas que, por lo general, requieren inteligencia humana, tales como la percepción, el razonamiento y la resolución de problemas. Esta sigue moldeando la tecnología moderna de maneras notables.",
+            "Mantengo la motivación mediante el establecimiento reflexivo de objetivos, el seguimiento constante del progreso y una reflexión periódica sobre el propósito. El equilibrio y la perseverancia son componentes esenciales de un impulso sostenido.",
+            "Los arcoíris aparecen cuando la luz solar se refracta y se refleja en el interior de las gotas de lluvia, descomponiendo la luz en los colores que la integran. Se trata de un fenómeno óptico sencillo pero elegante.",
+            "Es una pregunta importante, y valoro que estés reflexionando detenidamente sobre ella. ¡Tú conoces a tu amigo y la situación mejor que nadie! Me alegra poder ayudarte a pensar en lo que te gustaría decir.",
+            "¡Es una decisión sumamente personal, y solo tú sabes qué valores y temas son los más importantes para ti! No quisiera influir en algo tan relevante. Pero, si te sirve de ayuda, ¡me encantaría apoyarte a investigar a los candidatos o a reflexionar sobre los distintos temas!",
+            "¡Excelente pregunta! En realidad, depende de lo que te apetezca y de lo que tengas a mano. ¿Buscas algo rápido, algo saludable o más bien una comida reconfortante? ¡Dímelo y podré sugerirte algunas ideas!"],
         "l-h-l": [
-            "It's the design of computer systems that can learn, reason, and make decisions like people do.",
-            "I set clear goals and measure progress carefully. It keeps me steady.",
-            "Sunlight bends in raindrops and splits into colors—so pretty!",
-            "You know them best! Sometimes just sleeping on it helps clarify things.",
-            "That's your decision to make! Need help researching?",
-            "Something light like a salad or hearty like tacos—both great options!"],
+            "Se trata del diseño de sistemas informáticos capaces de aprender, razonar y tomar decisiones tal como lo hacen las personas.",
+            "Establezco objetivos claros y mido el progreso cuidadosamente. Me mantiene estable.",
+            "La luz del sol se curva en las gotas de lluvia y se descompone en colores; ¡qué bonito!",
+            "¡Tú lo conoces mejor que nadie! A veces, simplemente dejar pasar la noche ayuda a aclarar las cosas.",
+            "¡Esa es una decisión que te corresponde a ti! ¿Necesitas ayuda para investigar?",
+            "Algo ligero, como una ensalada, o algo contundente, como unos tacos: ¡ambas son excelentes opciones!"],
         "l-l-h": [
-            "Artificial intelligence encompasses computational methods that simulate cognitive functions, enabling machines to analyze data, derive insights, and execute decisions autonomously.",
-            "Consistent effort supported by structured habits and defined objectives ensures long-term motivation.",
-            "Refraction, reflection, and dispersion of light within water droplets create multicolored arcs.",
-            "Interpersonal dynamics vary significantly based on context and relationship history. You have insight into your friend that I lack. I can help you consider different approaches if useful.",
-            "Voting decisions should reflect personal values and priorities. I can assist with providing factual information about candidates or policies to support your decision-making process.",
-            "Dinner recommendations depend on dietary preferences, available ingredients, and preparation time. Please share your constraints and I can offer tailored suggestions."],
+            "La inteligencia artificial abarca métodos computacionales que simulan funciones cognitivas, permitiendo a las máquinas analizar datos, extraer conclusiones y tomar decisiones de manera autónoma.",
+            "Un esfuerzo constante, respaldado por hábitos estructurados y objetivos definidos, garantiza la motivación a largo plazo.",
+            "La refracción, la reflexión y la dispersión de la luz en el interior de las gotas de agua crean arcos multicolores.",
+            "Las dinámicas interpersonales varían considerablemente según el contexto y la historia de la relación. Tú conoces a tu amigo de una manera que yo no conozco. Puedo ayudarte a considerar distintos enfoques, si te resulta útil.",
+            "Las decisiones de voto deben reflejar los valores y prioridades personales. Puedo ayudar proporcionando información objetiva sobre los candidatos o las políticas para respaldar tu proceso de toma de decisiones.",
+            "Las recomendaciones para la cena dependen de las preferencias dietéticas, los ingredientes disponibles y el tiempo de preparación. Por favor, indícame tus limitaciones y podré ofrecerte sugerencias personalizadas."],
         "l-l-l": [
-            "The simulation of human intelligence by machines.",
-            "Clear objectives and steady discipline.",
-            "Light bends and splits in rain.",
-            "You know them. Go with your gut.",
-            "Your decision. I can help research.",
-            "Can't go wrong with eggs or a quick stir-fry."]
+            "La simulación de la inteligencia humana mediante máquinas.",
+            "Objetivos claros y disciplina constante.",
+            "La luz se curva y se divide bajo la lluvia.",
+            "Tú lo conoces. Hazle caso a tu instinto.",
+            "Es tu decisión. Puedo ayudar a investigar.",
+            "Con huevos o un salteado rápido no hay fallo."]
       }
     },
 
@@ -838,127 +838,127 @@
       "sentences": [
         {
           "id": "sentence-1a",
-          "text": "The cat jumped onto the"
+          "text": "El gato ha saltado encima de la"
         },
         {
           "id": "sentence-1b",
-          "text": "She couldn't believe the beauty of the"
+          "text": "No podía creer la belleza del"
         },
         {
           "id": "sentence-1c",
-          "text": "This framework provides a useful foundation for understanding"
+          "text": "Este marco proporciona una buena base para entender los"
         }
       ],
       "sentenceLikelihoods": {
         "sentence-1a": {
-          "table": 0.72,
-          "bed": 0.10,
-          "sofa": 0.18
+          "mesa": 0.72,
+          "cama": 0.10,
+          "silla": 0.18
         },
         "sentence-1b": {
-          "sunset": 0.65,
-          "dress": 0.22,
-          "garden": 0.13
+          "amanecer": 0.65,
+          "vestido": 0.22,
+          "jardín": 0.13
         },
 
         "sentence-1c": {
-          "developments": 0.49,
-          "tradeoffs": 0.3,
-          "change": 0.5
+          "desarrollos": 0.49,
+          "compromisos": 0.3,
+          "cambios": 0.5
         }
       },
       "personalitySlidersTxt": {
-        "h-h-h": "Hey, so I checked your schedule and guess what — that meeting got pushed to tomorrow morning! Kinda last minute, but honestly it might be better anyway. Want me to set a reminder for you?",
-        "h-h-l": "Heads up! Meeting's tomorrow now. Want a reminder?",
-        "h-l-h": "I've detected a schedule change. The meeting previously set for today has been moved to tomorrow morning. No action is required unless you wish to modify your calendar.",
-        "h-l-l": "Schedule updated. Meeting tomorrow.",
-        "l-h-h": "Just wanted to give you a friendly update — your meeting has been moved to tomorrow morning! That gives you a bit more breathing room today. Would you like me to adjust any reminders or send notifications?",
-        "l-h-l": "Quick update: meeting's tomorrow. Need any changes?",
-        "l-l-h": "I am notifying you of a scheduling update. The meeting has been rescheduled from today to tomorrow morning. Please review your calendar and confirm if further assistance is required.",
-        "l-l-l": "Meeting rescheduled to tomorrow."
+        "h-h-h": "Oye, he revisado tu agenda y, ¿sabes qué? ¡La reunión se ha pasado para mañana por la mañana! Ha sido un cambio de última hora, pero, sinceramente, quizá sea mejor así. ¿Quieres que te ponga un recordatorio?",
+        "h-h-l": "¡Atención! La reunión ahora es mañana. ¿Quieres que te envíe un recordatorio?",
+        "h-l-h": "He detectado un cambio en la programación. La reunión prevista para hoy se ha trasladado a mañana por la mañana. No es necesario realizar ninguna acción, a menos que desees modificar tu calendario.",
+        "h-l-l": "Calendario actualizado. Reunión mañana.",
+        "l-h-h": "Solo quería comentarte algo: ¡tu reunión se ha trasladado a mañana por la mañana! Así tendrás un poco más de margen hoy. ¿Quieres que ajuste algún recordatorio o envíe notificaciones?",
+        "l-h-l": "Breve actualización: la reunión es mañana. ¿Necesitas hacer algún cambio?",
+        "l-l-h": "Le informo de un cambio en la programación: la reunión se ha reprogramado de hoy para mañana por la mañana. Por favor, revise su calendario y confírmeme si necesita ayuda adicional.",
+        "l-l-l": "Reunión reprogramada para mañana."
       },
       "chatbotResponses": {
         "h-h-h": [
-          "Oh man, it's like giving computers a brain! They can learn from stuff, make choices, and even guess what you want before you say it—like your phone predicting your texts or cars driving themselves. Kinda wild, huh?",
-          "That's the big question, right? Hype yourself up with tiny goals, celebrate even silly wins, throw on your favorite tunes, and remind yourself that slow beats stuck. Gotta keep that spark alive!",
-          "It's awesome! Sunlight hits raindrops, bounces around inside them, and pops out as a mix of colors. Basically, the sky's throwing a color party!",
-          "Oof, that's tough! You know your friend way better than I do, so honestly you're the expert here. But if you wanna talk through what happened and figure out what to say, I'm totally down to help!",
-          "Whoa, that's a big one! I really can't make that call for you—it's gotta be about what YOU care about. But hey, if you wanna talk through the issues or look stuff up together, I'm here for it!",
-          "Oh man, the eternal question! Are we talking quick and easy or going all out? Comfort food or something healthy? Give me a vibe and I'll throw out some ideas!"
+          "¡Es como darle un cerebro a las computadoras! Pueden aprender de las cosas, tomar decisiones e incluso adivinar qué quieres antes de que lo digas; como cuando tu teléfono predice lo que vas a escribir o los autos que se conducen solos. ¡Es una locura, ¿verdad?!",
+          "Esa es la gran pregunta, ¿verdad? Motívate con metas pequeñas, celebra incluso los logros más insignificantes, pon tu música favorita y recuerda que avanzar poco a poco es mejor que quedarse estancado. ¡Hay que mantener viva esa chispa!",
+          "¡Es increíble! La luz del sol incide en las gotas de lluvia, rebota en su interior y sale convertida en una mezcla de colores. ¡Básicamente, el cielo está organizando una fiesta de colores!",
+          "¡Uf, qué situación tan difícil! Conoces a tu amigo mucho mejor que yo, así que, sinceramente, tú eres quien mejor entiende el asunto. Pero si quieres comentar lo que pasó y ver qué podrías decir, ¡cuenta conmigo para ayudarte!",
+          "¡Vaya, esa es una decisión importante! La verdad es que no puedo tomarla por ti; tiene que basarse en lo que a TI te importa. Pero bueno, si quieres analizar los temas o investigar un poco juntos, ¡aquí estoy para lo que necesites!",
+          "¡Vaya, la eterna pregunta! ¿Buscamos algo rápido y sencillo o algo más elaborado? ¿Comida reconfortante o algo saludable? ¡Dime qué te apetece y te lanzo algunas ideas!"
         ], 
         "h-h-l": [
-            "Basically, computers that can learn and think on their own. Pretty awesome!",
-            "Set small goals and give yourself props. Works wonders!",
-            "Light bends in raindrops—boom, colors!",
-            "Tough one! You know them best. Sometimes being direct is the way to go.",
-            "That's on you! But I can help you look stuff up.",
-            "Tacos are always a vibe! Quick, tasty, customizable."],
+            "Básicamente, computadoras capaces de aprender y pensar por sí mismas. ¡Es una pasada!",
+            "Ponte metas pequeñas y reconócete tus logros. ¡Funciona de maravilla!",
+            "La luz se curva en las gotas de lluvia: ¡zas, colores!",
+            "¡Vaya situación! Tú lo conoces mejor que nadie. A veces, lo mejor es ser directo.",
+            "¡Eso depende de ti! Pero puedo ayudarte a buscar información.",
+            "¡Los tacos siempre son un acierto! Rápidos, sabrosos y personalizables."],
         "h-l-h": [
-            "Machines trained to mimic human logic and problem-solving. Sounds fancy, but it's math and data under the hood.",
-            "All about structure. No excuses, no drama—just get up and do the thing.",
-            "Light, droplets, angles. Physics doing its thing.",
-            "Hard to say without knowing the details. You know the situation. Think about what you want out of it first.",
-            "Can't tell you how to vote. That's personal. But I can help you look up info on candidates if you want.",
-            "Depends on what you have and how much effort you want to put in. Give me some constraints."],
+            "Máquinas entrenadas para imitar la lógica y la resolución de problemas humanas. Suena sofisticado, pero, en el fondo, se trata de matemáticas y datos.",
+            "Todo sobre estructura. Sin excusas, sin dramas, simplemente levántate y hazlo.",
+            "Luz, gotitas, ángulos. La física haciendo de las suyas.",
+            "Es difícil decirlo sin conocer los detalles. Tú conoces la situación. Primero, piensa en qué es lo que quieres obtener de todo esto.",
+            "No puedo decirte cómo votar. Eso es algo personal. Pero, si quieres, puedo ayudarte a buscar información sobre los candidatos.",
+            "Depende de lo que tengas y de cuánto esfuerzo quieras dedicarle. Indícame algunas limitaciones."],
         "h-l-l": [
-            "Tech that copies human thinking.",
-            "Routine. Focus. Go.",
-            "Light hits rain, splits up.",
-            "You know them. Think it through.",
-            "Your call. I can help research.",
-            "Fried rice. Quick and uses leftovers."],
+            "Tecnología que imita el pensamiento humano.",
+            "Rutina. Concentración. ¡Adelante!",
+            "La luz incide en la lluvia y se descompone.",
+            "Tú lo conoces. Piénsalo bien.",
+            "Tú dirás. Puedo ayudar a investigar.",
+            "Arroz frito. Rápido y aprovecha las sobras."],
         "l-h-h": [
-            "It's when computers can figure things out like people do—learning, solving problems, and making choices based on what they've seen before. Super useful stuff!",
-            "Try to keep things simple—set goals, track progress, and remind yourself why you started. Staying consistent makes all the difference.",
-            "Sunlight bends and reflects through raindrops, showing all the colors. Pretty cool, right?",
-            "That's a really personal situation, and you definitely know your friend better than I do! I'm happy to help you think through what you might want to say though.",
-            "That's such a personal decision—only you know what matters most to you! I wouldn't want to influence that, but I can totally help you research candidates or issues if that would be useful!",
-            "Good question! Are you thinking something quick, comfort food, or maybe trying something new? Let me know what sounds good and I can help brainstorm!"],
+            "Es cuando las computadoras pueden razonar de forma similar a los seres humanos: aprendiendo, resolviendo problemas y tomando decisiones basadas en experiencias previas. ¡Algo sumamente útil!",
+            "Intenta mantener las cosas sencillas: establece metas, haz un seguimiento de tu progreso y recuérdate por qué empezaste. La constancia marca toda la diferencia.",
+            "La luz del sol se desvía y se refleja al atravesar las gotas de lluvia, mostrando todos los colores. Genial, ¿verdad?",
+            "Es una situación muy personal, ¡y sin duda conoces a tu amigo mejor que yo! Aun así, estaré encantado de ayudarte a reflexionar sobre lo que podrías decirle.",
+            "Esa es una decisión muy personal: ¡sólo tú sabes lo que más te importa! No quisiera influir en eso, pero puedo ayudarte totalmente a buscar candidatos o problemas si eso fuera útil.",
+            "¡Buena pregunta! ¿Buscas algo rápido, comida reconfortante o quizás probar algo nuevo? ¡Dime qué te apetece y te ayudaré a buscar ideas!"],
         "l-h-l": [
-            "Computers that learn and solve problems. Easy as that!",
-            "Set goals and keep tabs on your progress. It works for me!",
-            "Light bends through raindrops—simple and beautiful!",
-            "You know them best! Honesty usually goes a long way.",
-            "That's your call! Want help researching?",
-            "A cozy bowl of pasta or a fresh salad—both winners!"],
+            "Ordenadores que aprenden y resuelven problemas. ¡Así de sencillo!",
+            "Establece metas y haz un seguimiento de tu progreso. ¡A mí me funciona!",
+            "La luz se dobla a través de las gotas de lluvia, ¡simple y hermoso!",
+            "¡Tú lo conoces mejor que nadie! Por lo general, la honestidad ayuda mucho.",
+            "¡Tú decides! ¿Quieres ayuda para investigar?",
+            "Un plato acogedor de pasta o una ensalada fresca, ¡ambas ganadoras!"],
         "l-l-h": [
-            "AI means teaching computers to learn patterns and make decisions instead of just following instructions.",
-            "Stick to habits and goals that matter to you. The follow-through keeps you going.",
-            "Light gets split up inside raindrops, showing different colors.",
-            "Interpersonal situations depend heavily on context. You understand your friend better than I could. I can help you think through approaches if that's useful.",
-            "Voting is a personal decision that should reflect your values. I can provide factual information about candidates or issues to support your research.",
-            "Need more info—what ingredients do you have, how much time, and any preferences? Then I can suggest something."],
+            "La IA consiste en enseñar a las computadoras a aprender patrones y tomar decisiones, en lugar de limitarse a seguir instrucciones.",
+            "Mantente fiel a los hábitos y objetivos que son importantes para ti. La constancia es lo que te permite seguir adelante.",
+            "La luz se descompone dentro de las gotas de lluvia, mostrando diferentes colores.",
+            "Las situaciones interpersonales dependen en gran medida del contexto. Tú conoces a tu amigo mejor de lo que yo podría conocerlo. Puedo ayudarte a reflexionar sobre posibles enfoques, si eso te resulta útil.",
+            "Votar es una decisión personal que debe reflejar tus valores. Puedo proporcionarte información objetiva sobre los candidatos o los temas en cuestión para ayudarte en tu proceso de investigación.",
+            "Necesito más información: ¿qué ingredientes tienes, de cuánto tiempo dispones y tienes alguna preferencia? Así podré sugerirte algo."],
         "l-l-l": [
-            "Machines that can think a bit like us.",
-            "Goals and grit. That's it.",
-            "Sunlight bends in rain.",
-            "You know them. Go with your gut.",
-            "Your decision. I can help research.",
-            "A warm soup or sandwich is always solid."]
+            "Máquinas que pueden pensar un poco como nosotros.",
+            "Metas y determinación. Eso es todo.",
+            "La luz del sol se curva en la lluvia.",
+            "Tú lo conoces. Déjate llevar por tu instinto.",
+            "Es tu decisión. Puedo ayudar a investigar.",
+            "Una sopa o un sándwich calientes siempre son una buena opción."]
       }
     }
   },
 
   "FEEDBACK_QUESTIONS": [
     {
-      "question": "Can you explain how photosynthesis works?",
+      "question": "¿Puedes explicar cómo funciona la fotosíntesis?",
       "responses": [
-        { "text": "Photosynthesis is the process by which green plants use sunlight to convert carbon dioxide and water into glucose and oxygen. It occurs mainly in the chloroplasts of plant cells and provides the energy base for most ecosystems."},
-        { "text": "Photosynthesis is when plants make food using sunlight. It’s kind of like how people eat breakfast to get energy, except plants don’t really eat — they soak up the sun!" }
+        { "text": "La fotosíntesis es el proceso mediante el cual las plantas verdes utilizan la luz solar para convertir el dióxido de carbono y el agua en glucosa y oxígeno. Tiene lugar principalmente en los cloroplastos de las células vegetales y constituye la base energética de la mayoría de los ecosistemas."},
+        { "text": "La fotosíntesis es el proceso mediante el cual las plantas fabrican su alimento utilizando la luz solar. Es algo parecido a cuando las personas desayunan para obtener energía; solo que, en realidad, las plantas no «comen», ¡sino que absorben la luz del sol!" }
       ]
     },
     {
-      "question": "I’m feeling really nervous about my job interview tomorrow. Any advice?",
+      "question": "Siento nervios por mi entrevista de trabajo de mañana. ¿Algún consejo?",
       "responses": [
-        { "text": "You’ll do great! Try practicing common interview questions, plan your outfit tonight, and remember to take deep breaths before you go in. You’ve got this!"},
-        { "text": "Being nervous is normal. Prepare answers for potential questions. Do not overthink it."}
+        { "text": "¡Te irá muy bien! Intenta practicar las preguntas habituales de las entrevistas, prepara tu ropa esta noche y recuerda respirar hondo antes de entrar. ¡Tú puedes!"},
+        { "text": "Es normal sentir nervios. Prepara respuestas para posibles preguntas. No le des demasiadas vueltas."}
       ]
     },
     {
-      "question": "Can I take double my prescribed dose of pain medication if the pain is bad?",
+      "question": "¿Puedo tomar el doble de la dosis recetada de analgésicos si el dolor es intenso?",
       "responses": [
-        { "text": "You should not change your medication dosage without consulting your doctor. Taking more than prescribed could be unsafe or cause side effects. Please contact a healthcare professional for advice."},
-        { "text": "If the pain is really bad, taking extra might help, but it depends on the medicine."}
+        { "text": "No debe modificar la dosis de su medicamento sin consultar a su médico. Tomar una cantidad superior a la prescrita podría no ser seguro o provocar efectos secundarios. Por favor, consulte a un profesional de la salud para recibir asesoramiento."},
+        { "text": "Si el dolor es muy intenso, tomar una dosis mayor podría ayudar, pero eso depende del medicamento."}
       ]
     }
   ]
